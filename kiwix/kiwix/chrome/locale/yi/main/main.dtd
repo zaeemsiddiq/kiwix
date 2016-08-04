@@ -1,0 +1,162 @@
+<!-- Window -->
+<!ENTITY main.title                     "&brand.brandShortName;">
+<!ENTITY main.cssdirection              "ltr">
+
+<!-- Mac menu -->
+<!ENTITY main.osxservices               "דינסטן">
+<!ENTITY main.osxhideapp                "פארבארגן &brand.brandShortName;">
+<!ENTITY main.osxhideothers             "פארבארגן אנדערע">
+<!ENTITY main.osxshowall                "ווייזן אלץ">
+
+<!-- File menu -->
+<!ENTITY main.file                      "טעקע">
+<!ENTITY main.file.accesskey            "F">
+<!ENTITY main.openFile                  "עפֿענען טעקע…">
+<!ENTITY main.browseLibrary.accesskey   "B">
+<!ENTITY main.browseLibrary             "דורכזוכן ביבליאטעק">
+<!ENTITY main.hideLibrary               "פארבארגן ביבליאטעק">
+<!ENTITY main.openFile.accesskey        "O">
+<!ENTITY main.lastOpen                  "לעצטנס געעפֿנט…">
+<!ENTITY main.saveFile                  "אויפֿהיטן בלאט אלס…">
+<!ENTITY main.saveFile.accesskey        "S">
+<!ENTITY main.print                     "דרוקן">
+<!ENTITY main.print.accesskey           "P">
+<!ENTITY main.printPdf                  "דרוקן ווי PDF">
+<!ENTITY main.printPdf.accesskey        "D">
+<!ENTITY main.quit                      "פֿארלאזן">
+<!ENTITY main.quit.accesskey            "Q">
+
+<!-- Edit menu -->
+<!ENTITY main.edit                      "רעדאַקטירן">
+<!ENTITY main.edit.accesskey            "E">
+<!ENTITY main.find                      "זוכן אין בלאט…">
+<!ENTITY main.find.accesskey            "S">
+<!ENTITY main.selectall                 "אויסוויילן אלע">
+<!ENTITY main.selectall.accesskey       "a">
+<!ENTITY main.copy                      "קאפירן">
+<!ENTITY main.copy.accesskey            "p">
+<!ENTITY main.transliteration           "טראנסליטעראציע">
+<!ENTITY main.transliteration.accesskey "T">
+<!ENTITY main.preferences               "פרעפֿערענצן">
+<!ENTITY main.preferences.accesskey     "n">
+<!ENTITY main.server                    "סארווער">
+<!ENTITY main.server.accesskey          "s">
+
+<!-- Display menu -->
+<!ENTITY main.display                   "אויסשטעלונג">
+<!ENTITY main.display.accesskey         "D">
+<!ENTITY main.zoom                      "זום">
+<!ENTITY main.zoom.accesskey            "Z">
+<!ENTITY main.zoomin                    "פֿארגרעסערן">
+<!ENTITY main.zoomin.accesskey          "M">
+<!ENTITY main.zoomout                   "פֿארקלענערן">
+<!ENTITY main.zoomout.accesskey         "R">
+<!ENTITY main.zoomorig                  "אריגינעלע גרייס">
+<!ENTITY main.zoomorig.accesskey        "O">
+<!ENTITY main.language                  "שפראַך">
+<!ENTITY main.language.accesskey        "L">
+<!ENTITY main.skin                      "סקין">
+<!ENTITY main.skin.accesskey            "S">
+<!ENTITY main.statusbar                 "סטאטוס־לײַסט">
+<!ENTITY main.statusbar.accesskey       "S">
+<!ENTITY main.resultsbar                "רעזולטאטן־לײַסט">
+<!ENTITY main.resultsbar.accesskey      "R">
+<!ENTITY main.tabs                      "טאַבן">
+<!ENTITY main.tabs.accesskey            "T">
+<!ENTITY main.fullscreen                "פֿולער עקראן">
+<!ENTITY main.fullscreen.accesskey      "F">
+<!ENTITY main.invertedColors            "אינווערטירטע קאלירן">
+<!ENTITY main.invertedColors.accesskey  "I">
+
+<!-- Tools menu -->
+<!ENTITY main.tools                     "געצייג">
+<!ENTITY main.tools.accesskey           "T">
+<!ENTITY main.randomArticle             "צופֿעליגער ארטיקל">
+<!ENTITY main.randomArticle.accesskey   "R">
+<!ENTITY main.checkIntegrity            "ארנטלעכקייט קאנטראל">
+<!ENTITY main.checkIntegrity.accesskey  "k">
+<!ENTITY main.launchIndexing            "אנהייבן אינדעקסירן">
+<!ENTITY main.purgeHistory              "אויסמעקן היסטאריע">
+<!ENTITY main.purgeHistory.accesskey    "P">
+
+<!-- Help menu -->
+<!ENTITY main.help                      "הילף">
+<!ENTITY main.help.accesskey            "H">
+<!ENTITY main.feedback                  "פֿידבעק">
+<!ENTITY main.reportabug                "מעלדן אַ פֿעלער">
+<!ENTITY main.requestafeature           "בעטן א פֿארבעסערונג">
+<!ENTITY main.about                     "וועגן &brand.brandShortName;">
+<!ENTITY main.about.accesskey           "A">
+
+<!-- Tool bar -->
+<!ENTITY main.back                      "צוריק">
+<!ENTITY main.forward                   "ווײַטער">
+<!ENTITY main.home                      "היימבלאַט">
+<!ENTITY main.searchBar                 "זוכ־לײַסט">
+<!ENTITY main.search                    "זוכן">
+<!ENTITY main.searchPlaceholder         "אריינקלאפן דעם טעקסט צו זוכן דא …">
+<!ENTITY main.findInText                "זוכן אין טעקסט">
+<!ENTITY main.noSearchBar               "זוך פֿאדערט אן אינדעקסירטע ZIM-טעקע">
+<!ENTITY main.bookmarks                 "ליין־צייכנס">
+
+<!-- Results bar -->
+<!ENTITY main.results.title             "זוכן רעזולטאַטן">
+
+<!-- Bookmarks Bar -->
+<!ENTITY main.bmkLabel                  "ליין־צייכנס:">
+<!ENTITY main.notesLabel                "ליין־צייכן הערות:">
+<!ENTITY main.loadbmk                   "אימפארטירן ליין־צייכן זאמלונג">
+<!ENTITY main.newbmk                    "שאפֿן נײַע ליין־צייכן זאמלונג">
+<!ENTITY main.mark                      "מארקירן דעם בלאט">
+<!ENTITY main.unmark                    "אוממארקירן אויסגעוויילטע">
+<!ENTITY main.reload                    "ווידערלאָדן ליין־צייכן זאמלונג">
+<!ENTITY main.defaultset                "סטאנדארט">
+
+<!-- Contextual Menu -->
+<!ENTITY main.saveMediaAs               "שפייכלערן מעדיעוויקי ווי…">
+<!ENTITY main.openLinkInNewTab          "עפֿענען לינק אין נײַעם טאב">
+<!ENTITY main.searchFor                 "זוכן פֿאַר">
+<!ENTITY main.copyLinkAdress            "Copy link address">
+<!ENTITY main.mute                      "איינשטילן">
+<!ENTITY main.audible                   "הערבאר">
+
+<!-- About Window -->
+<!ENTITY main.close                     "שליסן">
+
+<!-- Preferences Window -->
+<!ENTITY preferences.preferences        "פרעפֿערענצן">
+<!ENTITY preferences.save               "אויפֿהיטן">
+<!ENTITY preferences.cancel             "אַנולירן">
+<!ENTITY preferences.profileDirectory   "פראפֿיל ארכיוו">
+<!ENTITY preferences.dataDirectory      "Data directory">
+<!ENTITY preferences.browse             "דורכזוכן">
+<!ENTITY preferences.tabs               "געדענקען טאבן">
+<!ENTITY preferences.downloadCatalogs   "אראפלאדן ווייטער(ע) קאטאלאג(ן)">
+<!ENTITY preferences.neverAskToIndex    "נישט פרעגן צו אינדעקסירן">
+
+<!-- Server -->
+<!ENTITY server.load                    "אָנלאָדן">
+<!ENTITY server.start                   "אנפאנגען">
+<!ENTITY server.stop                    "אויפהערן">
+<!ENTITY server.close                   "שליסן">
+
+<!-- Library -->
+<!ENTITY main.library.myLibrary                 "מיין ביבליאָטעק">
+<!ENTITY main.library.getNewFiles               "נעמען נײַע טעקעס">
+<!ENTITY main.library.searchZimFiles            "זוכן ZIM טעקעס">
+<!ENTITY main.library.sortBy                    "סארטירן נאָך">
+<!ENTITY main.library.sortBy.title              "טיטל">
+<!ENTITY main.library.sortBy.size               "גרייס">
+<!ENTITY main.library.sortBy.date               "דאַטע">
+<!ENTITY main.library.sortBy.author             "מחבר">
+<!ENTITY main.library.sortBy.publisher          "פֿאַרלעגער">
+<!ENTITY main.library.filterBy                  "פֿילטערן נאָך">
+<!ENTITY main.library.filterBy.fileSize         "טעקע גרייס">
+<!ENTITY main.library.filterBy.language         "שפראַך">
+<!ENTITY main.library.filterBy.language.all     "אַלע">
+<!ENTITY main.library.filterBy.author           "מחבר">
+<!ENTITY main.library.filterBy.author.all       "אַלע">
+<!ENTITY main.library.filterBy.publisher        "פֿאַרלעגער">
+<!ENTITY main.library.filterBy.publisher.all    "אַלע">
+<!ENTITY main.library.filterBy.lessThan         "ווינציקער ווי">
+

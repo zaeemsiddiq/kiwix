@@ -1,0 +1,162 @@
+<!-- Window -->
+<!ENTITY main.title                     "&brand.brandShortName;">
+<!ENTITY main.cssdirection              "ltr">
+
+<!-- Mac menu -->
+<!ENTITY main.osxservices               "சேவைகள்">
+<!ENTITY main.osxhideapp                "மறை &brand.brandShortName;">
+<!ENTITY main.osxhideothers             "மற்றவைகளை மறை">
+<!ENTITY main.osxshowall                "அனைத்தையும் காண்பி">
+
+<!-- File menu -->
+<!ENTITY main.file                      "கோப்பு">
+<!ENTITY main.file.accesskey            "F">
+<!ENTITY main.openFile                  "கோப்பை திறக்கவும்...">
+<!ENTITY main.browseLibrary.accesskey   "B">
+<!ENTITY main.browseLibrary             "நூலகத்தில் தேடவும்">
+<!ENTITY main.hideLibrary               "நூலகத்தை மறை">
+<!ENTITY main.openFile.accesskey        "O">
+<!ENTITY main.lastOpen                  "சமீபத்தில் திற...">
+<!ENTITY main.saveFile                  "பக்கத்தை இவ்வாறாக சேமி...">
+<!ENTITY main.saveFile.accesskey        "S">
+<!ENTITY main.print                     "அச்சிடு">
+<!ENTITY main.print.accesskey           "P">
+<!ENTITY main.printPdf                  "PDF ஆக அச்சிடு">
+<!ENTITY main.printPdf.accesskey        "D">
+<!ENTITY main.quit                      "முடித்துக்கொள்">
+<!ENTITY main.quit.accesskey            "Q">
+
+<!-- Edit menu -->
+<!ENTITY main.edit                      "திருத்து">
+<!ENTITY main.edit.accesskey            "E">
+<!ENTITY main.find                      "பக்கத்தில் தேடு...">
+<!ENTITY main.find.accesskey            "S">
+<!ENTITY main.selectall                 "எல்லாவற்றையும் தேர்வுசெய்யவும்">
+<!ENTITY main.selectall.accesskey       "a">
+<!ENTITY main.copy                      "நகல் எடு">
+<!ENTITY main.copy.accesskey            "p">
+<!ENTITY main.transliteration           "ஒலிப்பெயர்ப்பு">
+<!ENTITY main.transliteration.accesskey "T">
+<!ENTITY main.preferences               "விருப்பத்தேர்வுகள்">
+<!ENTITY main.preferences.accesskey     "n">
+<!ENTITY main.server                    "வழங்கி">
+<!ENTITY main.server.accesskey          "s">
+
+<!-- Display menu -->
+<!ENTITY main.display                   "காண்பி">
+<!ENTITY main.display.accesskey         "D">
+<!ENTITY main.zoom                      "அணுகிக் காண்">
+<!ENTITY main.zoom.accesskey            "Z">
+<!ENTITY main.zoomin                    "பெரிதாக்கு">
+<!ENTITY main.zoomin.accesskey          "M">
+<!ENTITY main.zoomout                   "குறை">
+<!ENTITY main.zoomout.accesskey         "R">
+<!ENTITY main.zoomorig                  "மூல அளவு">
+<!ENTITY main.zoomorig.accesskey        "O">
+<!ENTITY main.language                  "மொழி">
+<!ENTITY main.language.accesskey        "L">
+<!ENTITY main.skin                      "தோல்">
+<!ENTITY main.skin.accesskey            "S">
+<!ENTITY main.statusbar                 "நிலை பட்டி">
+<!ENTITY main.statusbar.accesskey       "S">
+<!ENTITY main.resultsbar                "முடிவு பட்டி">
+<!ENTITY main.resultsbar.accesskey      "R">
+<!ENTITY main.tabs                      "தாவல்கள்">
+<!ENTITY main.tabs.accesskey            "T">
+<!ENTITY main.fullscreen                "முழு திரை">
+<!ENTITY main.fullscreen.accesskey      "F">
+<!ENTITY main.invertedColors            "தலைகீழ் வண்ணங்கள்">
+<!ENTITY main.invertedColors.accesskey  "I">
+
+<!-- Tools menu -->
+<!ENTITY main.tools                     "கருவிகள்">
+<!ENTITY main.tools.accesskey           "T">
+<!ENTITY main.randomArticle             "தொடர்பற்ற கட்டுரை">
+<!ENTITY main.randomArticle.accesskey   "R">
+<!ENTITY main.checkIntegrity            "நேர்மை சரிபார்த்தல்">
+<!ENTITY main.checkIntegrity.accesskey  "k">
+<!ENTITY main.launchIndexing            "அகரவரிசை அட்டவணை உருவாக்கத்துவங்கு">
+<!ENTITY main.purgeHistory              "வரலாற்றை நீக்கவும்">
+<!ENTITY main.purgeHistory.accesskey    "P">
+
+<!-- Help menu -->
+<!ENTITY main.help                      "உதவி">
+<!ENTITY main.help.accesskey            "H">
+<!ENTITY main.feedback                  "கருத்து">
+<!ENTITY main.reportabug                "பிழை கூறு">
+<!ENTITY main.requestafeature           "ஒரு அம்சம் கோரவும்">
+<!ENTITY main.about                     "பற்றி &brand.brandShortName;">
+<!ENTITY main.about.accesskey           "A">
+
+<!-- Tool bar -->
+<!ENTITY main.back                      "பின்செல்">
+<!ENTITY main.forward                   "முன் செல்">
+<!ENTITY main.home                      "முகப்பு">
+<!ENTITY main.searchBar                 "தேடல் பட்டி">
+<!ENTITY main.search                    "தேடு">
+<!ENTITY main.searchPlaceholder         "தேடலுக்கான உரையை இங்கு உள்ளிடவும்...">
+<!ENTITY main.findInText                "உரையில் கண்டுபிடி">
+<!ENTITY main.noSearchBar               "தேடலுக்கு அடைவாக்கப்பட்ட ZIM கோப்பு தேவைப்படுகிறது">
+<!ENTITY main.bookmarks                 "புத்தகக்குறிகள்">
+
+<!-- Results bar -->
+<!ENTITY main.results.title             "தேடல் முடிவுகள்">
+
+<!-- Bookmarks Bar -->
+<!ENTITY main.bmkLabel                  "புத்தகக்குறிகள்">
+<!ENTITY main.notesLabel                "புத்தகக்குறி குறிப்புகள்:">
+<!ENTITY main.loadbmk                   "புத்தகக்குறி அமைவை இறக்குமதி செய்">
+<!ENTITY main.newbmk                    "புதிய புத்தகக்குறி அமை உருவாக்கு">
+<!ENTITY main.mark                      "இப்பக்கத்தை  குறியிடு">
+<!ENTITY main.unmark                    "தேர்ந்தெடுத்ததை குறியிட்டதை அழி">
+<!ENTITY main.reload                    "புத்தகக்குறி அமைவை மறுபடியும் ஏற்று">
+<!ENTITY main.defaultset                "இயல்புநிலை அமை">
+
+<!-- Contextual Menu -->
+<!ENTITY main.saveMediaAs               "ஊடகப்பொருளை இவ்வாறு சேமித்து வை">
+<!ENTITY main.openLinkInNewTab          "புதிய தாவலில் இணைப்பை திற">
+<!ENTITY main.searchFor                 "இதை தேடு">
+<!ENTITY main.copyLinkAdress            "Copy link address">
+<!ENTITY main.mute                      "அமைதியாக்கு">
+<!ENTITY main.audible                   "கேட்கத் தக்க">
+
+<!-- About Window -->
+<!ENTITY main.close                     "மூடு">
+
+<!-- Preferences Window -->
+<!ENTITY preferences.preferences        "விருப்பங்கள்">
+<!ENTITY preferences.save               "சேமி">
+<!ENTITY preferences.cancel             "ரத்து செய்">
+<!ENTITY preferences.profileDirectory   "சுயகுறிப்பு அடைவு">
+<!ENTITY preferences.dataDirectory      "Data directory">
+<!ENTITY preferences.browse             "உலவு">
+<!ENTITY preferences.tabs               "தாவல்களை நினைவில் கொள்">
+<!ENTITY preferences.downloadCatalogs   "தொலைதூர வரிசைப் பட்டியலை(பட்டியல்களை) தகவலிறக்கு">
+<!ENTITY preferences.neverAskToIndex    "அகரவரிசை அட்டவணைப்படுத்த இனி எப்பொழுதும் கேட்காதே">
+
+<!-- Server -->
+<!ENTITY server.load                    "ஏற்று">
+<!ENTITY server.start                   "தொடங்கு">
+<!ENTITY server.stop                    "நிறுத்து">
+<!ENTITY server.close                   "மூடு">
+
+<!-- Library -->
+<!ENTITY main.library.myLibrary                 "என் நூலகம்">
+<!ENTITY main.library.getNewFiles               "புதிய கோப்புகளை பெறு">
+<!ENTITY main.library.searchZimFiles            "ZIM கோப்புகளைத் தேடு">
+<!ENTITY main.library.sortBy                    "வரிசைப்படுத்து">
+<!ENTITY main.library.sortBy.title              "தலைப்பு">
+<!ENTITY main.library.sortBy.size               "அளவு">
+<!ENTITY main.library.sortBy.date               "தேதி">
+<!ENTITY main.library.sortBy.author             "பங்களிப்பாளர்">
+<!ENTITY main.library.sortBy.publisher          "வெளியீட்டாளர்">
+<!ENTITY main.library.filterBy                  "இதன்படி வடிகட்டு">
+<!ENTITY main.library.filterBy.fileSize         "கோப்பின் அளவு">
+<!ENTITY main.library.filterBy.language         "மொழி">
+<!ENTITY main.library.filterBy.language.all     "அனைத்தும்">
+<!ENTITY main.library.filterBy.author           "ஆசிரியர்">
+<!ENTITY main.library.filterBy.author.all       "அனைத்தும்">
+<!ENTITY main.library.filterBy.publisher        "வெளியீட்டாளர்">
+<!ENTITY main.library.filterBy.publisher.all    "அனைத்தும்">
+<!ENTITY main.library.filterBy.lessThan         "குறைவான">
+

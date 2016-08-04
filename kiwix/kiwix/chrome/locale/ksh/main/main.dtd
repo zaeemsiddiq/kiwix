@@ -1,0 +1,162 @@
+<!-- Window -->
+<!ENTITY main.title                     "&brand.brandShortName;">
+<!ENTITY main.cssdirection              "ltr">
+
+<!-- Mac menu -->
+<!ENTITY main.osxservices               "Deenste">
+<!ENTITY main.osxhideapp                "&brand.brandShortName; verschteische">
+<!ENTITY main.osxhideothers             "Andere verschteische">
+<!ENTITY main.osxshowall                "Alle aanzeije">
+
+<!-- File menu -->
+<!ENTITY main.file                      "Dattei">
+<!ENTITY main.file.accesskey            "F">
+<!ENTITY main.openFile                  "Dattei opmaache...">
+<!ENTITY main.browseLibrary.accesskey   "B">
+<!ENTITY main.browseLibrary             "En de Bilijotheek bläddere">
+<!ENTITY main.hideLibrary               "Bibliotheek verschteische">
+<!ENTITY main.openFile.accesskey        "O">
+<!ENTITY main.lastOpen                  "Köözlesch opjehatt...">
+<!ENTITY main.saveFile                  "Di Sigg faßhallde onger...">
+<!ENTITY main.saveFile.accesskey        "S">
+<!ENTITY main.print                     "Dröcke">
+<!ENTITY main.print.accesskey           "P">
+<!ENTITY main.printPdf                  "Print as PDF">
+<!ENTITY main.printPdf.accesskey        "D">
+<!ENTITY main.quit                      "Ophühre!">
+<!ENTITY main.quit.accesskey            "Q">
+
+<!-- Edit menu -->
+<!ENTITY main.edit                      "Ändere">
+<!ENTITY main.edit.accesskey            "E">
+<!ENTITY main.find                      "En dä Sigg söhke...">
+<!ENTITY main.find.accesskey            "S">
+<!ENTITY main.selectall                 "Alles ußwähle">
+<!ENTITY main.selectall.accesskey       "a">
+<!ENTITY main.copy                      "Kopeere">
+<!ENTITY main.copy.accesskey            "p">
+<!ENTITY main.transliteration           "Bochschtabe tuusche">
+<!ENTITY main.transliteration.accesskey "T">
+<!ENTITY main.preferences               "Enschtällonge">
+<!ENTITY main.preferences.accesskey     "n">
+<!ENTITY main.server                    "ẞööver">
+<!ENTITY main.server.accesskey          "s">
+
+<!-- Display menu -->
+<!ENTITY main.display                   "Aanzeije">
+<!ENTITY main.display.accesskey         "D">
+<!ENTITY main.zoom                      "Zoome">
+<!ENTITY main.zoom.accesskey            "Z">
+<!ENTITY main.zoomin                    "jrüüßer maache">
+<!ENTITY main.zoomin.accesskey          "M">
+<!ENTITY main.zoomout                   "Kleiner maache">
+<!ENTITY main.zoomout.accesskey         "R">
+<!ENTITY main.zoomorig                  "Ojinal">
+<!ENTITY main.zoomorig.accesskey        "O">
+<!ENTITY main.language                  "Schprohch">
+<!ENTITY main.language.accesskey        "L">
+<!ENTITY main.skin                      "Et Ußsinn">
+<!ENTITY main.skin.accesskey            "S">
+<!ENTITY main.statusbar                 "De Zohschtands-Reih">
+<!ENTITY main.statusbar.accesskey       "S">
+<!ENTITY main.resultsbar                "De Äjeebnis-Reih">
+<!ENTITY main.resultsbar.accesskey      "R">
+<!ENTITY main.tabs                      "Zubbel">
+<!ENTITY main.tabs.accesskey            "T">
+<!ENTITY main.fullscreen                "Op  der kumplääte Beldscherm">
+<!ENTITY main.fullscreen.accesskey      "F">
+<!ENTITY main.invertedColors            "Ömjedriehte Klöre">
+<!ENTITY main.invertedColors.accesskey  "I">
+
+<!-- Tools menu -->
+<!ENTITY main.tools                     "Werkzüch">
+<!ENTITY main.tools.accesskey           "T">
+<!ENTITY main.randomArticle             "Ene zohfälleje Atikel">
+<!ENTITY main.randomArticle.accesskey   "R">
+<!ENTITY main.checkIntegrity            "Der ennere Zosammehald vun dä ZIM-Dattei prööfe">
+<!ENTITY main.checkIntegrity.accesskey  "k">
+<!ENTITY main.launchIndexing            "Donn der Endäx opboue">
+<!ENTITY main.purgeHistory              "Schmieß de Leß met de köözlesch opjemaate Deieje fott">
+<!ENTITY main.purgeHistory.accesskey    "P">
+
+<!-- Help menu -->
+<!ENTITY main.help                      "Hölp">
+<!ENTITY main.help.accesskey            "H">
+<!ENTITY main.feedback                  "Röckmäldonge">
+<!ENTITY main.reportabug                "Ene Fähler mälde">
+<!ENTITY main.requestafeature           "Verbäßerung vörschlonn">
+<!ENTITY main.about                     "Övver &brand.brandShortName;">
+<!ENTITY main.about.accesskey           "A">
+
+<!-- Tool bar -->
+<!ENTITY main.back                      "Retuhr">
+<!ENTITY main.forward                   "Wigger jon">
+<!ENTITY main.home                      "Houpsigg">
+<!ENTITY main.searchBar                 "Söhk noh">
+<!ENTITY main.search                    "Söhke">
+<!ENTITY main.searchPlaceholder         "Jev heh ene Täx en, woh mer noh söke sulle&nbsp;…">
+<!ENTITY main.findInText                "En Täx fenge">
+<!ENTITY main.noSearchBar               "Öm söhke ze künne, bruch mer en ZIM-Dattei met enem Index.">
+<!ENTITY main.bookmarks                 "Leesezeische">
+
+<!-- Results bar -->
+<!ENTITY main.results.title             "Wat bem Söhke eruß kohm">
+
+<!-- Bookmarks Bar -->
+<!ENTITY main.bmkLabel                  "Leesezeische:">
+<!ENTITY main.notesLabel                "Notize:">
+<!ENTITY main.loadbmk                   "Ene Pöngel Lesezeiche us ene Dattei empoteere">
+<!ENTITY main.newbmk                    "Ene neue Pöngel Lesezeiche aanfange">
+<!ENTITY main.mark                      "Heh di Sigg makeere">
+<!ENTITY main.unmark                    "Makkehrong fottnämme">
+<!ENTITY main.reload                    "Donn dä Pöngel Lesezeiche norr_ens neu vun dä Dattei lahde">
+<!ENTITY main.defaultset                "Der schtandatmääßeje Pöngel">
+
+<!-- Contextual Menu -->
+<!ENTITY main.saveMediaAs               "Donn di Dattei faßhallde als ...">
+<!ENTITY main.openLinkInNewTab          "Donn dä Lengk en enem neue Ongerfinster op maache">
+<!ENTITY main.searchFor                 "Söhk noh">
+<!ENTITY main.copyLinkAdress            "Copy link address">
+<!ENTITY main.mute                      "Ton uß">
+<!ENTITY main.audible                   "Hüerbaa">
+
+<!-- About Window -->
+<!ENTITY main.close                     "Zohmaache">
+
+<!-- Preferences Window -->
+<!ENTITY preferences.preferences        "Enschtällonge">
+<!ENTITY preferences.save               "Faßhalde">
+<!ENTITY preferences.cancel             "Ophüre">
+<!ENTITY preferences.profileDirectory   "Verzeijschneß mem Profihl">
+<!ENTITY preferences.dataDirectory      "Data directory">
+<!ENTITY preferences.browse             "Aanluure">
+<!ENTITY preferences.tabs               "Tabbulatoore behallde">
+<!ENTITY preferences.downloadCatalogs   "Donn dä Kattalohch udder di Kattalohre vun ußerhallfe eronger lahde">
+<!ENTITY preferences.neverAskToIndex    "Frooch nie dernoh, der Endäx neu opzeboue">
+
+<!-- Server -->
+<!ENTITY server.load                    "Laade">
+<!ENTITY server.start                   "Aanfange">
+<!ENTITY server.stop                    "Aanhallde">
+<!ENTITY server.close                   "Zohmaache">
+
+<!-- Library -->
+<!ENTITY main.library.myLibrary                 "Ming eije Sammlong">
+<!ENTITY main.library.getNewFiles               "Neu Datteije krijje">
+<!ENTITY main.library.searchZimFiles            "Noh neu ZIM-Datteije söhke">
+<!ENTITY main.library.sortBy                    "Zoteer noh">
+<!ENTITY main.library.sortBy.title              "Övverschreff">
+<!ENTITY main.library.sortBy.size               "Ömfang">
+<!ENTITY main.library.sortBy.date               "Dattom un Zigg">
+<!ENTITY main.library.sortBy.author             "Fotojraf udder Maacher">
+<!ENTITY main.library.sortBy.publisher          "Verläjer udder Veröffentlescher">
+<!ENTITY main.library.filterBy                  "Ußsöhke noh">
+<!ENTITY main.library.filterBy.fileSize         "Datteiömfang">
+<!ENTITY main.library.filterBy.language         "de Schprohch">
+<!ENTITY main.library.filterBy.language.all     "Alle Schprohche">
+<!ENTITY main.library.filterBy.author           "Fottojraaf udder Maacher">
+<!ENTITY main.library.filterBy.author.all       "Jeeder Ein">
+<!ENTITY main.library.filterBy.publisher        "Verläjer udder Veröffentlescher">
+<!ENTITY main.library.filterBy.publisher.all    "Jeeder Ein">
+<!ENTITY main.library.filterBy.lessThan         "Winnijer wi">
+

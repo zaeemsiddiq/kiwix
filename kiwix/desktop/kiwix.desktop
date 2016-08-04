@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=Kiwix
+GenericName=Kiwix
+Comment=Wikipedia offline reader
+Exec=kiwix %f
+Terminal=false
+Type=Application
+Icon=kiwix
+Categories=Education;
+StartupNotify=false
+MimeType=application/x-zim

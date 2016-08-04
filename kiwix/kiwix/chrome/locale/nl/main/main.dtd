@@ -1,0 +1,162 @@
+<!-- Window -->
+<!ENTITY main.title                     "&brand.brandShortName;">
+<!ENTITY main.cssdirection              "ltr">
+
+<!-- Mac menu -->
+<!ENTITY main.osxservices               "Diensten">
+<!ENTITY main.osxhideapp                "&brand.brandShortName; verbergen">
+<!ENTITY main.osxhideothers             "Andere verbergen">
+<!ENTITY main.osxshowall                "Allemaal weergeven">
+
+<!-- File menu -->
+<!ENTITY main.file                      "Bestand">
+<!ENTITY main.file.accesskey            "B">
+<!ENTITY main.openFile                  "Bestand openen...">
+<!ENTITY main.browseLibrary.accesskey   "B">
+<!ENTITY main.browseLibrary             "Bibliotheek doorbladeren">
+<!ENTITY main.hideLibrary               "Bibliotheek verbergen">
+<!ENTITY main.openFile.accesskey        "O">
+<!ENTITY main.lastOpen                  "Recent geopend...">
+<!ENTITY main.saveFile                  "Pagina opslaan als...">
+<!ENTITY main.saveFile.accesskey        "S">
+<!ENTITY main.print                     "Afdrukken">
+<!ENTITY main.print.accesskey           "P">
+<!ENTITY main.printPdf                  "Afdrukken als PDF">
+<!ENTITY main.printPdf.accesskey        "D">
+<!ENTITY main.quit                      "Afsluiten">
+<!ENTITY main.quit.accesskey            "Q">
+
+<!-- Edit menu -->
+<!ENTITY main.edit                      "Bewerken">
+<!ENTITY main.edit.accesskey            "E">
+<!ENTITY main.find                      "Zoeken in pagina...">
+<!ENTITY main.find.accesskey            "S">
+<!ENTITY main.selectall                 "Alles selecteren">
+<!ENTITY main.selectall.accesskey       "a">
+<!ENTITY main.copy                      "Kopiëren">
+<!ENTITY main.copy.accesskey            "p">
+<!ENTITY main.transliteration           "Transliteratie">
+<!ENTITY main.transliteration.accesskey "T">
+<!ENTITY main.preferences               "Voorkeuren">
+<!ENTITY main.preferences.accesskey     "n">
+<!ENTITY main.server                    "Server">
+<!ENTITY main.server.accesskey          "s">
+
+<!-- Display menu -->
+<!ENTITY main.display                   "Beeld">
+<!ENTITY main.display.accesskey         "D">
+<!ENTITY main.zoom                      "Zoomen">
+<!ENTITY main.zoom.accesskey            "Z">
+<!ENTITY main.zoomin                    "Vergroten">
+<!ENTITY main.zoomin.accesskey          "M">
+<!ENTITY main.zoomout                   "Verkleinen">
+<!ENTITY main.zoomout.accesskey         "R">
+<!ENTITY main.zoomorig                  "Originele grootte">
+<!ENTITY main.zoomorig.accesskey        "O">
+<!ENTITY main.language                  "Taal">
+<!ENTITY main.language.accesskey        "L">
+<!ENTITY main.skin                      "Thema">
+<!ENTITY main.skin.accesskey            "S">
+<!ENTITY main.statusbar                 "Statusbalk">
+<!ENTITY main.statusbar.accesskey       "S">
+<!ENTITY main.resultsbar                "Resultatenbalk">
+<!ENTITY main.resultsbar.accesskey      "R">
+<!ENTITY main.tabs                      "Tabbladen">
+<!ENTITY main.tabs.accesskey            "T">
+<!ENTITY main.fullscreen                "Volledig scherm">
+<!ENTITY main.fullscreen.accesskey      "F">
+<!ENTITY main.invertedColors            "Omgekeerde kleuren">
+<!ENTITY main.invertedColors.accesskey  "I">
+
+<!-- Tools menu -->
+<!ENTITY main.tools                     "Extra">
+<!ENTITY main.tools.accesskey           "T">
+<!ENTITY main.randomArticle             "Willekeurig artikel">
+<!ENTITY main.randomArticle.accesskey   "R">
+<!ENTITY main.checkIntegrity            "Integriteitscontrole">
+<!ENTITY main.checkIntegrity.accesskey  "k">
+<!ENTITY main.launchIndexing            "Indexeren starten">
+<!ENTITY main.purgeHistory              "Geschiedenis verwijderen">
+<!ENTITY main.purgeHistory.accesskey    "P">
+
+<!-- Help menu -->
+<!ENTITY main.help                      "Hulp">
+<!ENTITY main.help.accesskey            "H">
+<!ENTITY main.feedback                  "Terugkoppeling">
+<!ENTITY main.reportabug                "Probleem melden">
+<!ENTITY main.requestafeature           "Nieuwe functionaliteit aanvragen">
+<!ENTITY main.about                     "Over &brand.brandShortName;">
+<!ENTITY main.about.accesskey           "A">
+
+<!-- Tool bar -->
+<!ENTITY main.back                      "Terug">
+<!ENTITY main.forward                   "Verder">
+<!ENTITY main.home                      "Startpagina">
+<!ENTITY main.searchBar                 "Zoekbalk">
+<!ENTITY main.search                    "Zoeken">
+<!ENTITY main.searchPlaceholder         "Typ hier de tekst om te zoeken...">
+<!ENTITY main.findInText                "Zoeken in tekst">
+<!ENTITY main.noSearchBar               "Om te zoeken hebt u een geïndexeerd ZIM-bestand nodig">
+<!ENTITY main.bookmarks                 "Bladwijzers">
+
+<!-- Results bar -->
+<!ENTITY main.results.title             "Zoekresultaten">
+
+<!-- Bookmarks Bar -->
+<!ENTITY main.bmkLabel                  "Bladwijzers:">
+<!ENTITY main.notesLabel                "Bladwijzeropmerkingen:">
+<!ENTITY main.loadbmk                   "Bladwijzers importeren">
+<!ENTITY main.newbmk                    "Nieuwe bladwijzergroep aanmaken">
+<!ENTITY main.mark                      "Pagina markeren">
+<!ENTITY main.unmark                    "Markering voor geselecteerde verwijderen">
+<!ENTITY main.reload                    "Bladwijzergroep opnieuw laden">
+<!ENTITY main.defaultset                "Standaardgroep">
+
+<!-- Contextual Menu -->
+<!ENTITY main.saveMediaAs               "Media opslaan als...">
+<!ENTITY main.openLinkInNewTab          "Koppeling openen in nieuw tabblad">
+<!ENTITY main.searchFor                 "Zoeken naar">
+<!ENTITY main.copyLinkAdress            "Copy link address">
+<!ENTITY main.mute                      "Geluid dempen">
+<!ENTITY main.audible                   "Geluid aanzetten">
+
+<!-- About Window -->
+<!ENTITY main.close                     "Sluiten">
+
+<!-- Preferences Window -->
+<!ENTITY preferences.preferences        "Voorkeuren">
+<!ENTITY preferences.save               "Opslaan">
+<!ENTITY preferences.cancel             "Annuleren">
+<!ENTITY preferences.profileDirectory   "Profielmap">
+<!ENTITY preferences.dataDirectory      "Data directory">
+<!ENTITY preferences.browse             "Bladeren">
+<!ENTITY preferences.tabs               "Tabbladen onthouden">
+<!ENTITY preferences.downloadCatalogs   "Catalogi downloaden">
+<!ENTITY preferences.neverAskToIndex    "Nooit vragen om te indexeren">
+
+<!-- Server -->
+<!ENTITY server.load                    "Laden">
+<!ENTITY server.start                   "Beginnen">
+<!ENTITY server.stop                    "Stoppen">
+<!ENTITY server.close                   "Sluiten">
+
+<!-- Library -->
+<!ENTITY main.library.myLibrary                 "Mijn bibliotheek">
+<!ENTITY main.library.getNewFiles               "Nieuwe bestanden verkijgen">
+<!ENTITY main.library.searchZimFiles            "ZIM-bestanden zoeken">
+<!ENTITY main.library.sortBy                    "Sorteren op">
+<!ENTITY main.library.sortBy.title              "Titel">
+<!ENTITY main.library.sortBy.size               "Grootte">
+<!ENTITY main.library.sortBy.date               "Datum">
+<!ENTITY main.library.sortBy.author             "Auteur">
+<!ENTITY main.library.sortBy.publisher          "Uitgever">
+<!ENTITY main.library.filterBy                  "Filteren op">
+<!ENTITY main.library.filterBy.fileSize         "Bestandsgrootte">
+<!ENTITY main.library.filterBy.language         "Taal">
+<!ENTITY main.library.filterBy.language.all     "Alle">
+<!ENTITY main.library.filterBy.author           "Auteur">
+<!ENTITY main.library.filterBy.author.all       "Alle">
+<!ENTITY main.library.filterBy.publisher        "Uitgever">
+<!ENTITY main.library.filterBy.publisher.all    "Alle">
+<!ENTITY main.library.filterBy.lessThan         "Minder dan">
+

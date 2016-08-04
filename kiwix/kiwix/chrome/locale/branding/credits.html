@@ -1,0 +1,89 @@
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<title>About</title>
+<script language="javascript">
+var titlea = new Array();
+var texta = new Array();
+
+titlea[0] = "Release";
+texta[0] = "Kiwix 0.9<br/>This software is released under the terms of the GNU General Public License version 3. See COPYING file for complete license text.<br/>Get the source code at http://code.kiwix.org";
+
+titlea[1] = "Developers";
+texta[1] = "Emmanuel Engelhart (kelson@kiwix.org)<br/>Renaud Gaudin (reg@kiwix.org)<br/>Guillaume Duhamel (gduhamel@linterweb.com)<br/>Fabien Coulon (fcoulon@linterweb.com)<br/>Wilfredo Rodriguez (wilfredor@kiwix.org)";
+
+titlea[2] = "Libraries";
+texta[2] = "LibZIM - GPLv2 (openzim.org)<br/>Xulrunner - MPL/GPL/LGPL (mozilla.org)<br/>Xapian - GPL (xapian.org)<br/>CTPP2 - BSD (ctpp.havoc.ru)<br/>Pugixml - MIT (pugixml.org)<br/>ICU - ICU License (icu-project.org)<br/>Libmicrohttpd - GPL (www.gnu.org/software/libmicrohttpd/)<br/>Aria2 - GPL (aria2.sourceforge.net)";
+
+var mc=3;
+var inoout=false;
+var spage;
+
+divtextb ="<div id=d"
+dive1=" onmouseover=\"scroll()\" onmouseout =\"stop()\" ";
+divtexts = " style=\"position:absolute; visibility:hidden; font-family: verdana,arial,helvetica; top:0; font-size: 0.8em; margin:0px; line-height: 12pt; text-align:left; padding:0px;\">";
+ns6span= " style=\"position:relative; font-family: verdana,arial,helvetica; font-size: 1em; font-weight: bold; line-height: 14pt; text-align:left;padding:0px;\"";
+
+var uzunobj=null;
+var uzuntop=0;
+var toplay=0;
+
+function scroll(gnum) {
+	inoout=true;
+}
+
+function stop() {
+	inoout=false;
+}
+
+function dotrans() {
+	if(inoout==false) {
+		dahayok=false;
+		uzuntop--;
+		for(i=0;i<mc;i++) {
+			objd=document.getElementById('d'+i);
+			objd.style.top=""+(uzuntop+(i*125))+"px";
+		}
+
+		if(uzuntop<(-1*(mc)*115)) {
+			uzuntop=320;
+		}
+	}
+
+	setTimeout('dotrans()',35);
+}
+
+function init2() {
+	toplay=4;
+	for(i=0;i<mc;i++) {
+		objd=document.getElementById('d'+i);
+		objd.style.visibility="visible";
+		objd.style.top=""+(toplay+(125*i))+"px";
+		objd.style.left=""+8+"px";
+	}
+
+	uzuntop=330;
+	dotrans();
+}
+
+function init() {
+	i=0;
+	innertxt="";
+
+	for(i=0;i<mc;i++) {
+		innertxt=innertxt+""+divtextb+""+i+""+dive1+""+divtexts+"<div id=\"hgd"+i+"\""+ns6span+">"+titlea[i]+"<br></div>"+texta[i]+"</div>";
+	}
+
+	spage=document.getElementById('zone');
+	spage.innerHTML=innertxt;
+
+	setTimeout('init2()',400);
+}
+window.onload=init;
+</script>
+</head>
+<body style="overflow: hidden;">
+<img src="logo.png" style="position: absolute; top: 0px; left: 0px; z-index: 10;"/>
+<div id="zone"></div>
+</body>
+</html>

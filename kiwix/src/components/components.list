@@ -1,0 +1,15 @@
+zimAccessor.dylib
+zimAccessor.so
+zimAccessor.dll
+zimXapianIndexer.dylib
+zimXapianIndexer.so
+zimXapianIndexer.dylib
+xapianAccessor.dylib
+xapianAccessor.so
+xapianAccessor.dll
+searchProtocol.js
+zimProtocol.js
+suggest.js
+contentManager.dylib
+contentManager.so
+contentManager.dll

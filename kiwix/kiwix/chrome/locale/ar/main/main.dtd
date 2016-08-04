@@ -1,0 +1,162 @@
+<!-- Window -->
+<!ENTITY main.title                     "&brand.brandShortName;">
+<!ENTITY main.cssdirection              "rtl">
+
+<!-- Mac menu -->
+<!ENTITY main.osxservices               "خدمات">
+<!ENTITY main.osxhideapp                "إخفاء &brand.brandShortName;">
+<!ENTITY main.osxhideothers             "إخفاء الآخرين">
+<!ENTITY main.osxshowall                "أظهر الكل">
+
+<!-- File menu -->
+<!ENTITY main.file                      "ملف">
+<!ENTITY main.file.accesskey            "F">
+<!ENTITY main.openFile                  "افتح ملفًا...">
+<!ENTITY main.browseLibrary.accesskey   "B">
+<!ENTITY main.browseLibrary             "تصفح المكتبة">
+<!ENTITY main.hideLibrary               "إخفاء المكتبة">
+<!ENTITY main.openFile.accesskey        "O">
+<!ENTITY main.lastOpen                  "المفتوح مؤخراً...">
+<!ENTITY main.saveFile                  "حفظ الصفحة كـ...">
+<!ENTITY main.saveFile.accesskey        "S">
+<!ENTITY main.print                     "طباعة">
+<!ENTITY main.print.accesskey           "P">
+<!ENTITY main.printPdf                  "طباعة كملف جوال PDF">
+<!ENTITY main.printPdf.accesskey        "D">
+<!ENTITY main.quit                      "خروج">
+<!ENTITY main.quit.accesskey            "Q">
+
+<!-- Edit menu -->
+<!ENTITY main.edit                      "تعديل">
+<!ENTITY main.edit.accesskey            "E">
+<!ENTITY main.find                      "بحث في الصفحة...">
+<!ENTITY main.find.accesskey            "S">
+<!ENTITY main.selectall                 "اختر الكل">
+<!ENTITY main.selectall.accesskey       "a">
+<!ENTITY main.copy                      "انسخ">
+<!ENTITY main.copy.accesskey            "p">
+<!ENTITY main.transliteration           "تحويل لغة الكتابة">
+<!ENTITY main.transliteration.accesskey "T">
+<!ENTITY main.preferences               "تفضيلات">
+<!ENTITY main.preferences.accesskey     "n">
+<!ENTITY main.server                    "الخادوم">
+<!ENTITY main.server.accesskey          "s">
+
+<!-- Display menu -->
+<!ENTITY main.display                   "عرض">
+<!ENTITY main.display.accesskey         "D">
+<!ENTITY main.zoom                      "المقربة">
+<!ENTITY main.zoom.accesskey            "Z">
+<!ENTITY main.zoomin                    "كبّر">
+<!ENTITY main.zoomin.accesskey          "M">
+<!ENTITY main.zoomout                   "صغّر">
+<!ENTITY main.zoomout.accesskey         "R">
+<!ENTITY main.zoomorig                  "الحجم الأصلي">
+<!ENTITY main.zoomorig.accesskey        "O">
+<!ENTITY main.language                  "اللغة">
+<!ENTITY main.language.accesskey        "L">
+<!ENTITY main.skin                      "الواجهة">
+<!ENTITY main.skin.accesskey            "S">
+<!ENTITY main.statusbar                 "شريط الحالة">
+<!ENTITY main.statusbar.accesskey       "S">
+<!ENTITY main.resultsbar                "شريط النتائج">
+<!ENTITY main.resultsbar.accesskey      "R">
+<!ENTITY main.tabs                      "ألسنة">
+<!ENTITY main.tabs.accesskey            "T">
+<!ENTITY main.fullscreen                "ملئ الشاشة">
+<!ENTITY main.fullscreen.accesskey      "F">
+<!ENTITY main.invertedColors            "ألوان معكوسة">
+<!ENTITY main.invertedColors.accesskey  "I">
+
+<!-- Tools menu -->
+<!ENTITY main.tools                     "أدوات">
+<!ENTITY main.tools.accesskey           "T">
+<!ENTITY main.randomArticle             "مقالة عشوائية">
+<!ENTITY main.randomArticle.accesskey   "R">
+<!ENTITY main.checkIntegrity            "إفحص الإستقامة">
+<!ENTITY main.checkIntegrity.accesskey  "k">
+<!ENTITY main.launchIndexing            "بدء الفهرسة">
+<!ENTITY main.purgeHistory              "مسح تاريخ التصفح">
+<!ENTITY main.purgeHistory.accesskey    "P">
+
+<!-- Help menu -->
+<!ENTITY main.help                      "المساعدة">
+<!ENTITY main.help.accesskey            "H">
+<!ENTITY main.feedback                  "تعليقات">
+<!ENTITY main.reportabug                "بلغ عن علة">
+<!ENTITY main.requestafeature           "اطلب ميزة">
+<!ENTITY main.about                     "حول &brand.brandShortName;">
+<!ENTITY main.about.accesskey           "A">
+
+<!-- Tool bar -->
+<!ENTITY main.back                      "رجوع">
+<!ENTITY main.forward                   "التالي">
+<!ENTITY main.home                      "الصفحة الرئيسية">
+<!ENTITY main.searchBar                 "شريط البحث">
+<!ENTITY main.search                    "إبحث">
+<!ENTITY main.searchPlaceholder         "أدخل النص للبحث هنا...">
+<!ENTITY main.findInText                "إبحث في النص">
+<!ENTITY main.noSearchBar               "ابحث عن ملفات ZIM المفهرسة">
+<!ENTITY main.bookmarks                 "علامات القراءة">
+
+<!-- Results bar -->
+<!ENTITY main.results.title             "نتائج البحث">
+
+<!-- Bookmarks Bar -->
+<!ENTITY main.bmkLabel                  "علامات القراءة:">
+<!ENTITY main.notesLabel                "ملاحظات علامات القراءة:">
+<!ENTITY main.loadbmk                   "استورد مجموعة علامات قراءة">
+<!ENTITY main.newbmk                    "أنشئ مجموعة علامات قراءة جديدة">
+<!ENTITY main.mark                      "علّم هذه الصفحة">
+<!ENTITY main.unmark                    "أزل تعليم المحدد">
+<!ENTITY main.reload                    "أعد تحميل مجموعة المفضلة">
+<!ENTITY main.defaultset                "تفضيلات أصليّة">
+
+<!-- Contextual Menu -->
+<!ENTITY main.saveMediaAs               "حفظ وسائط باسم...">
+<!ENTITY main.openLinkInNewTab          "افتح الوصلة في علامة تبويب جديدة">
+<!ENTITY main.searchFor                 "إبحث عن">
+<!ENTITY main.copyLinkAdress            "Copy link address">
+<!ENTITY main.mute                      "كتم الصوت">
+<!ENTITY main.audible                   "مسموعة">
+
+<!-- About Window -->
+<!ENTITY main.close                     "أغلق">
+
+<!-- Preferences Window -->
+<!ENTITY preferences.preferences        "التفضيلات">
+<!ENTITY preferences.save               "إحفظ">
+<!ENTITY preferences.cancel             "ألغِ">
+<!ENTITY preferences.profileDirectory   "ملف الاختيارات">
+<!ENTITY preferences.dataDirectory      "Data directory">
+<!ENTITY preferences.browse             "تصفّح">
+<!ENTITY preferences.tabs               "تذكر علامات التبويب">
+<!ENTITY preferences.downloadCatalogs   "نزّل دفتر/دفاتر مصور/ة بعيد/ة">
+<!ENTITY preferences.neverAskToIndex    "لا تطلب أبدًا إلى الفهرس">
+
+<!-- Server -->
+<!ENTITY server.load                    "حمّل">
+<!ENTITY server.start                   "إبدأ">
+<!ENTITY server.stop                    "قف">
+<!ENTITY server.close                   "أغلق">
+
+<!-- Library -->
+<!ENTITY main.library.myLibrary                 "مكتبتي">
+<!ENTITY main.library.getNewFiles               "احصل على ملفات جديدة">
+<!ENTITY main.library.searchZimFiles            "ابحث عن ملفات ZIM">
+<!ENTITY main.library.sortBy                    "رتب حسب">
+<!ENTITY main.library.sortBy.title              "العنوان">
+<!ENTITY main.library.sortBy.size               "الحجم">
+<!ENTITY main.library.sortBy.date               "التاريخ">
+<!ENTITY main.library.sortBy.author             "المؤلف">
+<!ENTITY main.library.sortBy.publisher          "الناشر">
+<!ENTITY main.library.filterBy                  "رشّح حسب">
+<!ENTITY main.library.filterBy.fileSize         "حجم الملف">
+<!ENTITY main.library.filterBy.language         "اللغة">
+<!ENTITY main.library.filterBy.language.all     "الكل">
+<!ENTITY main.library.filterBy.author           "المؤلف">
+<!ENTITY main.library.filterBy.author.all       "الكل">
+<!ENTITY main.library.filterBy.publisher        "الناشر">
+<!ENTITY main.library.filterBy.publisher.all    "الكل">
+<!ENTITY main.library.filterBy.lessThan         "أقل من">
+

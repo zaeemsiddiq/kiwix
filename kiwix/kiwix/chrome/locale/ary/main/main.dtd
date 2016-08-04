@@ -1,0 +1,162 @@
+<!-- Window -->
+<!ENTITY main.title                     "&brand.brandShortName;">
+<!ENTITY main.cssdirection              "ltr">
+
+<!-- Mac menu -->
+<!ENTITY main.osxservices               "Services">
+<!ENTITY main.osxhideapp                "Hide &brand.brandShortName;">
+<!ENTITY main.osxhideothers             "Hide Others">
+<!ENTITY main.osxshowall                "Show All">
+
+<!-- File menu -->
+<!ENTITY main.file                      "mileff">
+<!ENTITY main.file.accesskey            "F">
+<!ENTITY main.openFile                  "ḫell l-milef...">
+<!ENTITY main.browseLibrary.accesskey   "B">
+<!ENTITY main.browseLibrary             "Browse library">
+<!ENTITY main.hideLibrary               "Hide library">
+<!ENTITY main.openFile.accesskey        "O">
+<!ENTITY main.lastOpen                  "mfṫoḫ mo'eĥaran...">
+<!ENTITY main.saveFile                  "ḫfd ṣfḫa ka...">
+<!ENTITY main.saveFile.accesskey        "S">
+<!ENTITY main.print                     "tbeĝ">
+<!ENTITY main.print.accesskey           "P">
+<!ENTITY main.printPdf                  "tbeĝ ka PDF">
+<!ENTITY main.printPdf.accesskey        "D">
+<!ENTITY main.quit                      "ĥrej">
+<!ENTITY main.quit.accesskey            "Q">
+
+<!-- Edit menu -->
+<!ENTITY main.edit                      "ĝddel">
+<!ENTITY main.edit.accesskey            "E">
+<!ENTITY main.find                      "qllb f-ṣṣfḫa...">
+<!ENTITY main.find.accesskey            "S">
+<!ENTITY main.selectall                 "ĥṫar kolċi">
+<!ENTITY main.selectall.accesskey       "a">
+<!ENTITY main.copy                      "nseĥ">
+<!ENTITY main.copy.accesskey            "p">
+<!ENTITY main.transliteration           "nasĥ ḫrfi">
+<!ENTITY main.transliteration.accesskey "T">
+<!ENTITY main.preferences               "ṫfḍilaṫ">
+<!ENTITY main.preferences.accesskey     "n">
+<!ENTITY main.server                    "Server">
+<!ENTITY main.server.accesskey          "s">
+
+<!-- Display menu -->
+<!ENTITY main.display                   "ĝarḍ">
+<!ENTITY main.display.accesskey         "D">
+<!ENTITY main.zoom                      "zoom">
+<!ENTITY main.zoom.accesskey            "Z">
+<!ENTITY main.zoomin                    "kḅḅeṛ">
+<!ENTITY main.zoomin.accesskey          "M">
+<!ENTITY main.zoomout                   "ṣġġeṛ">
+<!ENTITY main.zoomout.accesskey         "R">
+<!ENTITY main.zoomorig                  "l-ḫajm l-'aṣli">
+<!ENTITY main.zoomorig.accesskey        "O">
+<!ENTITY main.language                  "loġa">
+<!ENTITY main.language.accesskey        "L">
+<!ENTITY main.skin                      "skin">
+<!ENTITY main.skin.accesskey            "S">
+<!ENTITY main.statusbar                 "ċarit l-ḫala">
+<!ENTITY main.statusbar.accesskey       "S">
+<!ENTITY main.resultsbar                "ṣarit n-naṫa'ij">
+<!ENTITY main.resultsbar.accesskey      "R">
+<!ENTITY main.tabs                      "t-tab">
+<!ENTITY main.tabs.accesskey            "T">
+<!ENTITY main.fullscreen                "ṣṣaṣa kollha">
+<!ENTITY main.fullscreen.accesskey      "F">
+<!ENTITY main.invertedColors            "Inverted colors">
+<!ENTITY main.invertedColors.accesskey  "I">
+
+<!-- Tools menu -->
+<!ENTITY main.tools                     "adawaṫ">
+<!ENTITY main.tools.accesskey           "T">
+<!ENTITY main.randomArticle             "maqala ĝṣwa'iyya">
+<!ENTITY main.randomArticle.accesskey   "R">
+<!ENTITY main.checkIntegrity            "ṫ'ked mn ṣ-ṣalaḫiyya">
+<!ENTITY main.checkIntegrity.accesskey  "k">
+<!ENTITY main.launchIndexing            "Launch indexing">
+<!ENTITY main.purgeHistory              "msḫ listorik">
+<!ENTITY main.purgeHistory.accesskey    "P">
+
+<!-- Help menu -->
+<!ENTITY main.help                      "mosa'ada">
+<!ENTITY main.help.accesskey            "H">
+<!ENTITY main.feedback                  "Feedback">
+<!ENTITY main.reportabug                "bllġ ĝla ċi bog">
+<!ENTITY main.requestafeature           "tlḅ ċi ĥassiyya">
+<!ENTITY main.about                     "ĝla &brand.brandShortName;">
+<!ENTITY main.about.accesskey           "A">
+
+<!-- Tool bar -->
+<!ENTITY main.back                      "rjeĝ">
+<!ENTITY main.forward                   "zid">
+<!ENTITY main.home                      "ra'isiyya">
+<!ENTITY main.searchBar                 "ċarit l-behṫ">
+<!ENTITY main.search                    "bheṫ">
+<!ENTITY main.searchPlaceholder         "Type the text to search here...">
+<!ENTITY main.findInText                "lqa f-naṣṣ">
+<!ENTITY main.noSearchBar               "l-behṫ ĥaṣṣo ċi milef ZIM indexé">
+<!ENTITY main.bookmarks                 "mofaḍḍalat">
+
+<!-- Results bar -->
+<!ENTITY main.results.title             "qllb ĝla naṫa'ij">
+
+<!-- Bookmarks Bar -->
+<!ENTITY main.bmkLabel                  "mafaḍḍalat:">
+<!ENTITY main.notesLabel                "molaḫaḍat ĝla l-mofaḍḍalaṫ:">
+<!ENTITY main.loadbmk                   "jib mjmoĝt l-mofaḍḍalat">
+<!ENTITY main.newbmk                    "ṣayb ċi mjmoĝa dial l-mofaḍḍalaṫ">
+<!ENTITY main.mark                      "marki had ṣ-ṣfḫa">
+<!ENTITY main.unmark                    "ḫyyed lli ĥtariṫ mn mofaḍḍalaṫ">
+<!ENTITY main.reload                    "reċarji mjmo'ṫ l-mofaḍḍalaṫ">
+<!ENTITY main.defaultset                "ḍḅṫ fṫiraḍi">
+
+<!-- Contextual Menu -->
+<!ENTITY main.saveMediaAs               "Save media as...">
+<!ENTITY main.openLinkInNewTab          "Open link in new tab">
+<!ENTITY main.searchFor                 "Search for">
+<!ENTITY main.copyLinkAdress            "Copy link address">
+<!ENTITY main.mute                      "Mute">
+<!ENTITY main.audible                   "Audible">
+
+<!-- About Window -->
+<!ENTITY main.close                     "sedd">
+
+<!-- Preferences Window -->
+<!ENTITY preferences.preferences        "ṫfḍilaṫ">
+<!ENTITY preferences.save               "sjl">
+<!ENTITY preferences.cancel             "lġi">
+<!ENTITY preferences.profileDirectory   "l-idara dial l-profile">
+<!ENTITY preferences.dataDirectory      "Data directory">
+<!ENTITY preferences.browse             "ṫsffeh">
+<!ENTITY preferences.tabs               "Remember tabs">
+<!ENTITY preferences.downloadCatalogs   "Download remote catalog(s)">
+<!ENTITY preferences.neverAskToIndex    "Never ask to index">
+
+<!-- Server -->
+<!ENTITY server.load                    "Load">
+<!ENTITY server.start                   "Start">
+<!ENTITY server.stop                    "Stop">
+<!ENTITY server.close                   "Close">
+
+<!-- Library -->
+<!ENTITY main.library.myLibrary                 "My library">
+<!ENTITY main.library.getNewFiles               "Get new files">
+<!ENTITY main.library.searchZimFiles            "Search ZIM files">
+<!ENTITY main.library.sortBy                    "Sort by">
+<!ENTITY main.library.sortBy.title              "Title">
+<!ENTITY main.library.sortBy.size               "Size">
+<!ENTITY main.library.sortBy.date               "Date">
+<!ENTITY main.library.sortBy.author             "Author">
+<!ENTITY main.library.sortBy.publisher          "Publisher">
+<!ENTITY main.library.filterBy                  "Filter by">
+<!ENTITY main.library.filterBy.fileSize         "File size">
+<!ENTITY main.library.filterBy.language         "Language">
+<!ENTITY main.library.filterBy.language.all     "All">
+<!ENTITY main.library.filterBy.author           "Author">
+<!ENTITY main.library.filterBy.author.all       "All">
+<!ENTITY main.library.filterBy.publisher        "Publisher">
+<!ENTITY main.library.filterBy.publisher.all    "All">
+<!ENTITY main.library.filterBy.lessThan         "Less than">
+

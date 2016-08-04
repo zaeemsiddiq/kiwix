@@ -1,0 +1,162 @@
+<!-- Window -->
+<!ENTITY main.title                     "&brand.brandShortName;">
+<!ENTITY main.cssdirection              "ltr">
+
+<!-- Mac menu -->
+<!ENTITY main.osxservices               "Tjenester">
+<!ENTITY main.osxhideapp                "Skjul &brand.brandShortName;">
+<!ENTITY main.osxhideothers             "Skjul andre">
+<!ENTITY main.osxshowall                "Vis alle">
+
+<!-- File menu -->
+<!ENTITY main.file                      "Fil">
+<!ENTITY main.file.accesskey            "F">
+<!ENTITY main.openFile                  "Åpne fil …">
+<!ENTITY main.browseLibrary.accesskey   "B">
+<!ENTITY main.browseLibrary             "Bla gjennom biblioteket">
+<!ENTITY main.hideLibrary               "Skjul bibliotek">
+<!ENTITY main.openFile.accesskey        "O">
+<!ENTITY main.lastOpen                  "Nylig åpnet …">
+<!ENTITY main.saveFile                  "Lagre siden som …">
+<!ENTITY main.saveFile.accesskey        "S">
+<!ENTITY main.print                     "Skriv ut">
+<!ENTITY main.print.accesskey           "P">
+<!ENTITY main.printPdf                  "Skriv ut som PDF">
+<!ENTITY main.printPdf.accesskey        "D">
+<!ENTITY main.quit                      "Avslutt">
+<!ENTITY main.quit.accesskey            "Q">
+
+<!-- Edit menu -->
+<!ENTITY main.edit                      "Rediger">
+<!ENTITY main.edit.accesskey            "E">
+<!ENTITY main.find                      "Søk i siden …">
+<!ENTITY main.find.accesskey            "S">
+<!ENTITY main.selectall                 "Velg alle">
+<!ENTITY main.selectall.accesskey       "a">
+<!ENTITY main.copy                      "Kopier">
+<!ENTITY main.copy.accesskey            "p">
+<!ENTITY main.transliteration           "Translitterasjon">
+<!ENTITY main.transliteration.accesskey "T">
+<!ENTITY main.preferences               "Innstillinger">
+<!ENTITY main.preferences.accesskey     "n">
+<!ENTITY main.server                    "Tjener">
+<!ENTITY main.server.accesskey          "s">
+
+<!-- Display menu -->
+<!ENTITY main.display                   "Skjerm">
+<!ENTITY main.display.accesskey         "D">
+<!ENTITY main.zoom                      "Zoom">
+<!ENTITY main.zoom.accesskey            "Z">
+<!ENTITY main.zoomin                    "Forstørr">
+<!ENTITY main.zoomin.accesskey          "M">
+<!ENTITY main.zoomout                   "Forminsk">
+<!ENTITY main.zoomout.accesskey         "R">
+<!ENTITY main.zoomorig                  "Opprinnelig størrelse">
+<!ENTITY main.zoomorig.accesskey        "O">
+<!ENTITY main.language                  "Språk">
+<!ENTITY main.language.accesskey        "L">
+<!ENTITY main.skin                      "Utseende">
+<!ENTITY main.skin.accesskey            "S">
+<!ENTITY main.statusbar                 "Statuslinje">
+<!ENTITY main.statusbar.accesskey       "S">
+<!ENTITY main.resultsbar                "Resultatlinje">
+<!ENTITY main.resultsbar.accesskey      "R">
+<!ENTITY main.tabs                      "Faner">
+<!ENTITY main.tabs.accesskey            "T">
+<!ENTITY main.fullscreen                "Fullskjerm">
+<!ENTITY main.fullscreen.accesskey      "F">
+<!ENTITY main.invertedColors            "Inverse farger">
+<!ENTITY main.invertedColors.accesskey  "I">
+
+<!-- Tools menu -->
+<!ENTITY main.tools                     "Verktøy">
+<!ENTITY main.tools.accesskey           "T">
+<!ENTITY main.randomArticle             "Tilfeldig artikkel">
+<!ENTITY main.randomArticle.accesskey   "R">
+<!ENTITY main.checkIntegrity            "Integritetssjekk">
+<!ENTITY main.checkIntegrity.accesskey  "k">
+<!ENTITY main.launchIndexing            "Start indeksering">
+<!ENTITY main.purgeHistory              "Tøm historikk">
+<!ENTITY main.purgeHistory.accesskey    "P">
+
+<!-- Help menu -->
+<!ENTITY main.help                      "Hjelp">
+<!ENTITY main.help.accesskey            "H">
+<!ENTITY main.feedback                  "Tilbakemelding">
+<!ENTITY main.reportabug                "Rapporter feil">
+<!ENTITY main.requestafeature           "Be om funksjonalitet">
+<!ENTITY main.about                     "Om &brand.brandShortName;">
+<!ENTITY main.about.accesskey           "A">
+
+<!-- Tool bar -->
+<!ENTITY main.back                      "Tilbake">
+<!ENTITY main.forward                   "Fremover">
+<!ENTITY main.home                      "Hjem">
+<!ENTITY main.searchBar                 "Søkelinje">
+<!ENTITY main.search                    "Søk">
+<!ENTITY main.searchPlaceholder         "Skriv søketeksten her...">
+<!ENTITY main.findInText                "Finn i tekst">
+<!ENTITY main.noSearchBar               "Søk krever en indeksert Zim-fil">
+<!ENTITY main.bookmarks                 "Bokmerker">
+
+<!-- Results bar -->
+<!ENTITY main.results.title             "Søkeresultater">
+
+<!-- Bookmarks Bar -->
+<!ENTITY main.bmkLabel                  "Bokmerker:">
+<!ENTITY main.notesLabel                "Bokmerkenotater:">
+<!ENTITY main.loadbmk                   "Importer bokmerkesamling">
+<!ENTITY main.newbmk                    "Opprett nytt bokmerkesamling">
+<!ENTITY main.mark                      "Marker denne siden">
+<!ENTITY main.unmark                    "Fjern markering for valgte">
+<!ENTITY main.reload                    "Last inn bokmerkesamling på nytt">
+<!ENTITY main.defaultset                "Standardsamling">
+
+<!-- Contextual Menu -->
+<!ENTITY main.saveMediaAs               "Lagre media som...">
+<!ENTITY main.openLinkInNewTab          "Åpne lenke i ny fane">
+<!ENTITY main.searchFor                 "Søk etter">
+<!ENTITY main.copyLinkAdress            "Copy link address">
+<!ENTITY main.mute                      "Demp">
+<!ENTITY main.audible                   "Hørbar">
+
+<!-- About Window -->
+<!ENTITY main.close                     "Lukk">
+
+<!-- Preferences Window -->
+<!ENTITY preferences.preferences        "Innstillinger">
+<!ENTITY preferences.save               "Lagre">
+<!ENTITY preferences.cancel             "Avbryt">
+<!ENTITY preferences.profileDirectory   "Profilkatalog">
+<!ENTITY preferences.dataDirectory      "Data directory">
+<!ENTITY preferences.browse             "Bla gjennom">
+<!ENTITY preferences.tabs               "Husk faner">
+<!ENTITY preferences.downloadCatalogs   "Last ned ekstern(e) katalog(er)">
+<!ENTITY preferences.neverAskToIndex    "Aldri spør om indeksering">
+
+<!-- Server -->
+<!ENTITY server.load                    "Last">
+<!ENTITY server.start                   "Start">
+<!ENTITY server.stop                    "Stopp">
+<!ENTITY server.close                   "Lukk">
+
+<!-- Library -->
+<!ENTITY main.library.myLibrary                 "Mitt bibliotek">
+<!ENTITY main.library.getNewFiles               "Få nye filer">
+<!ENTITY main.library.searchZimFiles            "Søk ZIM-filer">
+<!ENTITY main.library.sortBy                    "Sorter etter">
+<!ENTITY main.library.sortBy.title              "Tittel">
+<!ENTITY main.library.sortBy.size               "Størrelse">
+<!ENTITY main.library.sortBy.date               "Dato">
+<!ENTITY main.library.sortBy.author             "Forfatter">
+<!ENTITY main.library.sortBy.publisher          "Utgiver">
+<!ENTITY main.library.filterBy                  "Filtrer etter">
+<!ENTITY main.library.filterBy.fileSize         "Filstørrelse">
+<!ENTITY main.library.filterBy.language         "Språk">
+<!ENTITY main.library.filterBy.language.all     "Alle">
+<!ENTITY main.library.filterBy.author           "Forfatter">
+<!ENTITY main.library.filterBy.author.all       "Alle">
+<!ENTITY main.library.filterBy.publisher        "Utgiver">
+<!ENTITY main.library.filterBy.publisher.all    "Alle">
+<!ENTITY main.library.filterBy.lessThan         "Mindre enn">
+

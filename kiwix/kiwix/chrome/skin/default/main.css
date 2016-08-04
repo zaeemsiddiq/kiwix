@@ -1,0 +1,735 @@
+/* Menuitems */
+
+/* This has to be to make menu(item) icons visible on GNU/Linux */
+.menu-iconic-left {
+    visibility: visible;
+}
+
+/* Menu(items) icons */
+#file-open {
+    list-style-image: url("chrome://main/skin/icon/open16.png");
+}
+
+#file-save {
+    list-style-image: url("chrome://main/skin/icon/saveas16.png");
+}
+
+#file-print {
+    list-style-image: url("chrome://main/skin/icon/print24.png");
+}
+
+#file-quit {
+    list-style-image: url("chrome://main/skin/icon/quit16.png");
+}
+
+#edit-find {
+    list-style-image: url("chrome://main/skin/icon/find16.png");
+}
+
+#edit-selectall {
+    list-style-image: url("chrome://main/skin/icon/select-all16.png");
+}
+
+#edit-copy {
+    list-style-image: url("chrome://main/skin/icon/copy16.png");
+}
+
+#display-zoom-in {
+    list-style-image: url("chrome://main/skin/icon/zoom-in16.png");
+}
+
+#display-zoom-out {
+    list-style-image: url("chrome://main/skin/icon/zoom-out16.png");
+}
+
+#display-zoom-orig {
+    list-style-image: url("chrome://main/skin/icon/zoom-10016.png");
+}
+
+#toold-randomArticle {
+    list-style-image: url("chrome://main/skin/icon/jump-to16.png");
+}
+
+#help-help {
+    list-style-image: url("chrome://main/skin/icon/help16.png");
+}
+
+#help-about {
+    list-style-image: url("chrome://main/skin/icon/about16.png");
+}
+
+/* Tool box & bar */
+#tool-box {
+    margin-left: -1px;
+    margin-right: -1px;
+    padding: 2px 5px 2px 5px;
+}
+
+#main.mac #tool-box {
+    margin: 0;
+    padding: 0;
+}
+
+#main.mac * toolbarbutton {
+    padding: 0px;
+    margin: 0px;
+}
+
+#main.win #tool-box {
+    padding: 5px;
+}
+
+/* Buttons */
+#button-back {
+    list-style-image: url("chrome://main/skin/icon/go-back24.png");
+}
+window[langdir="rtl"] #button-back {
+    list-style-image: url("chrome://main/skin/icon/go-forward24.png");
+}
+#button-back.disabled {
+    opacity: 0.2;
+}
+
+#button-next {
+    list-style-image: url("chrome://main/skin/icon/go-forward24.png");
+}
+window[langdir="rtl"] #button-next {
+    list-style-image: url("chrome://main/skin/icon/go-back24.png");
+}
+#button-next.disabled {
+    opacity: 0.2;
+}
+
+#button-home {
+    list-style-image: url("chrome://main/skin/icon/home24.png");
+}
+#button-home.disabled {
+    opacity: 0.2;
+}
+
+#button-results {
+    list-style-image: url("chrome://main/skin/icon/find24.png");
+}
+#button-results.disabled {
+    opacity: 0.2;
+}
+
+#button-zoom-in {
+    list-style-image: url("chrome://main/skin/icon/zoom-in24.png");
+}
+#button-zoom-in.disabled {
+    opacity: 0.2;
+}
+
+#button-zoom-out {
+    list-style-image: url("chrome://main/skin/icon/zoom-out24.png");
+}
+#button-zoom-out.disabled {
+    opacity: 0.2;
+}
+
+#button-fullscreen, #button-fullscreen.normal, #display-fullscreen, #display-fullscreen.normal {
+    list-style-image: url("chrome://main/skin/icon/fullscreen24.png");
+}
+#button-fullscreen.fullscreen, #display-fullscreen.fullscreen {
+    list-style-image: url("chrome://main/skin/icon/leave-fullscreen24.png");
+}
+#button-fullscreen.disabled {
+    opacity: 0.2;
+}
+
+#button-print {
+    list-style-image: url("chrome://main/skin/icon/print24.png");
+}
+#button-print.disabled {
+    opacity: 0.2;
+}
+
+#button-bookmarks {
+    list-style-image: url("chrome://main/skin/icon/bookmarks24.png");
+}
+#button-bookmarks.disabled {
+    opacity: 0.2;
+}
+
+#button-search-article {
+    list-style-image: url("chrome://main/skin/icon/find-article24.png");
+}
+#button-search-article.disabled {
+    opacity: 0.2;
+}
+
+#button-results {
+    list-style-image: url("chrome://main/skin/icon/searchs24.png");
+}
+
+#button-library {
+    list-style-image: url("chrome://main/skin/icon/library24.png");
+}
+
+#main.mac #button-library, #main.mac #button-search-article, #main.mac #button-bookmarks {
+    -moz-appearance: none !important;
+}
+
+#main.mac #button-library[checked='true'], #main.mac #button-search-article[checked='true'], #main.mac #button-bookmarks[checked='true'] {
+  -moz-appearance: none !important;
+  background-color: transparent !important;
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+/* Textbox search */
+#textbox-search {
+    margin: 6px;
+    width: 100%;
+}
+
+#main.win #textbox-search {
+    -moz-appearance: none;
+    border: 1px solid #dedede;
+    padding-left: .5em;
+    padding-right: .5em;
+    margin-top: .3em;
+    margin-bottom: .3em;
+    border-radius: 0.8em;
+}
+
+#main.mac #textbox-search {
+    -moz-appearance: none;
+    background-color: #f1f1f1;
+    border: 1px solid #dedede;
+    padding-left: .5em;
+    padding-right: .5em;
+    border-radius: 1em;
+}
+
+#textbox-search-go-button {
+    list-style-image: url("chrome://main/skin/icon/magnify16.png");
+    margin-right: 2px;
+    cursor: pointer;
+}
+
+/* Main window*/
+#main {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Results bar */
+#results-bar {
+    margin: 0px;
+    min-width: 150px;
+    max-width: 450px;
+    width: 200px;
+}
+
+#results-list {
+    margin: 0px;
+}
+
+#results-close-button {
+    list-style-image: url("chrome://main/skin/icon/close12.png");
+}
+
+.results-button {
+    margin: 0px;
+}
+
+#results-bar-header {
+    padding: 2px 0px 2px 0px;
+}
+
+.results-title {
+    margin: 0px;
+    padding: 4px 0px 0px 2px;
+}
+
+/* Bookmarks bar */
+
+#bookmarks-close-button {
+    list-style-image: url("chrome://main/skin/icon/close12.png");
+}
+
+#bookmarks-bar-header {
+    padding: 2px 0px 2px 0px;
+}
+
+#bookmarks-bar {
+    margin: 0px;
+    min-width: 150px;
+    max-width: 450px;
+    width: 200px;
+}
+
+#main.mac #bookmarks-bar {
+    width: 240px;
+}
+
+#bookmarks-toolbar {
+    -moz-appearance: none;
+}
+
+#bookmarks-load-button {
+    list-style-image: url("chrome://main/skin/icon/open24.png");
+}
+
+#bookmarks-new-button {
+    list-style-image: url("chrome://main/skin/icon/new24.png");
+}
+
+#bookmarks-mark-button {
+    list-style-image: url("chrome://main/skin/icon/add24.png");
+}
+
+#bookmarks-unmark-button {
+    list-style-image: url("chrome://main/skin/icon/remove24.png");
+}
+
+#bookmarks-reload-button {
+    list-style-image: url("chrome://main/skin/icon/reload24.png");
+}
+
+/* Tabs */
+#tab-box {
+    margin: 0px;
+    position: relative;
+    padding-top: 4px;
+    background-color: #f2f1f0;
+}
+
+#main.notabs * #tab-box {
+    padding-top: 0 !important;
+}
+
+#tab-panels {
+    padding: 0px;
+}
+
+#tab-headers {
+    position: relative;
+    border-bottom: 1px solid #cdcdcd;
+    margin-bottom: 6px;
+    background-color: #f2f1f0;
+}
+
+#main * .tabs-close-button {
+    list-style-image: none;
+    background-image: url("chrome://main/skin/icon/close10.png") !important;
+    padding: 0px;
+    margin: 0px;
+    width: 10px;
+    height: 10px;
+    position: relative;
+    left: -16px;
+    z-index: 99;
+    background-color: transparent !important;
+    top: -10px;
+}
+
+#main * .tabs-close-button:hover {
+    box-shadow: 2px 2px 5px #888;
+}
+
+#main * .tab-header {
+    height: 25px;
+    width: 150px;
+    position: relative;
+    margin-left: -11px;
+    bottom: auto;
+    top: 3px;
+    width: 160px;
+}
+
+.tab-header-label {
+    width: 120px;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    margin-left: -20px;
+    padding-left: 0px;
+    color: #4c4c4c;
+}
+
+#tab-headers tab, #tab-headers tab *, #tab-headers * {
+    -moz-appearance: none !important;
+    background-color: inherit !important;
+    background-image: none !important;
+    border: none !important;
+    -moz-border-top-colors: none !important;
+    -moz-border-bottom-colors: none !important;
+    -moz-border-left-colors: none !important;
+    -moz-border-right-colors: none !important;
+}
+
+#tab-headers tab {
+    border-radius: 5px 5px 0 0;
+    border: 1px solid #cdcdcd !important;
+    border-bottom: 0 !important;
+    background-color: #dfdbd2 !important;
+}
+
+#tab-headers tab[selected="true"] {
+    background-color: #f2f1f0 !important;
+    border-bottom: none;
+    top: -1px;
+    height: 31px;
+}
+
+#tab-headers tab:hover {
+    background-color: #f2f1f0 !important;
+}
+
+tab[selected="true"] label {
+    font-weight: bold;
+}
+
+window[langdir="ltr"] #tab-headers tab.tab-header:first-child {
+    margin-left: 0px;
+}
+
+#tabs-add-button {
+    -moz-appearance: none;
+    width: 25px;
+    height: 25px;
+    background-color: #dfdbd2 !important;
+    list-style-image: url("chrome://main/skin/icon/add12.png");
+    padding-top: 2px;
+    margin: 0px;
+    border-radius: 5px 5px 0 0;
+    border: 1px solid #cdcdcd !important;
+    border-bottom: none !important;
+}
+window[langdir="rtl"] #tabs-add-button {
+    padding-right: 5px;
+}
+window[langdir="ltr"] #tabs-add-button {
+    padding-left: 6px;
+}
+
+#tabs-add-button:hover {
+    background-color: #f2f1f0 !important;
+}
+
+/******** LINUX */
+
+#main.linux * #tab-panels {
+    margin-right: -2px;
+    margin-left: -2px
+}
+
+#main.linux * browser {
+    margin-top: -1px;
+}
+
+#main.linux * #tool-bar {
+    margin-bottom: -3px;
+    padding-bottom: 4px;
+}
+
+/******** WINDOWS */
+
+#main.win #tool-box {
+    margin-left: 0 !important;
+}
+
+#main.win * .tab-header  {
+    top: 6px;
+    bottom: auto;
+}
+
+#main.win * tab[selected="true"] {
+    top: 1px;
+}
+
+#main.win * .tabs-close-button {
+    top: -2px;
+}
+
+#main.win * #tabs-add-button {
+    position: relative;
+    height: 22px;
+    bottom: -11px;
+}
+
+#main.win * tab[selected="true"] .tab-header-label {
+    margin-bottom: -5px !important;
+}
+
+#main.win.notabs * #tab-box {
+    padding-top: 0 !important;
+}
+
+#main.win * #tab-panels {
+    margin-right: -5px;
+}
+
+#main.win * browser {
+    margin-top: -3px;
+    margin-bottom: -2px;
+}
+
+/******** MAC */
+
+#main.mac * .tabs-close-button {
+    left: -16px;
+    top: -6px;
+}
+
+#main.mac * #tabs-add-button {
+    height: 22px;
+    padding-left: 8px;
+    width: 22px;
+    padding-top: 1px;
+}
+
+#main.mac * .tab-header {
+    height: 22px;
+}
+
+#main.mac * tab {
+    left: 0;
+    top: 2px;
+    -moz-appearance: none;
+    padding-top: 3px;
+    padding-left: 0px;
+    margin-left: -11px;
+    border-radius: 4px 4px 0 0;
+}
+
+#main.mac * tab[selected="true"] {
+    height: 27px;
+    padding-top: 7px;
+    border-radius: 6px 6px 0 0;
+}
+
+#main.mac * .tab-header-label {
+    font-size: 110%;
+}
+
+#main.mac * browser {
+    border-top: 1px solid #cdcdcd !important;
+}
+
+#main.mac.notabs * browser {
+    border-top: none !important;
+}
+
+#main.mac.notabs * #tab-box {
+    padding-top: 0 !important;
+}
+
+#main.mac #tab-headers tab {
+    height: 25px;
+}
+
+/* Status bar */
+#status-bar {
+    margin: 0px;
+    height: 22px;
+}
+
+#status-bar-image {
+    margin: 3px 3px 0px 3px;
+}
+
+#address-bar {
+    margin: 0px;
+    padding: 3px 0px 0px 3px;
+}
+
+#earth-icon {
+    list-style-image: url("chrome://main/skin/icon/external16.png");
+}
+
+#book-icon {
+    list-style-image: url("chrome://main/skin/icon/floppy16.png");
+}
+
+#progress-bar {
+    width: 200px;
+}
+
+#progress-bar-label {
+    margin-top: 2px;
+    text-align: center;
+}
+
+/* Library manager */
+
+.library-left {
+    background: -moz-linear-gradient(left, #b8b5b0, #d2d2d2);
+    width: 270px;
+}
+
+.library-left-stuffer {
+    border-color: #777777;
+    border-width: 0px 2px 0px 0px;
+    border-style: solid;
+}
+
+.library-menu {
+    background: -moz-linear-gradient(left, #b8b5b0, #d2d2d2);
+    padding-top: 0px;
+    padding-right: 0px;
+    width: 200px;
+}
+
+.library-menuitem-description {
+    cursor: pointer;
+}
+
+.library-menuitem-unselected, .library-menuitem-selected {
+    margin: 0px 0px 0px 10px;
+    padding: 5px;
+    font-size: 110%;
+    color: black;
+    cursor: pointer;
+    border-radius: 5px 0px 0px 5px;
+}
+
+.library-menuitem-unselected {
+    background-color: white;
+    border-color: #777777;
+    border-width: 0px 2px 0px 0px;
+    border-style: solid;
+}
+
+.library-menuitem-selected {
+    border-color: #777777;
+    border-width: 2px 0px 2px 2px;
+    border-style: solid;
+    background-color: Highlight;
+}
+
+.library-content-item[selected='true'] {
+   background-color: Highlight !important;
+}
+
+.library-content-item[selected='true'] textbox, .library-content-item[selected='true'] grid label {
+   color: HighlightText !important;
+}
+
+.library-filter {
+    padding: 5px;
+    font-size: 110%;
+    color: black;
+    background-color: #dbdbdb;
+}
+
+richlistbox {
+    -moz-appearance: none;
+    -moz-user-focus: normal;
+    background-color: white;
+    border: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+.library-content-item {
+    height: 90px;
+    border: none;
+    padding: 0px 0px 5px 0px;
+}
+
+.library-content-item-favicon {
+    background-image: url("chrome://main/skin/icon/book48.png");
+    background-repeat: no-repeat;
+    background-position: right top;
+    width: 55px;
+    margin: 10px 5px 0px 0px;
+}
+
+.library-content-item-details {
+    margin: 7px 0px 0px 0px;
+}
+
+.library-content-item-title {
+    font-size: 100%;
+    font-weight: bold;
+    display: block;
+    background-color: transparent;
+    border: none;
+    padding: 0px;
+    margin: 0px 0px 0px 5px;
+    -moz-appearance: none;
+}
+
+.library-content-item-description {
+    line-height:90%;
+    font-size: 90%;
+    display: block;
+    background-color: transparent;
+    border: none;
+    padding: 0px;
+    margin: 0px 0px 0px 5px;
+    -moz-appearance: none;
+}
+
+.library-content-item-detail {
+    line-height:80%;
+    color: #555555;
+    font-size: 80%;
+}
+
+.mini-button {
+  -moz-appearance: none;
+  background-color: transparent;
+  border: none;
+  padding: 0px;
+  margin: 0px;
+  min-width: 0px;
+  min-height: 0px;
+}
+
+.pause {
+    list-style-image: url("chrome://main/skin/icon/pause16.png");
+}
+
+.play {
+    list-style-image: url("chrome://main/skin/icon/play16.png");
+}
+
+.cancel {
+    list-style-image: url("chrome://main/skin/icon/cancel16.png");
+}
+
+treechildren::-moz-tree-cell-text(italic) {
+    font-style: italic;
+}
+
+/* SUGAR REMOVAL */
+#sugar-display-toolbar, toolbarbutton[id^="sugar"] { display: none; }
+
+/* RTL tweaks */
+window[langdir="rtl"] * .tabs-close-button {
+    right: -5px;
+}
+
+window[langdir="rtl"] #tabs-add-button {
+    margin-right: 10px;
+}
+
+window[langdir="rtl"] * .tab-header-label {
+   text-align: center !important;
+   padding-left: 12px;
+   padding-right: 2px;
+}
+
+/* MAC RTL */
+
+window[langdir="rtl"].mac #tabs-add-button {
+    padding-right: 18px;
+}
+
+window[langdir="ltr"].mac #tabs-add-button {
+    padding-left: 12px !important;
+}
+
+window[langdir="ltr"].mac #tool-bar:first-child {
+	padding-left: 10px !important;
+}
+
+window[langdir="rtl"].mac #tool-bar:first-child {
+	padding-right: 10px !important;
+}

@@ -1,0 +1,162 @@
+<!-- Window -->
+<!ENTITY main.title                     "&brand.brandShortName;">
+<!ENTITY main.cssdirection              "ltr">
+
+<!-- Mac menu -->
+<!ENTITY main.osxservices               "Servicer">
+<!ENTITY main.osxhideapp                "&brand.brandShortName; verstoppen">
+<!ENTITY main.osxhideothers             "Anerer verstoppen">
+<!ENTITY main.osxshowall                "All weisen">
+
+<!-- File menu -->
+<!ENTITY main.file                      "Fichier">
+<!ENTITY main.file.accesskey            "F">
+<!ENTITY main.openFile                  "Fichier opmaachen...">
+<!ENTITY main.browseLibrary.accesskey   "B">
+<!ENTITY main.browseLibrary             "Bibliothéik duerchsichen">
+<!ENTITY main.hideLibrary               "Bibliothéik verstoppen">
+<!ENTITY main.openFile.accesskey        "O">
+<!ENTITY main.lastOpen                  "Rezent opgemaach...">
+<!ENTITY main.saveFile                  "Säit späicheren als ...">
+<!ENTITY main.saveFile.accesskey        "S">
+<!ENTITY main.print                     "Drécken">
+<!ENTITY main.print.accesskey           "P">
+<!ENTITY main.printPdf                  "Als PDF drécken">
+<!ENTITY main.printPdf.accesskey        "D">
+<!ENTITY main.quit                      "Erausgoen">
+<!ENTITY main.quit.accesskey            "Q">
+
+<!-- Edit menu -->
+<!ENTITY main.edit                      "Änneren">
+<!ENTITY main.edit.accesskey            "E">
+<!ENTITY main.find                      "Op der Säit sichen...">
+<!ENTITY main.find.accesskey            "S">
+<!ENTITY main.selectall                 "Alles uwielen">
+<!ENTITY main.selectall.accesskey       "a">
+<!ENTITY main.copy                      "Kopéieren">
+<!ENTITY main.copy.accesskey            "p">
+<!ENTITY main.transliteration           "Transliteratioun">
+<!ENTITY main.transliteration.accesskey "T">
+<!ENTITY main.preferences               "Astellungen">
+<!ENTITY main.preferences.accesskey     "n">
+<!ENTITY main.server                    "Server">
+<!ENTITY main.server.accesskey          "s">
+
+<!-- Display menu -->
+<!ENTITY main.display                   "Ausgesinn">
+<!ENTITY main.display.accesskey         "D">
+<!ENTITY main.zoom                      "Zoom">
+<!ENTITY main.zoom.accesskey            "Z">
+<!ENTITY main.zoomin                    "Vergréisseren">
+<!ENTITY main.zoomin.accesskey          "M">
+<!ENTITY main.zoomout                   "Verklengeren">
+<!ENTITY main.zoomout.accesskey         "R">
+<!ENTITY main.zoomorig                  "Original Gréisst">
+<!ENTITY main.zoomorig.accesskey        "O">
+<!ENTITY main.language                  "Sprooch">
+<!ENTITY main.language.accesskey        "L">
+<!ENTITY main.skin                      "Design">
+<!ENTITY main.skin.accesskey            "S">
+<!ENTITY main.statusbar                 "Statusläischt">
+<!ENTITY main.statusbar.accesskey       "S">
+<!ENTITY main.resultsbar                "Läischt mat de Resultater">
+<!ENTITY main.resultsbar.accesskey      "R">
+<!ENTITY main.tabs                      "Tabben">
+<!ENTITY main.tabs.accesskey            "T">
+<!ENTITY main.fullscreen                "Ganzen Ecran">
+<!ENTITY main.fullscreen.accesskey      "F">
+<!ENTITY main.invertedColors            "Faarwen ëmgedréint">
+<!ENTITY main.invertedColors.accesskey  "I">
+
+<!-- Tools menu -->
+<!ENTITY main.tools                     "Geschir (Tools)">
+<!ENTITY main.tools.accesskey           "T">
+<!ENTITY main.randomArticle             "Zoufällegen Artikel">
+<!ENTITY main.randomArticle.accesskey   "R">
+<!ENTITY main.checkIntegrity            "Integritéitstest">
+<!ENTITY main.checkIntegrity.accesskey  "k">
+<!ENTITY main.launchIndexing            "Indexéierung ufänken">
+<!ENTITY main.purgeHistory              "Historique eidel maachen">
+<!ENTITY main.purgeHistory.accesskey    "P">
+
+<!-- Help menu -->
+<!ENTITY main.help                      "Hëllef">
+<!ENTITY main.help.accesskey            "H">
+<!ENTITY main.feedback                  "Feedback">
+<!ENTITY main.reportabug                "E Feeler mellen">
+<!ENTITY main.requestafeature           "Eng Funktionalitéit froen">
+<!ENTITY main.about                     "Iwwer &brand.brandShortName;">
+<!ENTITY main.about.accesskey           "A">
+
+<!-- Tool bar -->
+<!ENTITY main.back                      "Zréck">
+<!ENTITY main.forward                   "Virun">
+<!ENTITY main.home                      "Haaptsäit">
+<!ENTITY main.searchBar                 "Sich-Läischt">
+<!ENTITY main.search                    "Sichen">
+<!ENTITY main.searchPlaceholder         "Gitt den Text fir ze sichen hei an ...">
+<!ENTITY main.findInText                "Am Text sichen">
+<!ENTITY main.noSearchBar               "D'Sich funktionéiert nëmme mat indexéierten ZIM-Dateien.">
+<!ENTITY main.bookmarks                 "Lieszeechen">
+
+<!-- Results bar -->
+<!ENTITY main.results.title             "Resultater vun der Sich">
+
+<!-- Bookmarks Bar -->
+<!ENTITY main.bmkLabel                  "Lieszeechen:">
+<!ENTITY main.notesLabel                "Notizen zu dësem Lieszeechen:">
+<!ENTITY main.loadbmk                   "Lieszeeche-Lëscht importéieren">
+<!ENTITY main.newbmk                    "Nei Lieszeeche-Lëscht uleeën">
+<!ENTITY main.mark                      "Dës Säit markéieren">
+<!ENTITY main.unmark                    "Ausgewielt Markéierung läschen">
+<!ENTITY main.reload                    "Lieszeeche-Lëscht nei lueden">
+<!ENTITY main.defaultset                "Standard Astellung">
+
+<!-- Contextual Menu -->
+<!ENTITY main.saveMediaAs               "Medium späicheren als…">
+<!ENTITY main.openLinkInNewTab          "Link an engem neien Tab opmaachen">
+<!ENTITY main.searchFor                 "Sichen no:">
+<!ENTITY main.copyLinkAdress            "Copy link address">
+<!ENTITY main.mute                      "Toun aus">
+<!ENTITY main.audible                   "Toun un">
+
+<!-- About Window -->
+<!ENTITY main.close                     "Zoumaachen">
+
+<!-- Preferences Window -->
+<!ENTITY preferences.preferences        "Astellungen">
+<!ENTITY preferences.save               "Späicheren">
+<!ENTITY preferences.cancel             "Ofbriechen">
+<!ENTITY preferences.profileDirectory   "Profilregëster">
+<!ENTITY preferences.dataDirectory      "Data directory">
+<!ENTITY preferences.browse             "Duerchsichen">
+<!ENTITY preferences.tabs               "Sech un d'Tabben erënneren">
+<!ENTITY preferences.downloadCatalogs   "Extern(e) Katalog(en) eroflueden">
+<!ENTITY preferences.neverAskToIndex    "Ni dono froe fir ze indexéieren">
+
+<!-- Server -->
+<!ENTITY server.load                    "Lueden">
+<!ENTITY server.start                   "Ufank">
+<!ENTITY server.stop                    "Ophalen">
+<!ENTITY server.close                   "Zoumaachen">
+
+<!-- Library -->
+<!ENTITY main.library.myLibrary                 "Meng Bibliothéik">
+<!ENTITY main.library.getNewFiles               "Nei Fichieren eroflueden">
+<!ENTITY main.library.searchZimFiles            "No ZIM-Fichiere sichen">
+<!ENTITY main.library.sortBy                    "Zortéieren no">
+<!ENTITY main.library.sortBy.title              "Titel">
+<!ENTITY main.library.sortBy.size               "Gréisst">
+<!ENTITY main.library.sortBy.date               "Datum">
+<!ENTITY main.library.sortBy.author             "Auteur">
+<!ENTITY main.library.sortBy.publisher          "Editeur">
+<!ENTITY main.library.filterBy                  "Filteren no">
+<!ENTITY main.library.filterBy.fileSize         "Gréisst vum Fichier">
+<!ENTITY main.library.filterBy.language         "Sprooch">
+<!ENTITY main.library.filterBy.language.all     "All">
+<!ENTITY main.library.filterBy.author           "Auteur">
+<!ENTITY main.library.filterBy.author.all       "All">
+<!ENTITY main.library.filterBy.publisher        "Editeur">
+<!ENTITY main.library.filterBy.publisher.all    "All">
+<!ENTITY main.library.filterBy.lessThan         "Manner wéi">
+

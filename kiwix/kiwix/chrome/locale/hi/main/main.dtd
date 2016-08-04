@@ -1,0 +1,162 @@
+<!-- Window -->
+<!ENTITY main.title                     "&brand.brandShortName;">
+<!ENTITY main.cssdirection              "ltr">
+
+<!-- Mac menu -->
+<!ENTITY main.osxservices               "सेवाएं">
+<!ENTITY main.osxhideapp                "&brand.brandShortName; छुपायें">
+<!ENTITY main.osxhideothers             "अन्य छुपायें">
+<!ENTITY main.osxshowall                "सभी दिखाएँ">
+
+<!-- File menu -->
+<!ENTITY main.file                      "फ़ाइल">
+<!ENTITY main.file.accesskey            "F">
+<!ENTITY main.openFile                  "फ़ाइल खोलें...">
+<!ENTITY main.browseLibrary.accesskey   "B">
+<!ENTITY main.browseLibrary             "लायब्रेरी ब्राउज़ करें">
+<!ENTITY main.hideLibrary               "लाइब्रेरी छुपायें">
+<!ENTITY main.openFile.accesskey        "O">
+<!ENTITY main.lastOpen                  "हाल ही में खोला हुआ...">
+<!ENTITY main.saveFile                  "पृष्ठ सेव करें (के रूप में)...">
+<!ENTITY main.saveFile.accesskey        "S">
+<!ENTITY main.print                     "प्रिंट करें">
+<!ENTITY main.print.accesskey           "P">
+<!ENTITY main.printPdf                  "PDF के रूप में प्रिंट करें">
+<!ENTITY main.printPdf.accesskey        "D">
+<!ENTITY main.quit                      "बाहर निकलें">
+<!ENTITY main.quit.accesskey            "Q">
+
+<!-- Edit menu -->
+<!ENTITY main.edit                      "संपादित करें">
+<!ENTITY main.edit.accesskey            "E">
+<!ENTITY main.find                      "पृष्ठ में खोज...">
+<!ENTITY main.find.accesskey            "S">
+<!ENTITY main.selectall                 "सभी का चयन करें">
+<!ENTITY main.selectall.accesskey       "a">
+<!ENTITY main.copy                      "कॉपी करें">
+<!ENTITY main.copy.accesskey            "p">
+<!ENTITY main.transliteration           "लिप्यंतरण">
+<!ENTITY main.transliteration.accesskey "T">
+<!ENTITY main.preferences               "प्राथमिकताएँ">
+<!ENTITY main.preferences.accesskey     "n">
+<!ENTITY main.server                    "सर्वर">
+<!ENTITY main.server.accesskey          "s">
+
+<!-- Display menu -->
+<!ENTITY main.display                   "डिस्प्ले">
+<!ENTITY main.display.accesskey         "D">
+<!ENTITY main.zoom                      "ज़ूम करें">
+<!ENTITY main.zoom.accesskey            "Z">
+<!ENTITY main.zoomin                    "बड़ा करें">
+<!ENTITY main.zoomin.accesskey          "M">
+<!ENTITY main.zoomout                   "छोटा करें">
+<!ENTITY main.zoomout.accesskey         "R">
+<!ENTITY main.zoomorig                  "आरंभिक आकार">
+<!ENTITY main.zoomorig.accesskey        "O">
+<!ENTITY main.language                  "भाषा">
+<!ENTITY main.language.accesskey        "L">
+<!ENTITY main.skin                      "स्किन">
+<!ENTITY main.skin.accesskey            "S">
+<!ENTITY main.statusbar                 "स्थिति पट्टी">
+<!ENTITY main.statusbar.accesskey       "S">
+<!ENTITY main.resultsbar                "परिणाम पट्टी">
+<!ENTITY main.resultsbar.accesskey      "R">
+<!ENTITY main.tabs                      "टैब्स">
+<!ENTITY main.tabs.accesskey            "T">
+<!ENTITY main.fullscreen                "पूरा स्क्रीन">
+<!ENTITY main.fullscreen.accesskey      "F">
+<!ENTITY main.invertedColors            "उल्टे रंग">
+<!ENTITY main.invertedColors.accesskey  "I">
+
+<!-- Tools menu -->
+<!ENTITY main.tools                     "उपकरण">
+<!ENTITY main.tools.accesskey           "T">
+<!ENTITY main.randomArticle             "रैन्डम लेख">
+<!ENTITY main.randomArticle.accesskey   "R">
+<!ENTITY main.checkIntegrity            "अखंडता की जाँच करें">
+<!ENTITY main.checkIntegrity.accesskey  "k">
+<!ENTITY main.launchIndexing            "इन्डेक्सिंग प्रारंभ करें">
+<!ENTITY main.purgeHistory              "इतिहास को पर्ज करें">
+<!ENTITY main.purgeHistory.accesskey    "P">
+
+<!-- Help menu -->
+<!ENTITY main.help                      "सहायता">
+<!ENTITY main.help.accesskey            "H">
+<!ENTITY main.feedback                  "आपके सुझाव">
+<!ENTITY main.reportabug                "बग रिपोर्ट करें">
+<!ENTITY main.requestafeature           "सुविधा का अनुरोध करें">
+<!ENTITY main.about                     "के बारे में &brand.brandShortName;">
+<!ENTITY main.about.accesskey           "A">
+
+<!-- Tool bar -->
+<!ENTITY main.back                      "पीछे जाएँ">
+<!ENTITY main.forward                   "आगे जाएँ">
+<!ENTITY main.home                      "होम">
+<!ENTITY main.searchBar                 "खोज पट्टी">
+<!ENTITY main.search                    "खोजें">
+<!ENTITY main.searchPlaceholder         "खोजने के लिए यहाँ टेक्स्ट लिखें...">
+<!ENTITY main.findInText                "पाठ में खोजें">
+<!ENTITY main.noSearchBar               "खोज के लिए अनुक्रमणित ZIM फ़ाइल की आवश्यकता है">
+<!ENTITY main.bookmarks                 "बुकमार्क्स">
+
+<!-- Results bar -->
+<!ENTITY main.results.title             "खोज का परिणाम">
+
+<!-- Bookmarks Bar -->
+<!ENTITY main.bmkLabel                  "बुकमार्क्स">
+<!ENTITY main.notesLabel                "बुकमार्क नोट्स:">
+<!ENTITY main.loadbmk                   "बुकमार्क सेट आयात करें">
+<!ENTITY main.newbmk                    "नई बुकमार्क सेट बनाएँ">
+<!ENTITY main.mark                      "इस पृष्ठ को चिह्नित करें">
+<!ENTITY main.unmark                    "चयनित अचिह्नित करें">
+<!ENTITY main.reload                    "बुकमार्क सेट पुनः लोड करें">
+<!ENTITY main.defaultset                "डिफ़ॉल्ट सेट">
+
+<!-- Contextual Menu -->
+<!ENTITY main.saveMediaAs               "मीडिया को इस तरह सहेजें...">
+<!ENTITY main.openLinkInNewTab          "लिंक खोलें नए टैब में">
+<!ENTITY main.searchFor                 "के लिए खोजें">
+<!ENTITY main.copyLinkAdress            "Copy link address">
+<!ENTITY main.mute                      "आवाज़ बंद करें">
+<!ENTITY main.audible                   "सुनाई देने लायक">
+
+<!-- About Window -->
+<!ENTITY main.close                     "बंद करें">
+
+<!-- Preferences Window -->
+<!ENTITY preferences.preferences        "प्राथमिकताएँ">
+<!ENTITY preferences.save               "सेव करें">
+<!ENTITY preferences.cancel             "रद्द करें">
+<!ENTITY preferences.profileDirectory   "प्रोफ़ाइल निर्देशिका">
+<!ENTITY preferences.dataDirectory      "Data directory">
+<!ENTITY preferences.browse             "ब्राउज़ करें">
+<!ENTITY preferences.tabs               "टैब याद रखें">
+<!ENTITY preferences.downloadCatalogs   "रिमोट कैटलॉग डाउनलोड करें">
+<!ENTITY preferences.neverAskToIndex    "इंडेक्स करने के लिए कभी ना पूछें">
+
+<!-- Server -->
+<!ENTITY server.load                    "लोड">
+<!ENTITY server.start                   "आरम्भ">
+<!ENTITY server.stop                    "रोकें">
+<!ENTITY server.close                   "बंद करें">
+
+<!-- Library -->
+<!ENTITY main.library.myLibrary                 "मेरी लाइब्रेरी">
+<!ENTITY main.library.getNewFiles               "नई फाइलें लाएँ">
+<!ENTITY main.library.searchZimFiles            "ZIM फ़ाइलें खोज करें">
+<!ENTITY main.library.sortBy                    "क्रमबद्ध करें">
+<!ENTITY main.library.sortBy.title              "शीर्षक">
+<!ENTITY main.library.sortBy.size               "आकार">
+<!ENTITY main.library.sortBy.date               "दिनांक">
+<!ENTITY main.library.sortBy.author             "लेखक">
+<!ENTITY main.library.sortBy.publisher          "प्रकाशक">
+<!ENTITY main.library.filterBy                  "फ़िल्टर करें">
+<!ENTITY main.library.filterBy.fileSize         "फ़ाइल का आकार">
+<!ENTITY main.library.filterBy.language         "भाषा">
+<!ENTITY main.library.filterBy.language.all     "सभी">
+<!ENTITY main.library.filterBy.author           "लेखक">
+<!ENTITY main.library.filterBy.author.all       "सभी">
+<!ENTITY main.library.filterBy.publisher        "प्रकाशक">
+<!ENTITY main.library.filterBy.publisher.all    "सभी">
+<!ENTITY main.library.filterBy.lessThan         "से कम">
+

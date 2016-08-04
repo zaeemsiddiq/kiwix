@@ -1,0 +1,41 @@
+<?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd' [
+	<!ENTITY stroke_color "#010101">
+	<!ENTITY fill_color "#FFFFFF">
+]>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   version="1.1"
+   width="75"
+   height="75"
+   id="svg2">
+  <defs
+     id="defs4">
+  </defs>
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     transform="translate(0,-977.36218)"
+     id="layer1">
+    <path
+       d="m 24.568182,989.68947 -0.18302,18.31313 c -0.09257,9.2647 6.225654,6.5134 10.711571,1.6084 L 59.05431,983.41474 c 3.961274,-4.3314 11.618433,-1.12657 4.677935,7.54969 -6.195054,7.74445 -36.454321,35.39777 -15.784827,35.93487 l 12.380408,-1.3345 c 5.911405,-0.6371 10.720917,6.8481 -1.242723,8.2113 -14.925598,1.7006 -28.078251,3.8533 -38.721824,12.5883 -6.250084,5.1291 -14.473275,-1.003 -9.906378,-10.134 9.798141,-19.5898 2.799809,-30.2408 4.831063,-46.67123 1.597504,-12.9219 9.359033,-7.74334 9.280218,0.1303 z"
+       id="path2475-7-8-6"
+       fill="&fill_color;" 
+       stroke="&stroke_color;"
+       stroke-width="3.5" />
+  </g>
+</svg>

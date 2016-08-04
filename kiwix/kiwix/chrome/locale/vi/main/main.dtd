@@ -1,0 +1,162 @@
+<!-- Window -->
+<!ENTITY main.title                     "&brand.brandShortName;">
+<!ENTITY main.cssdirection              "ltr">
+
+<!-- Mac menu -->
+<!ENTITY main.osxservices               "Dịch vụ">
+<!ENTITY main.osxhideapp                "Ẩn &brand.brandShortName;">
+<!ENTITY main.osxhideothers             "Ẩn các Chương trình khác">
+<!ENTITY main.osxshowall                "Hiện Tất cả">
+
+<!-- File menu -->
+<!ENTITY main.file                      "Tập tin">
+<!ENTITY main.file.accesskey            "T">
+<!ENTITY main.openFile                  "Mở Tập tin…">
+<!ENTITY main.browseLibrary.accesskey   "D">
+<!ENTITY main.browseLibrary             "Duyệt thư viện">
+<!ENTITY main.hideLibrary               "Ẩn thư viện">
+<!ENTITY main.openFile.accesskey        "M">
+<!ENTITY main.lastOpen                  "Mở Gần đây…">
+<!ENTITY main.saveFile                  "Lưu Trang Như…">
+<!ENTITY main.saveFile.accesskey        "L">
+<!ENTITY main.print                     "In">
+<!ENTITY main.print.accesskey           "I">
+<!ENTITY main.printPdf                  "In như PDF">
+<!ENTITY main.printPdf.accesskey        "P">
+<!ENTITY main.quit                      "Thoát">
+<!ENTITY main.quit.accesskey            "T">
+
+<!-- Edit menu -->
+<!ENTITY main.edit                      "Chỉnh sửa">
+<!ENTITY main.edit.accesskey            "C">
+<!ENTITY main.find                      "Tìm kiếm trong Trang…">
+<!ENTITY main.find.accesskey            "m">
+<!ENTITY main.selectall                 "Chọn Toàn bộ">
+<!ENTITY main.selectall.accesskey       "b">
+<!ENTITY main.copy                      "Chép">
+<!ENTITY main.copy.accesskey            "C">
+<!ENTITY main.transliteration           "Chuyển tự">
+<!ENTITY main.transliteration.accesskey "C">
+<!ENTITY main.preferences               "Tùy chỉnh">
+<!ENTITY main.preferences.accesskey     "T">
+<!ENTITY main.server                    "Máy chủ">
+<!ENTITY main.server.accesskey          "M">
+
+<!-- Display menu -->
+<!ENTITY main.display                   "Hiển thị">
+<!ENTITY main.display.accesskey         "H">
+<!ENTITY main.zoom                      "Thu phóng">
+<!ENTITY main.zoom.accesskey            "T">
+<!ENTITY main.zoomin                    "Phóng to">
+<!ENTITY main.zoomin.accesskey          "p">
+<!ENTITY main.zoomout                   "Thu nhỏ">
+<!ENTITY main.zoomout.accesskey         "n">
+<!ENTITY main.zoomorig                  "Kích thước Mặc định">
+<!ENTITY main.zoomorig.accesskey        "M">
+<!ENTITY main.language                  "Ngôn ngữ">
+<!ENTITY main.language.accesskey        "N">
+<!ENTITY main.skin                      "Giao diện">
+<!ENTITY main.skin.accesskey            "d">
+<!ENTITY main.statusbar                 "Thanh Trạng thái">
+<!ENTITY main.statusbar.accesskey       "r">
+<!ENTITY main.resultsbar                "Thanh Kết quả">
+<!ENTITY main.resultsbar.accesskey      "q">
+<!ENTITY main.tabs                      "Thẻ">
+<!ENTITY main.tabs.accesskey            "T">
+<!ENTITY main.fullscreen                "Toàn màn hình">
+<!ENTITY main.fullscreen.accesskey      "m">
+<!ENTITY main.invertedColors            "Đảo màu">
+<!ENTITY main.invertedColors.accesskey  "I">
+
+<!-- Tools menu -->
+<!ENTITY main.tools                     "Công cụ">
+<!ENTITY main.tools.accesskey           "g">
+<!ENTITY main.randomArticle             "Bài viết Ngẫu nhiên">
+<!ENTITY main.randomArticle.accesskey   "u">
+<!ENTITY main.checkIntegrity            "Kiểm tra Tính toàn vẹn">
+<!ENTITY main.checkIntegrity.accesskey  "v">
+<!ENTITY main.launchIndexing            "Khởi động quá trình lập chỉ mục">
+<!ENTITY main.purgeHistory              "Dọn sạch Lịch sử">
+<!ENTITY main.purgeHistory.accesskey    "D">
+
+<!-- Help menu -->
+<!ENTITY main.help                      "Trợ giúp">
+<!ENTITY main.help.accesskey            "p">
+<!ENTITY main.feedback                  "Phản hồi">
+<!ENTITY main.reportabug                "Báo Lỗi">
+<!ENTITY main.requestafeature           "Yêu cầu Tính năng">
+<!ENTITY main.about                     "Giới thiệu &brand.brandShortName;">
+<!ENTITY main.about.accesskey           "G">
+
+<!-- Tool bar -->
+<!ENTITY main.back                      "Lùi">
+<!ENTITY main.forward                   "Tiến">
+<!ENTITY main.home                      "Trang nhà">
+<!ENTITY main.searchBar                 "Thanh Tìm kiếm">
+<!ENTITY main.search                    "Tìm kiếm">
+<!ENTITY main.searchPlaceholder         "Nhập văn bản tìm kiếm vào đây…">
+<!ENTITY main.findInText                "Tìm trong Văn bản">
+<!ENTITY main.noSearchBar               "Cần tập tin ZIM có chỉ mục để tìm kiếm">
+<!ENTITY main.bookmarks                 "Dấu trang">
+
+<!-- Results bar -->
+<!ENTITY main.results.title             "Kết quả Tìm kiếm">
+
+<!-- Bookmarks Bar -->
+<!ENTITY main.bmkLabel                  "Dấu trang:">
+<!ENTITY main.notesLabel                "Ghi chú dấu trang:">
+<!ENTITY main.loadbmk                   "Nhập Danh sách Dấu trang">
+<!ENTITY main.newbmk                    "Tạo Danh sách Dấu trang Mới">
+<!ENTITY main.mark                      "Đánh dấu Trang Này">
+<!ENTITY main.unmark                    "Xóa Dấu trang Lựa chọn">
+<!ENTITY main.reload                    "Tải lại Danh sách Dấu trang">
+<!ENTITY main.defaultset                "Danh sách Mặc định">
+
+<!-- Contextual Menu -->
+<!ENTITY main.saveMediaAs               "Lưu Phương tiện Như…">
+<!ENTITY main.openLinkInNewTab          "Mở liên kết trong thẻ mới">
+<!ENTITY main.searchFor                 "Tìm kiếm">
+<!ENTITY main.copyLinkAdress            "Copy link address">
+<!ENTITY main.mute                      "Im lặng">
+<!ENTITY main.audible                   "Bật tiếng">
+
+<!-- About Window -->
+<!ENTITY main.close                     "Đóng">
+
+<!-- Preferences Window -->
+<!ENTITY preferences.preferences        "Tùy chỉnh">
+<!ENTITY preferences.save               "Lưu">
+<!ENTITY preferences.cancel             "Hủy bỏ">
+<!ENTITY preferences.profileDirectory   "Thư mục Hồ sơ">
+<!ENTITY preferences.dataDirectory      "Data directory">
+<!ENTITY preferences.browse             "Duyệt">
+<!ENTITY preferences.tabs               "Nhớ các thẻ">
+<!ENTITY preferences.downloadCatalogs   "Tải về mục lục từ xa">
+<!ENTITY preferences.neverAskToIndex    "Không bao giờ hỏi lập chỉ mục">
+
+<!-- Server -->
+<!ENTITY server.load                    "Tải">
+<!ENTITY server.start                   "Bắt đầu">
+<!ENTITY server.stop                    "Ngừng">
+<!ENTITY server.close                   "Đóng">
+
+<!-- Library -->
+<!ENTITY main.library.myLibrary                 "Thư viện của tôi">
+<!ENTITY main.library.getNewFiles               "Lấy tập tin mới">
+<!ENTITY main.library.searchZimFiles            "Tìm kiếm tập tin ZIM">
+<!ENTITY main.library.sortBy                    "Sắp xếp theo">
+<!ENTITY main.library.sortBy.title              "Tựa đề">
+<!ENTITY main.library.sortBy.size               "Kích thước">
+<!ENTITY main.library.sortBy.date               "Ngày tháng">
+<!ENTITY main.library.sortBy.author             "Tác giả">
+<!ENTITY main.library.sortBy.publisher          "Nhà xuất bản">
+<!ENTITY main.library.filterBy                  "Lọc theo">
+<!ENTITY main.library.filterBy.fileSize         "Kích thước tập tin">
+<!ENTITY main.library.filterBy.language         "Ngôn ngữ">
+<!ENTITY main.library.filterBy.language.all     "Tất cả">
+<!ENTITY main.library.filterBy.author           "Tác giả">
+<!ENTITY main.library.filterBy.author.all       "Tất cả">
+<!ENTITY main.library.filterBy.publisher        "Nhà xuất bản">
+<!ENTITY main.library.filterBy.publisher.all    "Tất cả">
+<!ENTITY main.library.filterBy.lessThan         "Không tới">
+

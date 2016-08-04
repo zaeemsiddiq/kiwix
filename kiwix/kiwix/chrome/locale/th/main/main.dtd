@@ -1,0 +1,162 @@
+<!-- Window -->
+<!ENTITY main.title                     "&brand.brandShortName;">
+<!ENTITY main.cssdirection              "ltr">
+
+<!-- Mac menu -->
+<!ENTITY main.osxservices               "บริการ">
+<!ENTITY main.osxhideapp                "ซ่อน &brand.brandShortName;">
+<!ENTITY main.osxhideothers             "ซ่อนอื่น ๆ">
+<!ENTITY main.osxshowall                "แสดงทั้งหมด">
+
+<!-- File menu -->
+<!ENTITY main.file                      "แฟ้ม">
+<!ENTITY main.file.accesskey            "F">
+<!ENTITY main.openFile                  "เปิดแฟ้ม...">
+<!ENTITY main.browseLibrary.accesskey   "B">
+<!ENTITY main.browseLibrary             "เปิดดูคลังดาวน์โหลด">
+<!ENTITY main.hideLibrary               "ซ่อนรายการ">
+<!ENTITY main.openFile.accesskey        "O">
+<!ENTITY main.lastOpen                  "เปิดล่าสุด...">
+<!ENTITY main.saveFile                  "บันทึกหน้าเป็น...">
+<!ENTITY main.saveFile.accesskey        "S">
+<!ENTITY main.print                     "พิมพ์">
+<!ENTITY main.print.accesskey           "P">
+<!ENTITY main.printPdf                  "พิมพ์เป็น PDF">
+<!ENTITY main.printPdf.accesskey        "D">
+<!ENTITY main.quit                      "ออกจากโปรแกรม">
+<!ENTITY main.quit.accesskey            "Q">
+
+<!-- Edit menu -->
+<!ENTITY main.edit                      "แก้ไข">
+<!ENTITY main.edit.accesskey            "E">
+<!ENTITY main.find                      "ค้นหาในหน้า...">
+<!ENTITY main.find.accesskey            "S">
+<!ENTITY main.selectall                 "เลือกทั้งหมด">
+<!ENTITY main.selectall.accesskey       "a">
+<!ENTITY main.copy                      "คัดลอก">
+<!ENTITY main.copy.accesskey            "p">
+<!ENTITY main.transliteration           "การทับศัพท์">
+<!ENTITY main.transliteration.accesskey "T">
+<!ENTITY main.preferences               "การตั้งค่า">
+<!ENTITY main.preferences.accesskey     "n">
+<!ENTITY main.server                    "เซิร์ฟเวอร์">
+<!ENTITY main.server.accesskey          "s">
+
+<!-- Display menu -->
+<!ENTITY main.display                   "แสดงผล">
+<!ENTITY main.display.accesskey         "D">
+<!ENTITY main.zoom                      "ย่อ-ขยาย">
+<!ENTITY main.zoom.accesskey            "Z">
+<!ENTITY main.zoomin                    "ขยาย">
+<!ENTITY main.zoomin.accesskey          "M">
+<!ENTITY main.zoomout                   "ย่อ">
+<!ENTITY main.zoomout.accesskey         "R">
+<!ENTITY main.zoomorig                  "ขนาดเดิม">
+<!ENTITY main.zoomorig.accesskey        "O">
+<!ENTITY main.language                  "ภาษา">
+<!ENTITY main.language.accesskey        "L">
+<!ENTITY main.skin                      "ชุดตกแต่ง">
+<!ENTITY main.skin.accesskey            "S">
+<!ENTITY main.statusbar                 "แถบสถานะ">
+<!ENTITY main.statusbar.accesskey       "S">
+<!ENTITY main.resultsbar                "แถบผลลัพธ์">
+<!ENTITY main.resultsbar.accesskey      "R">
+<!ENTITY main.tabs                      "แท็บ">
+<!ENTITY main.tabs.accesskey            "T">
+<!ENTITY main.fullscreen                "เต็มหน้าจอ">
+<!ENTITY main.fullscreen.accesskey      "F">
+<!ENTITY main.invertedColors            "กลับสี">
+<!ENTITY main.invertedColors.accesskey  "I">
+
+<!-- Tools menu -->
+<!ENTITY main.tools                     "เครื่องมือ">
+<!ENTITY main.tools.accesskey           "T">
+<!ENTITY main.randomArticle             "สุ่มบทความ">
+<!ENTITY main.randomArticle.accesskey   "R">
+<!ENTITY main.checkIntegrity            "ตรวจสอบความสมบูรณ์">
+<!ENTITY main.checkIntegrity.accesskey  "k">
+<!ENTITY main.launchIndexing            "Launch indexing">
+<!ENTITY main.purgeHistory              "ล้างประวัติ">
+<!ENTITY main.purgeHistory.accesskey    "P">
+
+<!-- Help menu -->
+<!ENTITY main.help                      "วิธีใช้">
+<!ENTITY main.help.accesskey            "H">
+<!ENTITY main.feedback                  "คำติชม">
+<!ENTITY main.reportabug                "รายงานข้อผิดพลาด">
+<!ENTITY main.requestafeature           "แนะนำคุณสมบัติ">
+<!ENTITY main.about                     "เกี่ยวกับ &brand.brandShortName;">
+<!ENTITY main.about.accesskey           "A">
+
+<!-- Tool bar -->
+<!ENTITY main.back                      "ย้อนกลับ">
+<!ENTITY main.forward                   "ถัดไป">
+<!ENTITY main.home                      "หน้าแรก">
+<!ENTITY main.searchBar                 "แถบค้นหา">
+<!ENTITY main.search                    "ค้นหา">
+<!ENTITY main.searchPlaceholder         "พิมพ์ข้อความการค้นหาที่นี่...">
+<!ENTITY main.findInText                "ค้นหาในข้อความ">
+<!ENTITY main.noSearchBar               "การค้นหาต้องมีการจัดทำดัชนีแฟ้ม ZIM">
+<!ENTITY main.bookmarks                 "ที่คั่นหน้าเว็บ">
+
+<!-- Results bar -->
+<!ENTITY main.results.title             "ผลการค้นหา">
+
+<!-- Bookmarks Bar -->
+<!ENTITY main.bmkLabel                  "ที่คั่นหน้าเว็บ:">
+<!ENTITY main.notesLabel                "บันทึกย่อที่คั่นหน้าเว็บ:">
+<!ENTITY main.loadbmk                   "นำเข้าการตั้งค่าที่คั่นหน้าเว็บ">
+<!ENTITY main.newbmk                    "สร้างการตั้งค่าที่คั่นหน้าเว็บใหม่">
+<!ENTITY main.mark                      "ทำเครื่องหมายหน้านี้">
+<!ENTITY main.unmark                    "ไม่ทำเครื่องหมายที่เลือก">
+<!ENTITY main.reload                    "โหลดการตั้งค่าของที่คั่นหน้าเว็บ">
+<!ENTITY main.defaultset                "การตั้งค่าเริ่มต้น">
+
+<!-- Contextual Menu -->
+<!ENTITY main.saveMediaAs               "Save media as...">
+<!ENTITY main.openLinkInNewTab          "เปิดลิงค์ในแท็บใหม่">
+<!ENTITY main.searchFor                 "ค้นหาเกี่ยวกับคำนี้">
+<!ENTITY main.copyLinkAdress            "Copy link address">
+<!ENTITY main.mute                      "ปิดเสียง">
+<!ENTITY main.audible                   "มีเสียง">
+
+<!-- About Window -->
+<!ENTITY main.close                     "ปิด">
+
+<!-- Preferences Window -->
+<!ENTITY preferences.preferences        "การตั้งค่า">
+<!ENTITY preferences.save               "บันทึก">
+<!ENTITY preferences.cancel             "ยกเลิก">
+<!ENTITY preferences.profileDirectory   "ไดเรกทอรีโปรไฟล์">
+<!ENTITY preferences.dataDirectory      "Data directory">
+<!ENTITY preferences.browse             "เรียกดู">
+<!ENTITY preferences.tabs               "จำแท็บนี้ไว้">
+<!ENTITY preferences.downloadCatalogs   "ดาวน์โหลดบัญชีรายชื่อระยะไกล">
+<!ENTITY preferences.neverAskToIndex    "Never ask to index">
+
+<!-- Server -->
+<!ENTITY server.load                    "โหลด">
+<!ENTITY server.start                   "เริ่ม">
+<!ENTITY server.stop                    "หยุด">
+<!ENTITY server.close                   "ปิด">
+
+<!-- Library -->
+<!ENTITY main.library.myLibrary                 "คลังดาวน์โหลดของฉัน">
+<!ENTITY main.library.getNewFiles               "ดึงไฟล์ใหม่">
+<!ENTITY main.library.searchZimFiles            "ค้นหาไฟล์ ZIM">
+<!ENTITY main.library.sortBy                    "จัดเรียงโดย">
+<!ENTITY main.library.sortBy.title              "ชื่อเรื่อง">
+<!ENTITY main.library.sortBy.size               "ขนาด">
+<!ENTITY main.library.sortBy.date               "วันที่">
+<!ENTITY main.library.sortBy.author             "ผู้แต่ง">
+<!ENTITY main.library.sortBy.publisher          "ผู้เผยแพร่">
+<!ENTITY main.library.filterBy                  "กรองข้อมูลโดย">
+<!ENTITY main.library.filterBy.fileSize         "ขนาดไฟล์">
+<!ENTITY main.library.filterBy.language         "ภาษา">
+<!ENTITY main.library.filterBy.language.all     "ทั้งหมด">
+<!ENTITY main.library.filterBy.author           "ผู้แต่ง">
+<!ENTITY main.library.filterBy.author.all       "ทั้งหมด">
+<!ENTITY main.library.filterBy.publisher        "ผู้เผยแพร่">
+<!ENTITY main.library.filterBy.publisher.all    "ทั้งหมด">
+<!ENTITY main.library.filterBy.lessThan         "น้อยกว่า">
+

@@ -1,0 +1,162 @@
+<!-- Window -->
+<!ENTITY main.title                     "&brand.brandShortName;">
+<!ENTITY main.cssdirection              "rtl">
+
+<!-- Mac menu -->
+<!ENTITY main.osxservices               "שירותים">
+<!ENTITY main.osxhideapp                "להציג &brand.brandShortName;">
+<!ENTITY main.osxhideothers             "להציג אחרים">
+<!ENTITY main.osxshowall                "להציג הכול">
+
+<!-- File menu -->
+<!ENTITY main.file                      "קובץ">
+<!ENTITY main.file.accesskey            "F">
+<!ENTITY main.openFile                  "פתיחת קובץ...">
+<!ENTITY main.browseLibrary.accesskey   "B">
+<!ENTITY main.browseLibrary             "עיון בספרייה">
+<!ENTITY main.hideLibrary               "הסתרת ספרייה">
+<!ENTITY main.openFile.accesskey        "O">
+<!ENTITY main.lastOpen                  "פתיחת קובץ מבין האחרונים...">
+<!ENTITY main.saveFile                  "שמירת דף בשם...">
+<!ENTITY main.saveFile.accesskey        "S">
+<!ENTITY main.print                     "הדפסה">
+<!ENTITY main.print.accesskey           "P">
+<!ENTITY main.printPdf                  "הדפסה אל PDF">
+<!ENTITY main.printPdf.accesskey        "D">
+<!ENTITY main.quit                      "יציאה">
+<!ENTITY main.quit.accesskey            "Q">
+
+<!-- Edit menu -->
+<!ENTITY main.edit                      "עריכה">
+<!ENTITY main.edit.accesskey            "E">
+<!ENTITY main.find                      "חיפוש בדף...">
+<!ENTITY main.find.accesskey            "S">
+<!ENTITY main.selectall                 "לבחור הכול">
+<!ENTITY main.selectall.accesskey       "a">
+<!ENTITY main.copy                      "העתקה">
+<!ENTITY main.copy.accesskey            "p">
+<!ENTITY main.transliteration           "תעתיק">
+<!ENTITY main.transliteration.accesskey "T">
+<!ENTITY main.preferences               "העדפות">
+<!ENTITY main.preferences.accesskey     "n">
+<!ENTITY main.server                    "שרת">
+<!ENTITY main.server.accesskey          "s">
+
+<!-- Display menu -->
+<!ENTITY main.display                   "תצוגה">
+<!ENTITY main.display.accesskey         "D">
+<!ENTITY main.zoom                      "מרחק מתצוגה">
+<!ENTITY main.zoom.accesskey            "Z">
+<!ENTITY main.zoomin                    "התקרבות">
+<!ENTITY main.zoomin.accesskey          "M">
+<!ENTITY main.zoomout                   "התרחקות">
+<!ENTITY main.zoomout.accesskey         "R">
+<!ENTITY main.zoomorig                  "גודל מקורי">
+<!ENTITY main.zoomorig.accesskey        "O">
+<!ENTITY main.language                  "שפה">
+<!ENTITY main.language.accesskey        "L">
+<!ENTITY main.skin                      "ערכת עיצוב">
+<!ENTITY main.skin.accesskey            "S">
+<!ENTITY main.statusbar                 "שורת מצב">
+<!ENTITY main.statusbar.accesskey       "S">
+<!ENTITY main.resultsbar                "אזור תוצאות">
+<!ENTITY main.resultsbar.accesskey      "R">
+<!ENTITY main.tabs                      "לשוניות">
+<!ENTITY main.tabs.accesskey            "T">
+<!ENTITY main.fullscreen                "מסך מלא">
+<!ENTITY main.fullscreen.accesskey      "F">
+<!ENTITY main.invertedColors            "צבעים שלולים">
+<!ENTITY main.invertedColors.accesskey  "I">
+
+<!-- Tools menu -->
+<!ENTITY main.tools                     "כלים">
+<!ENTITY main.tools.accesskey           "T">
+<!ENTITY main.randomArticle             "ערך אקראי">
+<!ENTITY main.randomArticle.accesskey   "R">
+<!ENTITY main.checkIntegrity            "בדיקת שלמות">
+<!ENTITY main.checkIntegrity.accesskey  "k">
+<!ENTITY main.launchIndexing            "הפעלת עדכון האינדקס">
+<!ENTITY main.purgeHistory              "מחיקת היסטוריה">
+<!ENTITY main.purgeHistory.accesskey    "P">
+
+<!-- Help menu -->
+<!ENTITY main.help                      "עזרה">
+<!ENTITY main.help.accesskey            "H">
+<!ENTITY main.feedback                  "משוב">
+<!ENTITY main.reportabug                "דיווח על באג">
+<!ENTITY main.requestafeature           "בקשת שיפור לתוכנה">
+<!ENTITY main.about                     "אודות">
+<!ENTITY main.about.accesskey           "A">
+
+<!-- Tool bar -->
+<!ENTITY main.back                      "אחורה">
+<!ENTITY main.forward                   "קדימה">
+<!ENTITY main.home                      "דף הבית">
+<!ENTITY main.searchBar                 "שורת חיפוש">
+<!ENTITY main.search                    "חיפוש">
+<!ENTITY main.searchPlaceholder         "נא להקליד את הטקסט לחיפוש כאן...">
+<!ENTITY main.findInText                "חיפוש בטקסט">
+<!ENTITY main.noSearchBar               "החיפוש אפשרי רק אם יש קובץ ZIM מאונדקס">
+<!ENTITY main.bookmarks                 "סימניות">
+
+<!-- Results bar -->
+<!ENTITY main.results.title             "תוצאות">
+
+<!-- Bookmarks Bar -->
+<!ENTITY main.bmkLabel                  "סימניות:">
+<!ENTITY main.notesLabel                "הערות לסימניות:">
+<!ENTITY main.loadbmk                   "יבוא אוסף סימניות">
+<!ENTITY main.newbmk                    "יצירת אוסף סימניות חדש">
+<!ENTITY main.mark                      "סימון דף זה">
+<!ENTITY main.unmark                    "ביטול סימון בקטע הנבחר">
+<!ENTITY main.reload                    "איפוס אוסף סימניות">
+<!ENTITY main.defaultset                "ערכה לפי בררת מחדל">
+
+<!-- Contextual Menu -->
+<!ENTITY main.saveMediaAs               "לשמור מדיה בתור...">
+<!ENTITY main.openLinkInNewTab          "פתיחת קישור בלשונית חדשה">
+<!ENTITY main.searchFor                 "לחפש את זה">
+<!ENTITY main.copyLinkAdress            "Copy link address">
+<!ENTITY main.mute                      "השתקה">
+<!ENTITY main.audible                   "נשמע">
+
+<!-- About Window -->
+<!ENTITY main.close                     "סגור">
+
+<!-- Preferences Window -->
+<!ENTITY preferences.preferences        "העדפות">
+<!ENTITY preferences.save               "שמירה">
+<!ENTITY preferences.cancel             "ביטול">
+<!ENTITY preferences.profileDirectory   "תיקיית פרופיל">
+<!ENTITY preferences.dataDirectory      "Data directory">
+<!ENTITY preferences.browse             "עיון">
+<!ENTITY preferences.tabs               "לזכור לשוניות">
+<!ENTITY preferences.downloadCatalogs   "הורדת קטלוגים מרוחקים">
+<!ENTITY preferences.neverAskToIndex    "לעולם לא לבקש להוסיף לאינדקס">
+
+<!-- Server -->
+<!ENTITY server.load                    "לטעון">
+<!ENTITY server.start                   "להתחיל">
+<!ENTITY server.stop                    "לעצור">
+<!ENTITY server.close                   "לסגור">
+
+<!-- Library -->
+<!ENTITY main.library.myLibrary                 "הספרייה שלי">
+<!ENTITY main.library.getNewFiles               "קבלת קבצים חדשים">
+<!ENTITY main.library.searchZimFiles            "חיפוש קובצי ZIM">
+<!ENTITY main.library.sortBy                    "מיון לפי">
+<!ENTITY main.library.sortBy.title              "כותרת">
+<!ENTITY main.library.sortBy.size               "גודל">
+<!ENTITY main.library.sortBy.date               "תאריך">
+<!ENTITY main.library.sortBy.author             "מחבר">
+<!ENTITY main.library.sortBy.publisher          "מוציא לאור">
+<!ENTITY main.library.filterBy                  "סינון לפי">
+<!ENTITY main.library.filterBy.fileSize         "גודל קובץ">
+<!ENTITY main.library.filterBy.language         "שפה">
+<!ENTITY main.library.filterBy.language.all     "הכול">
+<!ENTITY main.library.filterBy.author           "מחבר">
+<!ENTITY main.library.filterBy.author.all       "הכול">
+<!ENTITY main.library.filterBy.publisher        "מוציא לאור">
+<!ENTITY main.library.filterBy.publisher.all    "הכול">
+<!ENTITY main.library.filterBy.lessThan         "פחות מ">
+

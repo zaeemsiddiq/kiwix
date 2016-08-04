@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+<?xml-stylesheet href="chrome://main/skin/about.css" type="text/css"?>
+<!DOCTYPE window [
+<!ENTITY % mainDTD SYSTEM "chrome://main/locale/main.dtd">
+<!ENTITY % brandDTD SYSTEM "chrome://branding/locale/brand.dtd">
+<!ENTITY % findBarDTD SYSTEM "chrome://global/locale/findbar.dtd" >
+%mainDTD;
+%brandDTD;
+%findBarDTD;
+]>
+<window	xmlns:html="http://www.w3.org/1999/xhtml" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+	id        = "about"
+	title     = "&main.about;"
+	style     = "-moz-appearance: none; background: white; padding: 5px;"
+	>
+
+<!-- Custom Javascript scripts -->
+<script language="javaScript" type="text/javascript" src="resource://modules/settings.jsm"/>
+
+<keyset>
+  <key id="escape" keycode="VK_ESCAPE" oncommand="window.close()"/>
+</keyset>
+
+<!-- Log -->
+<browser type="text/html" src="chrome://branding/locale/credits.html" flex="1" style="background: white; padding-right: 10px;" />
+<button oncommand="window.close();" label="&main.close;" />
+</window>

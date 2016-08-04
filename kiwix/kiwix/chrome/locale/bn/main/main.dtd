@@ -1,0 +1,162 @@
+<!-- Window -->
+<!ENTITY main.title                     "&brand.brandShortName;">
+<!ENTITY main.cssdirection              "ltr">
+
+<!-- Mac menu -->
+<!ENTITY main.osxservices               "সেবা">
+<!ENTITY main.osxhideapp                "&brand.brandShortName; লুকান">
+<!ENTITY main.osxhideothers             "অন্যান্যগুলো লুকান">
+<!ENTITY main.osxshowall                "সবগুলো দেখাও">
+
+<!-- File menu -->
+<!ENTITY main.file                      "ফাইল">
+<!ENTITY main.file.accesskey            "F">
+<!ENTITY main.openFile                  "ফাইল খোলো...">
+<!ENTITY main.browseLibrary.accesskey   "B">
+<!ENTITY main.browseLibrary             "লাইব্রেরি ব্রাউজ করুন">
+<!ENTITY main.hideLibrary               "লাইব্রেরী লুকাও">
+<!ENTITY main.openFile.accesskey        "O">
+<!ENTITY main.lastOpen                  "বর্তমানে খোলা রয়েছে...">
+<!ENTITY main.saveFile                  "যেভাবে পাতটি সংরক্ষণ করবেন...">
+<!ENTITY main.saveFile.accesskey        "S">
+<!ENTITY main.print                     "মুদ্রণ">
+<!ENTITY main.print.accesskey           "P">
+<!ENTITY main.printPdf                  "পিডিএফ হিসেবে মুদ্রণ">
+<!ENTITY main.printPdf.accesskey        "D">
+<!ENTITY main.quit                      "বন্ধ">
+<!ENTITY main.quit.accesskey            "Q">
+
+<!-- Edit menu -->
+<!ENTITY main.edit                      "সম্পাদনা">
+<!ENTITY main.edit.accesskey            "E">
+<!ENTITY main.find                      "পাতায় অনুসন্ধান করুন...">
+<!ENTITY main.find.accesskey            "S">
+<!ENTITY main.selectall                 "সবগুলো নির্বাচন">
+<!ENTITY main.selectall.accesskey       "a">
+<!ENTITY main.copy                      "অনুলিপি">
+<!ENTITY main.copy.accesskey            "p">
+<!ENTITY main.transliteration           "প্রতিবর্ণীকরণ">
+<!ENTITY main.transliteration.accesskey "T">
+<!ENTITY main.preferences               "পছন্দ">
+<!ENTITY main.preferences.accesskey     "n">
+<!ENTITY main.server                    "সার্ভার">
+<!ENTITY main.server.accesskey          "s">
+
+<!-- Display menu -->
+<!ENTITY main.display                   "প্রদর্শন">
+<!ENTITY main.display.accesskey         "D">
+<!ENTITY main.zoom                      "বড় করো">
+<!ENTITY main.zoom.accesskey            "Z">
+<!ENTITY main.zoomin                    "বিবর্ধিত করুন">
+<!ENTITY main.zoomin.accesskey          "M">
+<!ENTITY main.zoomout                   "হ্রাস করুন">
+<!ENTITY main.zoomout.accesskey         "R">
+<!ENTITY main.zoomorig                  "মূল আকার">
+<!ENTITY main.zoomorig.accesskey        "O">
+<!ENTITY main.language                  "ভাষা">
+<!ENTITY main.language.accesskey        "L">
+<!ENTITY main.skin                      "আবরণ (Skin)">
+<!ENTITY main.skin.accesskey            "S">
+<!ENTITY main.statusbar                 "অবস্থান বার">
+<!ENTITY main.statusbar.accesskey       "S">
+<!ENTITY main.resultsbar                "ফলাফল বার">
+<!ENTITY main.resultsbar.accesskey      "R">
+<!ENTITY main.tabs                      "ট্যাব">
+<!ENTITY main.tabs.accesskey            "T">
+<!ENTITY main.fullscreen                "পূর্ণাঙ্গ স্ক্রিন">
+<!ENTITY main.fullscreen.accesskey      "F">
+<!ENTITY main.invertedColors            "বিপরীত রং">
+<!ENTITY main.invertedColors.accesskey  "I">
+
+<!-- Tools menu -->
+<!ENTITY main.tools                     "সরঞ্জাম">
+<!ENTITY main.tools.accesskey           "T">
+<!ENTITY main.randomArticle             "অজানা যে-কোনো নিবন্ধ">
+<!ENTITY main.randomArticle.accesskey   "R">
+<!ENTITY main.checkIntegrity            "সম্পূর্ণতা পরীক্ষা">
+<!ENTITY main.checkIntegrity.accesskey  "k">
+<!ENTITY main.launchIndexing            "নির্ঘন্ট প্রকাশ করা হচ্ছে">
+<!ENTITY main.purgeHistory              "পার্জ ইতিহাস">
+<!ENTITY main.purgeHistory.accesskey    "P">
+
+<!-- Help menu -->
+<!ENTITY main.help                      "সাহায্য">
+<!ENTITY main.help.accesskey            "H">
+<!ENTITY main.feedback                  "প্রতিক্রিয়া">
+<!ENTITY main.reportabug                "বাগ রিপোর্ট করুন">
+<!ENTITY main.requestafeature           "সুবিধার অনুরোধ জানান">
+<!ENTITY main.about                     "&brand.brandShortName; সম্পর্কে">
+<!ENTITY main.about.accesskey           "A">
+
+<!-- Tool bar -->
+<!ENTITY main.back                      "পিছনে">
+<!ENTITY main.forward                   "সামনে">
+<!ENTITY main.home                      "প্রধান পাতা">
+<!ENTITY main.searchBar                 "অনুসন্ধান বার">
+<!ENTITY main.search                    "অনুসন্ধান">
+<!ENTITY main.searchPlaceholder         "অনুসন্ধানের জন্য এখানে লিখুন...">
+<!ENTITY main.findInText                "লেখায় খুঁজুন">
+<!ENTITY main.noSearchBar               "অনুসন্ধানের জন্য একটি সূচিকৃত জেডআইএম ফাইল প্রয়োজন">
+<!ENTITY main.bookmarks                 "বুকমার্ক">
+
+<!-- Results bar -->
+<!ENTITY main.results.title             "অনুসন্ধানের ফলাফল">
+
+<!-- Bookmarks Bar -->
+<!ENTITY main.bmkLabel                  "বুকমার্ক:">
+<!ENTITY main.notesLabel                "বুকমার্ক নোট:">
+<!ENTITY main.loadbmk                   "বুকমার্ক সেট আমদানি করুন">
+<!ENTITY main.newbmk                    "নতুন বুকমার্ক সেট তৈরি করুন">
+<!ENTITY main.mark                      "এটি পাতাটি নজরে রাখুন">
+<!ENTITY main.unmark                    "নজর সরিয়ে নেওয়া হয়েছে">
+<!ENTITY main.reload                    "বুকমার্ক সেট পুনঃলোড করুন">
+<!ENTITY main.defaultset                "পূর্বনির্ধারিত সেট">
+
+<!-- Contextual Menu -->
+<!ENTITY main.saveMediaAs               "...হিসাবে মিডিয়া সংরক্ষণ করুন">
+<!ENTITY main.openLinkInNewTab          "নতুন টাঁবে খুলুন">
+<!ENTITY main.searchFor                 "অনুসন্ধান করো">
+<!ENTITY main.copyLinkAdress            "Copy link address">
+<!ENTITY main.mute                      "নিঃশব্দ">
+<!ENTITY main.audible                   "শ্রবনযোগ্য">
+
+<!-- About Window -->
+<!ENTITY main.close                     "বন্ধ">
+
+<!-- Preferences Window -->
+<!ENTITY preferences.preferences        "পছন্দ">
+<!ENTITY preferences.save               "সংরক্ষণ">
+<!ENTITY preferences.cancel             "বাতিল">
+<!ENTITY preferences.profileDirectory   "প্রোফাইল ডিরেক্টরি">
+<!ENTITY preferences.dataDirectory      "Data directory">
+<!ENTITY preferences.browse             "ব্রাউজ">
+<!ENTITY preferences.tabs               "ট্যাব মনে রাখুন">
+<!ENTITY preferences.downloadCatalogs   "ক্যাটালগ ডাউনলোড করুন">
+<!ENTITY preferences.neverAskToIndex    "কখনই নির্ঘন্ট করা না হোক">
+
+<!-- Server -->
+<!ENTITY server.load                    "লোড">
+<!ENTITY server.start                   "শুরু">
+<!ENTITY server.stop                    "থামুন">
+<!ENTITY server.close                   "বন্ধ">
+
+<!-- Library -->
+<!ENTITY main.library.myLibrary                 "আমার লাইব্রেরী">
+<!ENTITY main.library.getNewFiles               "নতুন ফাইল নিন">
+<!ENTITY main.library.searchZimFiles            "জিআইএম (ZIM) ফাইল অনুসন্ধান">
+<!ENTITY main.library.sortBy                    "ক্রমায়ণ হয়েছে">
+<!ENTITY main.library.sortBy.title              "শিরোনাম">
+<!ENTITY main.library.sortBy.size               "আকার">
+<!ENTITY main.library.sortBy.date               "তারিখ">
+<!ENTITY main.library.sortBy.author             "লেখক">
+<!ENTITY main.library.sortBy.publisher          "প্রকাশক">
+<!ENTITY main.library.filterBy                  "ফিল্টার হয়েছে">
+<!ENTITY main.library.filterBy.fileSize         "ফাইলের আকার">
+<!ENTITY main.library.filterBy.language         "ভাষা">
+<!ENTITY main.library.filterBy.language.all     "সমস্ত">
+<!ENTITY main.library.filterBy.author           "লেখক">
+<!ENTITY main.library.filterBy.author.all       "সমস্ত">
+<!ENTITY main.library.filterBy.publisher        "প্রকাশক">
+<!ENTITY main.library.filterBy.publisher.all    "সমস্ত">
+<!ENTITY main.library.filterBy.lessThan         "কম">
+

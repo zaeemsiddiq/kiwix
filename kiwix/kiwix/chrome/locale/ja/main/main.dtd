@@ -1,0 +1,162 @@
+<!-- Window -->
+<!ENTITY main.title                     "&brand.brandShortName;">
+<!ENTITY main.cssdirection              "ltr">
+
+<!-- Mac menu -->
+<!ENTITY main.osxservices               "サービス">
+<!ENTITY main.osxhideapp                "&brand.brandShortName;を隠す">
+<!ENTITY main.osxhideothers             "その他を隠す">
+<!ENTITY main.osxshowall                "すべて表示">
+
+<!-- File menu -->
+<!ENTITY main.file                      "ファイル">
+<!ENTITY main.file.accesskey            "F">
+<!ENTITY main.openFile                  "ファイルを開く...">
+<!ENTITY main.browseLibrary.accesskey   "B">
+<!ENTITY main.browseLibrary             "ライブラリを参照">
+<!ENTITY main.hideLibrary               "ライブラリを隠す">
+<!ENTITY main.openFile.accesskey        "O">
+<!ENTITY main.lastOpen                  "最近使用したファイルを開く...">
+<!ENTITY main.saveFile                  "ページを別名で保存...">
+<!ENTITY main.saveFile.accesskey        "S">
+<!ENTITY main.print                     "印刷">
+<!ENTITY main.print.accesskey           "P">
+<!ENTITY main.printPdf                  "PDFとして印刷">
+<!ENTITY main.printPdf.accesskey        "D">
+<!ENTITY main.quit                      "終了">
+<!ENTITY main.quit.accesskey            "Q">
+
+<!-- Edit menu -->
+<!ENTITY main.edit                      "編集">
+<!ENTITY main.edit.accesskey            "E">
+<!ENTITY main.find                      "ページ内の検索...">
+<!ENTITY main.find.accesskey            "S">
+<!ENTITY main.selectall                 "すべて選択">
+<!ENTITY main.selectall.accesskey       "a">
+<!ENTITY main.copy                      "コピー">
+<!ENTITY main.copy.accesskey            "p">
+<!ENTITY main.transliteration           "翻字">
+<!ENTITY main.transliteration.accesskey "T">
+<!ENTITY main.preferences               "設定">
+<!ENTITY main.preferences.accesskey     "n">
+<!ENTITY main.server                    "サーバー">
+<!ENTITY main.server.accesskey          "s">
+
+<!-- Display menu -->
+<!ENTITY main.display                   "表示">
+<!ENTITY main.display.accesskey         "D">
+<!ENTITY main.zoom                      "拡大縮小">
+<!ENTITY main.zoom.accesskey            "Z">
+<!ENTITY main.zoomin                    "拡大">
+<!ENTITY main.zoomin.accesskey          "M">
+<!ENTITY main.zoomout                   "縮小">
+<!ENTITY main.zoomout.accesskey         "R">
+<!ENTITY main.zoomorig                  "元の大きさ">
+<!ENTITY main.zoomorig.accesskey        "O">
+<!ENTITY main.language                  "言語">
+<!ENTITY main.language.accesskey        "L">
+<!ENTITY main.skin                      "外装">
+<!ENTITY main.skin.accesskey            "S">
+<!ENTITY main.statusbar                 "ステータス バー">
+<!ENTITY main.statusbar.accesskey       "S">
+<!ENTITY main.resultsbar                "結果バー">
+<!ENTITY main.resultsbar.accesskey      "R">
+<!ENTITY main.tabs                      "タブ">
+<!ENTITY main.tabs.accesskey            "T">
+<!ENTITY main.fullscreen                "全画面表示">
+<!ENTITY main.fullscreen.accesskey      "F">
+<!ENTITY main.invertedColors            "反転色">
+<!ENTITY main.invertedColors.accesskey  "I">
+
+<!-- Tools menu -->
+<!ENTITY main.tools                     "ツール">
+<!ENTITY main.tools.accesskey           "T">
+<!ENTITY main.randomArticle             "ランダム記事">
+<!ENTITY main.randomArticle.accesskey   "R">
+<!ENTITY main.checkIntegrity            "整合性チェック">
+<!ENTITY main.checkIntegrity.accesskey  "k">
+<!ENTITY main.launchIndexing            "Launch indexing">
+<!ENTITY main.purgeHistory              "履歴を削除">
+<!ENTITY main.purgeHistory.accesskey    "P">
+
+<!-- Help menu -->
+<!ENTITY main.help                      "ヘルプ">
+<!ENTITY main.help.accesskey            "H">
+<!ENTITY main.feedback                  "フィードバック">
+<!ENTITY main.reportabug                "バグを報告">
+<!ENTITY main.requestafeature           "機能の要望">
+<!ENTITY main.about                     "&brand.brandShortName;について">
+<!ENTITY main.about.accesskey           "A">
+
+<!-- Tool bar -->
+<!ENTITY main.back                      "戻る">
+<!ENTITY main.forward                   "進む">
+<!ENTITY main.home                      "ホーム">
+<!ENTITY main.searchBar                 "検索バー">
+<!ENTITY main.search                    "検索">
+<!ENTITY main.searchPlaceholder         "検索するテキストをここに入力...">
+<!ENTITY main.findInText                "テキストで検索">
+<!ENTITY main.noSearchBar               "検索にはインデックス付きZIMファイルが必要です">
+<!ENTITY main.bookmarks                 "ブックマーク">
+
+<!-- Results bar -->
+<!ENTITY main.results.title             "検索結果">
+
+<!-- Bookmarks Bar -->
+<!ENTITY main.bmkLabel                  "ブックマーク:">
+<!ENTITY main.notesLabel                "ブックマークノート:">
+<!ENTITY main.loadbmk                   "ブックマークのセットをインポート">
+<!ENTITY main.newbmk                    "新しいブックマークのセットを作成">
+<!ENTITY main.mark                      "このページをマーク">
+<!ENTITY main.unmark                    "選択したマークを解除">
+<!ENTITY main.reload                    "ブックマーク設定を再読み込み">
+<!ENTITY main.defaultset                "既定のセット">
+
+<!-- Contextual Menu -->
+<!ENTITY main.saveMediaAs               "メディアに名前を付けて保存...">
+<!ENTITY main.openLinkInNewTab          "リンクを新規タブで開く">
+<!ENTITY main.searchFor                 "検索対象:">
+<!ENTITY main.copyLinkAdress            "Copy link address">
+<!ENTITY main.mute                      "ミュート">
+<!ENTITY main.audible                   "可聴">
+
+<!-- About Window -->
+<!ENTITY main.close                     "閉じる">
+
+<!-- Preferences Window -->
+<!ENTITY preferences.preferences        "設定">
+<!ENTITY preferences.save               "保存">
+<!ENTITY preferences.cancel             "キャンセル">
+<!ENTITY preferences.profileDirectory   "プロファイル ディレクトリ">
+<!ENTITY preferences.dataDirectory      "Data directory">
+<!ENTITY preferences.browse             "閲覧">
+<!ENTITY preferences.tabs               "タブを記憶">
+<!ENTITY preferences.downloadCatalogs   "リモート カタログをダウンロード">
+<!ENTITY preferences.neverAskToIndex    "Never ask to index">
+
+<!-- Server -->
+<!ENTITY server.load                    "読み込み">
+<!ENTITY server.start                   "開始">
+<!ENTITY server.stop                    "停止">
+<!ENTITY server.close                   "閉じる">
+
+<!-- Library -->
+<!ENTITY main.library.myLibrary                 "マイ ライブラリ">
+<!ENTITY main.library.getNewFiles               "新規ファイルを取得">
+<!ENTITY main.library.searchZimFiles            "ZIM ファイルを検索">
+<!ENTITY main.library.sortBy                    "並び順:">
+<!ENTITY main.library.sortBy.title              "タイトル">
+<!ENTITY main.library.sortBy.size               "サイズ">
+<!ENTITY main.library.sortBy.date               "日付">
+<!ENTITY main.library.sortBy.author             "著者">
+<!ENTITY main.library.sortBy.publisher          "発行者">
+<!ENTITY main.library.filterBy                  "絞り込み条件">
+<!ENTITY main.library.filterBy.fileSize         "ファイル サイズ">
+<!ENTITY main.library.filterBy.language         "言語">
+<!ENTITY main.library.filterBy.language.all     "すべて">
+<!ENTITY main.library.filterBy.author           "著者">
+<!ENTITY main.library.filterBy.author.all       "すべて">
+<!ENTITY main.library.filterBy.publisher        "発行者">
+<!ENTITY main.library.filterBy.publisher.all    "すべて">
+<!ENTITY main.library.filterBy.lessThan         "未満">
+

@@ -1,0 +1,439 @@
+Kiwix 0.9.1
+* FIXED: Buggy pagination in fulltext result page
+* FIXED: kiwix-serve XSS attack vulnerability (#763)
+* FIXED: Better language ISO codes recognition in library
+* FIXED: Wrong tab printed (#820)
+* FIXED: Select text by focusing the searchbox, instead of deleting it (#842)
+* FIXED: Better highlighting colors in the library
+* FIXED: Beautiry bookmark XML file (#942)
+* NEW: New supported user interface languages: Amharic (am), Aramaic (arc),
+	Luri (lki), Sardinian (sc) and Somali (so)
+* NEW: Minimal skin
+
+Kiwix 0.9
+* FIXED: Public IP address detection on OSX (#658)
+* FIXED: Fulltext search results page for pattern including
+  mustbeurlencoded characters
+* FIXED: Kiwix-serve bug under Windows with library containing
+  relative paths
+* FIXED: Unclear usage() for console tools
+* FIXED: Crashing UI with Kannada (kn), Oriya (or) and Georgian (ka)
+  (#413)
+* FIXED: Unavailable kiwix-serve from the UI on Linux, if not installed (#411)
+* FIXED: kiwix-serve UI for non-javascript browsers like Dillo (#587)
+* FIXED: kiwix-serve crash if really long URL (#400)
+* FIXED: kiwix-serve welcome page Doctype HTML line fix (for Opera)
+* FIXED: Small display issue with multilingual ZIM file
+* FIXED: Toolbar buttons order
+* FIXED: pause/resume refreshing problem in library
+* FIXED: Argument forwarding in kiwix-launcher
+* FIXED: Copy to clipboard if inverted colors (#414)
+* FIXED: "Select all" with inverted colors
+* FIXED: Browser widget resizing sync. with the window (#382)
+* FIXED: Encoding issue in kiwix-serve 404 error message
+* FIXED: Abstruse index names (#84)
+* FIXED: Duplicate suggestions under certain conditions
+* FIXED: kiwix-serve index page for chrome/chromium
+* FIXED: Buggy kiwix-serve suggestion click handling (#463)
+* FIXED: Hanging page loading with specific pages on Win&Mac (#440, #376)
+* FIXED: Buggy tabs with RTL disposition (#424)
+* FIXED: Small bug in library filtering (by language)
+* FIXED: "Illegal instruction" crash with old CPUs without SSE2 (#478)
+* FIXED: Download problem with Metalink files containing magnet links
+* FIXED: Allow fullscreen for videos
+* FIXED: Icons for a better rendering on "retina" (like) screens
+* FIXED: Multiple issues with the PDF export on Win7 (#374, #396, #431)
+* FIXED: Save medias on Windows UNC drives (#682)
+* FIXED: Wrong file size in kiwix-serve home page
+* FIXED: Deal with multi-arch compilation architectures
+* FIXED: kiwix-serve crash if unattended search "start" & "end" values
+* FIXED: "yes" and "cancel" buttons translations in confirm dialogs
+* FIXED: Unstable library fulltext search 
+* NEW: Allow to save videos and sounds
+* NEW: Add a "random article" button to kiwix-serve
+* NEW: New supported user interface languages: Chuvash (cv), Fiji
+  Hindi Latin script (hif-latn), Mongolian (mn), Newari (new),
+  Sanskrit (sa), Uzbek (uz), Turkish (tr), Tagalog (tl), Talysh
+  language (tly), Kyrgyz (kir), Bambara (bam), Hakka (hak),
+  Hunsrik (hrx), Uyghur in Arabic script (ug-arab), 
+  Malagazy (mg), Southern Balochi (bcc) and Azerbaijani (az)
+* NEW: On GNU/Linux, replace basch script launcher by a binary (kiwix-launcher)
+* NEW: Does not ask to download remote catalogs if user is offline
+* NEW: Option to avoid dialog box asking for indexing (#330)
+* NEW: Menu item to launch indexing (#455)
+* NEW: Compiles and run with xulrunner up to 29
+* NEW: Add "Cache-Control" HTTP headers to kiwix-serve output
+* NEW: Better searchbox focus handling
+* NEW: ZIM, indexes & library saved in profile in a portable manner
+* NEW: Open XML library files from the menu
+* NEW: Preference to set custom data directory (#279, #323, #366,  #573, #692, #633)
+* NEW: --nosearchbar option for kiwix-serve
+* NEW: OSX 10.9 support
+* NEW: Sort bookmarks alphabetically
+* NEW: Able to deal with ZIM files containing relative paths
+* NEW: Allow to run launcher in a few additional directories
+* NEW: Improve file size display in kiwix-serve
+
+Kiwix 0.9 rc2
+* FIXED: kiwix-manage generate wrong size for splitted ZIM files (ID: 3547892)
+* FIXED: kiwix-install crashes
+* FIXED: kiwix-serve memory leak on ARM (ID: 3538663)
+* FIXED: Open link in new tab from the right-click contextual menu (ID: 3553735)
+* FIXED: Hide bookmarks sidebar in the "library view" (ID: 3555848)
+* FIXED: Better landing page loading in kiwix-plug (by introducing ip forwarding)
+* FIXED: Unclean Windows Registery after uninstalling (ID: 3467455)
+* FIXED: Problems in creating PDF/HTML from tabs (#362)
+* FIXED: Kiwix crashes on MS/Windows with "special" files (#317)
+* FIXED: 0.9rc1 broken Drag&Drop of files (regression)
+* FIXED: Multiple bugs impacting kiwix-plug scripts
+* FIXED: Server URL computation - was buggy in a few special cases (#363)
+* FIXED: *.zimaa files management (improved)
+* FIXED: Indexing progression computation (more accurate)
+* FIXED: "verbose" mode in kiwix-install, kiwix-index and kiwix-serve
+* FIXED: Ugly 16x16 kiwix icon
+* FIXED: Broken suggestion/search textbox with “syllable input mode”
+* FIXED: Buggy kiwix-manage remove feature
+* FIXED: Internet Explorer compatibility with kiwix-serve.
+* FIXED: Sporadicaly dying (serving big contents) kiwix-serve (#371)
+* FIXED: 64bits kiwix crashes on Archlinux (#365)
+* FIXED: Buggy filtering by size in the library
+* FIXED: Weak windows handling with small screen resolution
+* FIXED: kiwix- console tools do not start on OSX
+* NEW: New supported user interface languages: Zazaki (diq), Javanese (jv),
+  Khmer (km), Urdu (ur), Burmese (my), South Azerbaijani (azb)
+* NEW: CTRL+R to load random article (ID: 3549370)
+* NEW: Improved server dialog window
+* NEW: "Inverted colors" feature (ID: 3551975)
+* NEW: Internationalisation of kiwix-plug welcome page (en, fr, de)
+* NEW: Start Kiwix from the console with -search cmd line argument (ID: 3538176)
+* NEW: Search suggestions in kiwix-serve (ID: 2945983)
+* NEW: Xulrunner 14.0.1 (instead of 12)
+* NEW: Desktop shortcut creation in Windows installer
+* NEW: Ask to load content at the end of a download (ID: 3563964)
+* NEW: if "/M/Description" empty, check "/M/Subtitle" (used by Mediawiki Collection ext.)
+* NEW: Windows compilation using Visual Studio 2010
+* NEW: kiwix-serve (HTTP server) for MS/Windows (#140)
+* NEW: Persistent bookmark set over sessions (#188)
+
+Kiwix 0.9 rc1
+* FIXED: Smoothier zooming (ID: 3469927)
+* FIXED: "Evolution" skin (ID: 3444112)
+* FIXED: Bad aria2c process mgmt. by introducing aria2 v1.14 (ID: 3430225)
+* FIXED: Invisible menuitems icons on GNU/Linux
+* FIXED: Blanck kiwix-serve 404 error pages (ID: 3417227)
+* FIXED: Error during the installation of Ubuntu packages (ID: 3437855)
+* FIXED: Bad singleton-window implementation (ID: 3444121)
+* FIXED: Compilation with CLucene 2.3 (ID: 3405531)
+* FIXED: Too high article/media count in the ZIM library (ID: 3396763)
+* FIXED: Kiwix-serve sporadic invisible search box with non-latin contents
+* FIXED: Toolbar wrong height on Sugar with XOs (ID: 3471281)
+* FIXED: Broken ZIM loading on XO OSes 0.8x (ID: 3471279)
+* FIXED: Library filtering by language with ISO639-1 language code ZIM metadata
+* FIXED: Continuing indexing process if quitting app.
+* FIXED: Text-only zoom. Pictures are now zoomed with Text (ID: 3525284)
+* FIXED: Multiple small UI issues (ID: 3514842)
+* FIXED: Windows specific ZIM loading problem with accented&relative paths
+* FIXED: Zoom factor is not anymore registered over sessions (ID: 3536559)
+* FIXED: OSX menu, it feels like a native app. (ID: 3444682, ID: 3444101)
+* FIXED: Avoid killing the GNU/Linux session by quitting if aria2 is not launched
+* FIXED: Sporadic "segmentation fault" errors in the GNU/Linux file picker (ID: 3512771)
+* NEW: New supported user interface languages: Faroese (fo), Croatian (hr),
+  Iloko (ilo), Limburgish (li), Basa Banyumasan (map-bms), Pashto (ps),
+  Bachkir (ba), Welsh (cy), Yiddish (yi), Wolof (yo),
+  Chinese (Hong Kong)(zh-hk), Albanese (sq), Assamese (as), Kannada (kn),
+  Quechua (qu), Tulu (tcy), Belarusian (be), Interlingue (ie), Nepali (ne),
+  Norwegian Nynorsk (nn), Occitan (oc), Romansh (rm), Serbo-Croatian (sh),
+  Sinhalese (si), Luxembourgish (lb), Korean (ko), Korean of North Korea (ko-kp),
+  Min Nan Chinese (nan), Indonesian (id), Tunisian Spoken Arabic (aeb)
+  Windows (in Linux since beta5): Estonian (et), Bulgarian (bg), Georgian (ka),
+  Lithuanian (lt), Slovak (sk), Oriya (or), Kiswahili (sw), Venetian (vec)
+* NEW: ALT+D shortcut to give focus to the searchbar (ID: 3475647)
+* NEW: --current option to "add" command in kiwix-manage to set the ZIM file a current
+* NEW: Self-extracting installer for MS/Windows
+* NEW: Ask before downloading XML library files (ID: 3442087)
+* NEW: kiwix-serve able to deal directly with a library XML file
+* NEW: kiwix-serve able to deal with many contents in one instance
+* NEW: Speed-up start of downloads by removing file pre-allocation
+* NEW: Allow compilation against Gecko SDK 9.0 and further (xpidl binary was removed)
+* NEW: Static compiled releases run against XR11
+* NEW: Add support for HTML5 video/audio
+* NEW: Audible/Mute contextual menuitem for HTML5 videos
+* NEW: Default content icon in the library (ID: 3488268)
+* NEW: Compute "fake" title from the filename if no title metatadata in ZIM (ID: 3488268)
+* NEW: Replacement of "fastjar" by "zip" (better/common dependence)
+* NEW: Use new (20% smaller) IETF normalized Metalink format (meta4) instead of old (v3) Metalink
+* NEW: Open specific article via command prompt using "articleByUrl" & "articleByTitle" (ID: 3484628)
+* NEW: Fulltext search engine index ~4x faster (depending of the number of cores)
+* NEW: kiwix-set-fileassoc.bat Windows script to setup zim-kiwix file association for "portable" usage
+* NEW: GNU/Linux static compiled release ~50% smaller than before
+* NEW: OSX universal binary package (x86_32 & x86_64)
+* NEW: kiwix-serve command line option --attachToProcess
+* NEW: Windows BASCKSPACE handle to make page back (ID: 3518780)
+* NEW: kiwix-serve integration in Kiwix UI (OSX&Linux only)
+* NEW: Remove kiwix-serve external results.tmpl template file dependency
+* NEW: Rewrite of kiwix-serve UI using JQueryUI
+* NEW: Unix man pages for all tools on GNU/Linux (English & French)
+* NEW: Introduction in Debian Wheezy official repository (ID: 3525204)
+* NEW: Speed up startup/install on OSX&Windows by using jar files
+* NEW: Close tab by mouse middle click (ID: 3536553)
+* NEW: First version of kiwix-plug (scripts to autoconfigure dreamplug with Kiwix)
+* NEW: Associate *.zimaa files (splitted ZIM files) to Kiwix
+* NEW: Port of console tools kiwix-index, kiwix-manage and kiwix-install for portable Linux & OSX
+
+Kiwix 0.9 beta5
+* FIXED: letton language menu item (ID: 3439113)
+* FIXED: Duplicates in publisher & language filters in the content manager (ID: 3439108)
+* FIXED: Many localisation files which were broken due to a buggy script (ID: 3440627)
+* FIXED: Wrong behaviour in case of two different portable kiwix consecutive runs (ID: 3442083)
+* FIXED: Different issues relative to ISO language codes (ID: 3439293)
+* FIXED: On Windows, Media Defender complain about chp.exe (ID: 3389953)
+* FIXED: Rendering issue when displaying two notifications consecutivly: only the last one was displayed.
+* FIXED: Windows default install directory (to match standarts)
+* FIXED: Missing Kiwix shortcuts menu entry on Win7 Application menu (ID: 3456428)
+* FIXED: Buggy permission eskalation in Windows 7 installer (ID: 3442074)
+* FIXED: Buggy behaviour if you close the last tab (ID: 3459365)
+* FIXED: Double-checked menu items in language/skin menus in case of abandoned restart process
+* FIXED: Few UI bugs related to the navigation history management (ID: 3444677)
+* FIXED: Regression impacting reading of splitted big (more than 4GB) ZIM files (ID: 3463001)
+* NEW: New supported user interface languages: Czech (cs), Upper Sorbian (hsb),
+  Cyrillic Tatar (tt-cyrl), Lower Sorbian (dsb), Hindi (hi), Gujarati (gu), Tamil (ta)
+* NEW: Switch off automatically if loading random article
+* NEW: In the library, pressing <ENTER> in your local library directly open the file
+* NEW: Greying "Load random article" menu entry if no content is loaded (ID: 3439112)
+* NEW: Add the support of the "publisher" ZIM Metadata
+* NEW: Improved library menus rendering (ID: 3439109)
+* NEW: Improved code and documentation of kiwix-manage
+* NEW: In library, option to keep ZIM file during content deletion (ID: 3442084)
+* NEW: "Copy Link Address" in contextual menu for external links (ID: 3444066)
+* NEW: Security code to avoid "displaying" main window outside the screen (ID: 3415334)
+* NEW: "First" and "Last" arrows in the search result page (ID: 3442313)
+* NEW: Download ZIM files directly from HTTP - without using metalink (ID: 3450237)
+* NEW: Ctrl+ modifier to Home, Back and Forward buttons to branch to new tabs (ID: 3459481)
+* NEW: Windows installer Silent Mode (with command line option /S)
+* NEW: Improved Windows User Interface (by tunning the CSS)
+* NEW: Port of console tools kiwix-index, kiwix-manage and kiwix-install for Windows
+
+Kiwix 0.9 beta4
+* Fix regression, menu "last open" where not working anymore
+* Fix regression, avoid restarting aria2 at program exit
+* New content manager search/filter feature (ID: 3390515)
+* Newly able to deal with more than one XML library feed
+* Fixed missing link on feedback notification on OSX no growl (ID: 3419105)
+* Better kiwix-serve default loading if no welcome page is defined in ZIM (ID: 3417227)
+* Fixed Freezes on Windows 7 (ID: 3422838)
+* First version of kiwix-install
+
+Kiwix 0.9 beta3
+* Add for GNU/Linux Freedesktop managers the kiwix icon to ZIM files
+* Fixed issue in the library manager concerning ZIM files with accented paths
+* Selectable title and description in the content manager (ID: 3390514)
+* Fix buggy history behaviour by opening external urls
+* Implement ctrl+[PAGE_UP|PAGE_DOWN] to navigate in tabs
+* Fix different issue impacting keypress event mgmt on Tabs
+* Add hour pointer during search or loading of articles (ID: 3362817)
+* Remove the reset button for the bookmarks, was dangerous and ambigous (ID: 3395239)
+* Add "Copy" and "Select all" in the right-click contextual menu if necessary (ID: 3015761)
+* Add the "Search for..." in the contextual menu
+* Lots of new locales supported (thx Translatewiki.net)
+* Display the content manager per default if no local content detected (first start use case)
+* Kiwix again (was a regression) able to deal with relative paths in the library.xml (ID: 3397592)
+* Now possible to open ZIM file with accented paths on Windows (ID: 3107895)
+* New keyboard shortcuts to deal with bookmarks
+* Add arrow keys handling to navigate in the content manager (ID: 3389511)
+* Added static compilation of components for Linux.
+* Added debian init script for kiwix-serve (ID: 2976515)
+* Added static version capability to build-kiwix-release script
+* Improve the 'show' action in kiwix-manage
+* Fix contextual menu display (mouse right click) on Windows (ID: 3406801)
+* Save zoom factor over kiwix restarts (ID: 3367428)
+* Avoid sporadic problems with indexing/searching and certain Windows version (was necessary to install vcredist_x86.exe)
+* Fix configure for CLucene and Slackware (ID: 3408023)
+* New option remember open tabs, focused tab and respective scroll postion in the tabs over reboots (ID: 3117123)
+* Fixing a bug responsible of masking ongoing downloads while deleting an other content
+* ZIM file association on Windows
+
+Kiwix 0.9 beta2
+* Regression fix, tabs should not be visible per default
+* Fixed deprecated tmp.kiwix.org/zim links in help files (ID: 3376641)
+* Now able to load on GNU/Linux with the command line ZIM files with " " in their path
+* Add menuitem File > Browse Library (ID: 3377139)
+* Avoid segfault by bookmarks pointing to a missing ZIM file (ID: 3376642)
+* Bookmarks now compatible with multizim
+* Fixed the searchindex assignement problem if the current ZIM file is changed during indexing process (ID: 3377136)
+* Fixed broken locales it and ar
+* Fixed OSX crashes if previous ZIM was gone (ID: 3243147)
+* Fixed regression with not always 100% visible close tab button (ID: 3377280)
+* Fixed issue occuring by installing PPA 0.9 beta1 over alpha7 fails (ID: 3377130)
+* Fixed drag zim file on Kiwix icon in OSX Dock (ID: 3315167)
+* Fixed drag zim on Kiwix window in OSX (ID: 3385313)
+* Fixed fullscreen shortcut for OSX now compliant to standard (ID: 3304022)
+* Avoid the possibility to open an external url in a new kiwix tab (does not make sense)
+* Implement ctrl+w keyboard shortcut to close the current tab
+* Implement ctrl+W keyboard shortcut to close all tabs
+* Close all tabs before opening new ZIM file, avoid weird situations (ID: 3372140)
+* Fixed tabs behavior
+* FullScreen support for Tabs
+* Revamped Tabs UI on Linux, OSX and Windows
+* Introduce/Improve keyboard shortcuts behaviour for a better scrolling experience (ID: 3389521)
+* Fixed problem with not working content manager on Windows installed instances of Kiwix (ID: 3385476)
+* Fixed regression: scroll is funky on OSX (ID: 3385602)
+* Fixed a regression impacting javascript links
+
+Kiwix 0.9 beta1
+* Remove a hard coded path in kiwix-compact.sh (ID: 3135956)
+* Avoid the flickering during mouseover links after canceling the indexing
+* Under Windows, installer adds now shortcuts to all users
+* Force loading no plugin to avoid any problem (with libmoon for example)
+* Under Windows, the displayed (disk) "space required" value is now correct in the installer
+* kiwix-index backend argument is now an option and set as "xapian" per default
+* Fix regressions responsible for lower case titles in result list (ID: 3147594)
+* Implement the HTTP 404 error in kiwix-serve
+* Fix a small bug in the indexing code to avoid forgetting around 100 articles per ZIM file
+* Disable DNS prefetching for external links
+* New locales: Polish, Dutch
+* Open a ZIM file directly from the command line
+* Gnome and KDE integration: mime-type recognition + icon & application associations (ZIM double-click feature)
+* New checksum checker to be able to check ZIM file integrity
+* A list of ZIM files to download is dynamicaly downloaded in the help page if user online (ID: 3165272)
+* Simplification and improvment of the searchbar (no search button anymore, always available, standardized, ...)
+* New Find-in-text bar (like in firefox, at the bottom), to replace the dialogbox.
+* Result sidebar removed and replaced by a result web page "a la google"
+* Usage of jar files for a quicker startup
+* Kiwix for Mac OSX
+* kiwix-serve CPU usage improvement (ID: 3213104)
+* Update the Window title by switching the tabs
+* New integrated content manager/downloader
+* Introduction of Desktop notifications (ID: 3315162)
+* New way to open link in new tab with shortcuts or drag&drop (ID: 3311320)
+* Option to change the profile directory
+
+Kiwix 0.9 alpha7
+* Fix the encoding issue in the help in Parsi (ID: 3060250)
+* Fix an URL parsing issue impacting title containing a '/' (ID: 3065286)
+* Add mouse thumb buttons back/forward support (ID: 3063304)
+* Add a contextual menu "Save image as..." for images (ID: 1669553)
+* Remove the deprecated (not used anymore by libzim) bzip2 dependence
+* Fully localized MS Windows installer
+* Fix the default filename by "save image" and "save as PDF"  with article containing a "/"
+* Avoid a small bug responsible for duplicate zim calls
+* Per default, Kiwix instance are not "live" anymoore. Can now be decided with buildDistribution.pl
+* Propose a download dialog if the mime-type is unknown
+* New locales: Catalan
+* Fix a bug with the "impossible" indexing process in case of defect library.xml (ID: 3068722)
+* Reintroduction of the skin switcher tool
+* Consider chrome:// as internal url, and do not ask anumore to load the url with an external app.
+* Fullscreen is now a *real* fullscreen
+* Fix the initialisation of the random article url generator (ID: 3109548)
+* Fix an issue by tab rendering after closing one (ID: 3108586)
+* Fix the issue with no tab title if user change tab before content renders (ID: 3108598)
+* Fix the brocken liblzma dependence in Debian package for Maverick (ID: 3115241)
+* On the Windows installer, add dialog boxes to elevate the user level to get admin permissions
+
+Kiwix 0.9 alpha6
+* Fix a regression bug impacting the case insensitive (first character only) suggestion system
+* Fix a bug in kiwix-serve impacting search results with titles including special characters
+* Add the --verbose|-v arugment to kiwix-index
+* Add a stub HTML header&footer in case of the article only have a <body> (ID: 3030608)
+* Fix a bug in the ./configure libicu version checking (ID: 3034150)
+* Fix a bug in the debian/posrtrm script (ID: 3035092)
+* Complete the DEB package with additional informations
+* Add the "Purge history" Tool (ID: 3036917)
+* Tab navigation (ID: 1644478)
+* Capacity to deal with splitted ZIM files
+* Add mouse button forward/back support (ID: 3052213)
+* Fix annoyous bug impacting user moving and reopening the same file (ID: 3052211)
+* Remember the file picker path over sessions
+* Does not read/save anymore the profile library if "live" instance (DVD or USB)
+* Per default, use now the OS default language and not English anymore
+* Remove the auto full text search by typing the search pattern (was introduced in alpha5 and needs too much CPU)
+* Add new useful keyboard shortcuts like in Firefox (ID: 2992557)
+* Better help page in English
+
+Kiwix 0.9 alpha5
+* kiwix-serve supports the inflate/deflate compression for text/html
+* Fix bug in the search query tokenizer impact massively Malayalam
+
+Kiwix 0.9 alpha4
+* Fix a bug (regression) if no welcome page in the ZIM
+* Introduce the kiwix-debug.bat for Windows
+* Fix a UNICODE issue on Windows search engine
+* kiwix-compact can now directly take xapian-directory path as argument
+
+Kiwix 0.9 alpha3
+* Fix major bug ID: 2991242, On Windows the search is accent sensitive
+
+Kiwix 0.9 alpha2
+* Fix critical bug ID: 2992289, ZIM file >2GB are not readable on 32b GNU/Linux
+
+Kiwix 0.9 alpha1
+* ZIM library management outside the profile
+* Windows support & installer
+* Fix the Hebrew search issue with the doublequote character (ID: 2939690)
+* First version of the search suggest feature (ID: 2799913)
+* New icon (with white background) (ID: 2981323)
+* New ZIM HTTP server called "kiwix-serve"
+* New Command line indexation tool called "kiwix-index"
+* Allow drag&drop over the UI to open a ZIM file
+* Autodection of the UI locale at the first start (GNU/Linux only)
+* New "Recently open" menu
+* New internal library of ZIM (to be able to manage many ZIM files)
+* New Hebrew, Portuguese, Chinese and Persian localization
+* New Bookmarks and Notes system (coming from Moulinwiki)
+* New script to compact search engines indexes in the profile called "kiwix-compact.sh" (ID: 2834599)
+* Translate ISO code in the language sub-menu (ID: 2834600)
+* New "Save Page" (in files) feature (ID: 175508)
+* New "Print as PDF" feature
+* kiwix.sh check for current path (ID: 2850487)
+* First result is now only loaded with a pretty good score (ID: 2845850)
+* "Report a bug" and "request a feature" links in the UI
+* Fixing issue affecting ZIM file loading with accented paths (ID: 2905488)
+* New feature to clean the profile at the end of the session (optional)
+* Redesign of the "About" Dialog box
+
+Kiwix 0.8
+* nothing new
+
+Kiwix 0.8 rc3
+* Small improvement by the kiwix.sh launcher (should work now under Slackware (see https://sourceforge.net/forum/message.php?msg_id=7561932)
+* Fix sporadic segfault by indexing (ID: 2823597)
+* Fix dynlib linking issue affecting at least Slackware and Fedora
+
+Kiwix 0.8 rc2
+* Use xapian-core-1.0.14
+* Fix the "no icons available" issue (ID: 2830824)
+* Fixed toolbar icons with RTL languages
+* Improved toolbar UI (added icons & tooltip)
+* Fixed window size/position restore
+* Fixed address-bar not displaying TOC URLs (ID: 2806208)
+* Fixed anchored link not working (ID: 2806207)
+
+Kiwix 0.8 rc1
+* High reducing of the xapian index disk usage
+* Improvement of the history management
+* Ignore now, by indexing, HTML pages with the NOINDEX meta tag
+* French/Spanish/German translation of the software help
+* Fixed language switch menu (ID: 2822178)
+* Arabic localization
+* Use now mainly xulrunner icon set
+
+Kiwix 0.8 beta5
+* Small improvements of the Spanish translations&shortcuts
+* Bug fix by the indexing process observer (ID: 2811642)
+* Add a gray version of the buttons
+* First version of a software help
+* Add a cache strategy
+
+Kiwix 0.8 beta4
+* Random page feature (ID: 2799134)
+* Fix an issue concerning URLs with local anchors (ID: 2798769)
+* Localisation of Xulrunner builtins (ID: 2799815)
+
+Kiwix 0.8 beta3
+* Rewrite the buggy MD5 code
+* Improvement of the GUI Spanish translation
+* Remember the window geometry (ID: 1671235)
+* Use xapian-core-1.0.13
+
+Kiwix 0.8 beta2
+* GUI in Italian (ID: 2799146)
+* 32 bits support for large ZIM file (ID: 2801839)

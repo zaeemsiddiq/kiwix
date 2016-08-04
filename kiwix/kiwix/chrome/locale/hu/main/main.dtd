@@ -1,0 +1,162 @@
+<!-- Window -->
+<!ENTITY main.title                     "&brand.brandShortName;">
+<!ENTITY main.cssdirection              "ltr">
+
+<!-- Mac menu -->
+<!ENTITY main.osxservices               "Szolgáltatások">
+<!ENTITY main.osxhideapp                "&brand.brandShortName; elrejtése">
+<!ENTITY main.osxhideothers             "Egyebek elrejtése">
+<!ENTITY main.osxshowall                "Összes megjelenítése">
+
+<!-- File menu -->
+<!ENTITY main.file                      "Fájl">
+<!ENTITY main.file.accesskey            "F">
+<!ENTITY main.openFile                  "Fájl megnyitása...">
+<!ENTITY main.browseLibrary.accesskey   "B">
+<!ENTITY main.browseLibrary             "Könyvtár böngészése">
+<!ENTITY main.hideLibrary               "Könyvtár elrejtése">
+<!ENTITY main.openFile.accesskey        "O">
+<!ENTITY main.lastOpen                  "Legutóbb megnyitott...">
+<!ENTITY main.saveFile                  "Oldal mentése másként...">
+<!ENTITY main.saveFile.accesskey        "S">
+<!ENTITY main.print                     "Nyomtatás">
+<!ENTITY main.print.accesskey           "P">
+<!ENTITY main.printPdf                  "Nyomtatás PDF formátumban">
+<!ENTITY main.printPdf.accesskey        "D">
+<!ENTITY main.quit                      "Kilépés">
+<!ENTITY main.quit.accesskey            "Q">
+
+<!-- Edit menu -->
+<!ENTITY main.edit                      "Szerkesztés">
+<!ENTITY main.edit.accesskey            "E">
+<!ENTITY main.find                      "Keresés az oldalon...">
+<!ENTITY main.find.accesskey            "S">
+<!ENTITY main.selectall                 "Összes kijelölése">
+<!ENTITY main.selectall.accesskey       "a">
+<!ENTITY main.copy                      "Másolás">
+<!ENTITY main.copy.accesskey            "p">
+<!ENTITY main.transliteration           "Átírás">
+<!ENTITY main.transliteration.accesskey "T">
+<!ENTITY main.preferences               "Beállítások">
+<!ENTITY main.preferences.accesskey     "n">
+<!ENTITY main.server                    "Szerver">
+<!ENTITY main.server.accesskey          "s">
+
+<!-- Display menu -->
+<!ENTITY main.display                   "Megjelenítés">
+<!ENTITY main.display.accesskey         "D">
+<!ENTITY main.zoom                      "Kicsinyítés/nagyítás">
+<!ENTITY main.zoom.accesskey            "Z">
+<!ENTITY main.zoomin                    "Nagyítás">
+<!ENTITY main.zoomin.accesskey          "M">
+<!ENTITY main.zoomout                   "Kicsinyítés">
+<!ENTITY main.zoomout.accesskey         "R">
+<!ENTITY main.zoomorig                  "Eredeti méret">
+<!ENTITY main.zoomorig.accesskey        "O">
+<!ENTITY main.language                  "Nyelv">
+<!ENTITY main.language.accesskey        "L">
+<!ENTITY main.skin                      "Felület">
+<!ENTITY main.skin.accesskey            "S">
+<!ENTITY main.statusbar                 "Állapotsor">
+<!ENTITY main.statusbar.accesskey       "S">
+<!ENTITY main.resultsbar                "Eredménysáv">
+<!ENTITY main.resultsbar.accesskey      "R">
+<!ENTITY main.tabs                      "Fülek">
+<!ENTITY main.tabs.accesskey            "T">
+<!ENTITY main.fullscreen                "Teljes képernyő">
+<!ENTITY main.fullscreen.accesskey      "F">
+<!ENTITY main.invertedColors            "Fordított színek">
+<!ENTITY main.invertedColors.accesskey  "I">
+
+<!-- Tools menu -->
+<!ENTITY main.tools                     "Eszközök">
+<!ENTITY main.tools.accesskey           "T">
+<!ENTITY main.randomArticle             "Lap találomra">
+<!ENTITY main.randomArticle.accesskey   "R">
+<!ENTITY main.checkIntegrity            "Sértetlenség ellenőrzése">
+<!ENTITY main.checkIntegrity.accesskey  "k">
+<!ENTITY main.launchIndexing            "Indexelés elindítása">
+<!ENTITY main.purgeHistory              "Előzmények törlése">
+<!ENTITY main.purgeHistory.accesskey    "P">
+
+<!-- Help menu -->
+<!ENTITY main.help                      "Súgó">
+<!ENTITY main.help.accesskey            "H">
+<!ENTITY main.feedback                  "Visszajelzés">
+<!ENTITY main.reportabug                "Hibajelentés">
+<!ENTITY main.requestafeature           "Javaslat új funkciókra">
+<!ENTITY main.about                     "&brand.brandShortName; névjegye">
+<!ENTITY main.about.accesskey           "A">
+
+<!-- Tool bar -->
+<!ENTITY main.back                      "Vissza">
+<!ENTITY main.forward                   "Előre">
+<!ENTITY main.home                      "Kezdőlap">
+<!ENTITY main.searchBar                 "Keresősáv">
+<!ENTITY main.search                    "Keresés">
+<!ENTITY main.searchPlaceholder         "Írd be ide a keresendő szöveget...">
+<!ENTITY main.findInText                "Keresés a szövegben">
+<!ENTITY main.noSearchBar               "A kereséshez indexelt ZIM fájl szükséges">
+<!ENTITY main.bookmarks                 "Könyvjelzők">
+
+<!-- Results bar -->
+<!ENTITY main.results.title             "Keresési eredmények">
+
+<!-- Bookmarks Bar -->
+<!ENTITY main.bmkLabel                  "Könyvjelzők:">
+<!ENTITY main.notesLabel                "Könyvjelző megjegyzések:">
+<!ENTITY main.loadbmk                   "Könyvjelzőkészlet importálása">
+<!ENTITY main.newbmk                    "Új könyvjelzőkészlet létrehozása">
+<!ENTITY main.mark                      "Oldal megjelölése">
+<!ENTITY main.unmark                    "Kijelölés megszüntetése">
+<!ENTITY main.reload                    "Könyvjelzőkészlet újratöltése">
+<!ENTITY main.defaultset                "Alapértelmezett készlet">
+
+<!-- Contextual Menu -->
+<!ENTITY main.saveMediaAs               "Média mentése másként...">
+<!ENTITY main.openLinkInNewTab          "A hivatkozás megnyitása új lapon">
+<!ENTITY main.searchFor                 "Keresés">
+<!ENTITY main.copyLinkAdress            "Copy link address">
+<!ENTITY main.mute                      "Némítás">
+<!ENTITY main.audible                   "Hallható">
+
+<!-- About Window -->
+<!ENTITY main.close                     "Bezárás">
+
+<!-- Preferences Window -->
+<!ENTITY preferences.preferences        "Beállítások">
+<!ENTITY preferences.save               "Mentés">
+<!ENTITY preferences.cancel             "Mégse">
+<!ENTITY preferences.profileDirectory   "Profilkönyvtár">
+<!ENTITY preferences.dataDirectory      "Data directory">
+<!ENTITY preferences.browse             "Tallózás">
+<!ENTITY preferences.tabs               "Emlékezzen a fülekre">
+<!ENTITY preferences.downloadCatalogs   "Távoli katalógus(ok) letöltése">
+<!ENTITY preferences.neverAskToIndex    "Soha ne indexeljen">
+
+<!-- Server -->
+<!ENTITY server.load                    "Betöltés">
+<!ENTITY server.start                   "Indítás">
+<!ENTITY server.stop                    "Leállítás">
+<!ENTITY server.close                   "Bezárás">
+
+<!-- Library -->
+<!ENTITY main.library.myLibrary                 "Könyvtáram">
+<!ENTITY main.library.getNewFiles               "Új fájlok beszerzése">
+<!ENTITY main.library.searchZimFiles            "ZIM-fájlok keresése">
+<!ENTITY main.library.sortBy                    "Rendezés:">
+<!ENTITY main.library.sortBy.title              "Cím">
+<!ENTITY main.library.sortBy.size               "Méret">
+<!ENTITY main.library.sortBy.date               "Dátum">
+<!ENTITY main.library.sortBy.author             "Szerző">
+<!ENTITY main.library.sortBy.publisher          "Kiadó">
+<!ENTITY main.library.filterBy                  "Szűrés:">
+<!ENTITY main.library.filterBy.fileSize         "Fájlméret">
+<!ENTITY main.library.filterBy.language         "Nyelv">
+<!ENTITY main.library.filterBy.language.all     "Mind">
+<!ENTITY main.library.filterBy.author           "Szerző">
+<!ENTITY main.library.filterBy.author.all       "Mind">
+<!ENTITY main.library.filterBy.publisher        "Kiadó">
+<!ENTITY main.library.filterBy.publisher.all    "Mind">
+<!ENTITY main.library.filterBy.lessThan         "Kevesebb, mint">
+

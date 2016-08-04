@@ -1,0 +1,162 @@
+<!-- Window -->
+<!ENTITY main.title                     "&brand.brandShortName;">
+<!ENTITY main.cssdirection              "ltr">
+
+<!-- Mac menu -->
+<!ENTITY main.osxservices               "Palvelut">
+<!ENTITY main.osxhideapp                "Piilota &brand.brandShortName;">
+<!ENTITY main.osxhideothers             "Piilota muut">
+<!ENTITY main.osxshowall                "Näytä kaikki">
+
+<!-- File menu -->
+<!ENTITY main.file                      "Tiedosto">
+<!ENTITY main.file.accesskey            "T">
+<!ENTITY main.openFile                  "Avaa tiedosto...">
+<!ENTITY main.browseLibrary.accesskey   "S">
+<!ENTITY main.browseLibrary             "Selaa kirjastoa">
+<!ENTITY main.hideLibrary               "Piilota kirjasto">
+<!ENTITY main.openFile.accesskey        "A">
+<!ENTITY main.lastOpen                  "Viimeksi avatut...">
+<!ENTITY main.saveFile                  "Tallenna sivu nimellä...">
+<!ENTITY main.saveFile.accesskey        "a">
+<!ENTITY main.print                     "Tulosta">
+<!ENTITY main.print.accesskey           "u">
+<!ENTITY main.printPdf                  "Tulosta PDF-tiedostoksi">
+<!ENTITY main.printPdf.accesskey        "D">
+<!ENTITY main.quit                      "Lopeta">
+<!ENTITY main.quit.accesskey            "L">
+
+<!-- Edit menu -->
+<!ENTITY main.edit                      "Muokkaa">
+<!ENTITY main.edit.accesskey            "M">
+<!ENTITY main.find                      "Etsi sivulta...">
+<!ENTITY main.find.accesskey            "E">
+<!ENTITY main.selectall                 "Valitse kaikki">
+<!ENTITY main.selectall.accesskey       "V">
+<!ENTITY main.copy                      "Kopioi">
+<!ENTITY main.copy.accesskey            "p">
+<!ENTITY main.transliteration           "Translitterointi">
+<!ENTITY main.transliteration.accesskey "o">
+<!ENTITY main.preferences               "Asetukset">
+<!ENTITY main.preferences.accesskey     "k">
+<!ENTITY main.server                    "Palvelin">
+<!ENTITY main.server.accesskey          "s">
+
+<!-- Display menu -->
+<!ENTITY main.display                   "Näytä">
+<!ENTITY main.display.accesskey         "ä">
+<!ENTITY main.zoom                      "Zoomaus">
+<!ENTITY main.zoom.accesskey            "Z">
+<!ENTITY main.zoomin                    "Suurenna">
+<!ENTITY main.zoomin.accesskey          "n">
+<!ENTITY main.zoomout                   "Pienennä">
+<!ENTITY main.zoomout.accesskey         "ä">
+<!ENTITY main.zoomorig                  "Alkuperäinen koko">
+<!ENTITY main.zoomorig.accesskey        "r">
+<!ENTITY main.language                  "Kieli">
+<!ENTITY main.language.accesskey        "i">
+<!ENTITY main.skin                      "Ulkoasu">
+<!ENTITY main.skin.accesskey            "U">
+<!ENTITY main.statusbar                 "Tilapalkki">
+<!ENTITY main.statusbar.accesskey       "T">
+<!ENTITY main.resultsbar                "Tulospalkki">
+<!ENTITY main.resultsbar.accesskey      "k">
+<!ENTITY main.tabs                      "Välilehdet">
+<!ENTITY main.tabs.accesskey            "t">
+<!ENTITY main.fullscreen                "Koko näyttö">
+<!ENTITY main.fullscreen.accesskey      "ö">
+<!ENTITY main.invertedColors            "Käänteiset värit">
+<!ENTITY main.invertedColors.accesskey  "I">
+
+<!-- Tools menu -->
+<!ENTITY main.tools                     "Työkalut">
+<!ENTITY main.tools.accesskey           "T">
+<!ENTITY main.randomArticle             "Satunnainen artikkeli">
+<!ENTITY main.randomArticle.accesskey   "S">
+<!ENTITY main.checkIntegrity            "Eheydentarkistus">
+<!ENTITY main.checkIntegrity.accesskey  "y">
+<!ENTITY main.launchIndexing            "Launch indexing">
+<!ENTITY main.purgeHistory              "Tyhjennä historia">
+<!ENTITY main.purgeHistory.accesskey    "j">
+
+<!-- Help menu -->
+<!ENTITY main.help                      "Ohje">
+<!ENTITY main.help.accesskey            "O">
+<!ENTITY main.feedback                  "Palaute">
+<!ENTITY main.reportabug                "Ilmoita virheestä">
+<!ENTITY main.requestafeature           "Ehdota ominaisuutta">
+<!ENTITY main.about                     "Tietoja sovelluksesta &brand.brandShortName;">
+<!ENTITY main.about.accesskey           "o">
+
+<!-- Tool bar -->
+<!ENTITY main.back                      "Edellinen">
+<!ENTITY main.forward                   "Seuraava">
+<!ENTITY main.home                      "Etusivu">
+<!ENTITY main.searchBar                 "Hakupalkki">
+<!ENTITY main.search                    "Haku">
+<!ENTITY main.searchPlaceholder         "Kirjoita haettava teksti tähän...">
+<!ENTITY main.findInText                "Etsi tekstissä">
+<!ENTITY main.noSearchBar               "Haku vaatii indeksoidun ZIM-tiedoston">
+<!ENTITY main.bookmarks                 "Kirjanmerkit">
+
+<!-- Results bar -->
+<!ENTITY main.results.title             "Hakutulokset">
+
+<!-- Bookmarks Bar -->
+<!ENTITY main.bmkLabel                  "Kirjanmerkit:">
+<!ENTITY main.notesLabel                "Kirjanmerkin muistiinpanot:">
+<!ENTITY main.loadbmk                   "Tuo kirjanmerkkikokoelma">
+<!ENTITY main.newbmk                    "Luo uusi kirjanmerkkikokoelma">
+<!ENTITY main.mark                      "Merkitse tämä sivu">
+<!ENTITY main.unmark                    "Poista merkintä valituista">
+<!ENTITY main.reload                    "Lataa kirjanmerkkikokoelma uudelleen">
+<!ENTITY main.defaultset                "Oletuskokoelma">
+
+<!-- Contextual Menu -->
+<!ENTITY main.saveMediaAs               "Save media as...">
+<!ENTITY main.openLinkInNewTab          "Avaa linkki uudessa välilehdessä">
+<!ENTITY main.searchFor                 "Etsi">
+<!ENTITY main.copyLinkAdress            "Copy link address">
+<!ENTITY main.mute                      "Vaimenna">
+<!ENTITY main.audible                   "Poista vaimennus">
+
+<!-- About Window -->
+<!ENTITY main.close                     "Sulje">
+
+<!-- Preferences Window -->
+<!ENTITY preferences.preferences        "Asetukset">
+<!ENTITY preferences.save               "Tallenna">
+<!ENTITY preferences.cancel             "Peruuta">
+<!ENTITY preferences.profileDirectory   "Profiilihakemisto">
+<!ENTITY preferences.dataDirectory      "Data directory">
+<!ENTITY preferences.browse             "Selaa">
+<!ENTITY preferences.tabs               "Muista välilehdet">
+<!ENTITY preferences.downloadCatalogs   "Lataa etäkatalogi(t)">
+<!ENTITY preferences.neverAskToIndex    "Never ask to index">
+
+<!-- Server -->
+<!ENTITY server.load                    "Lataa">
+<!ENTITY server.start                   "Aloita">
+<!ENTITY server.stop                    "Pysäytä">
+<!ENTITY server.close                   "Sulje">
+
+<!-- Library -->
+<!ENTITY main.library.myLibrary                 "Oma kirjasto">
+<!ENTITY main.library.getNewFiles               "Hae uudet tiedostot">
+<!ENTITY main.library.searchZimFiles            "Etsi ZIM-tiedostoja">
+<!ENTITY main.library.sortBy                    "Lajitteluperuste">
+<!ENTITY main.library.sortBy.title              "Otsikko">
+<!ENTITY main.library.sortBy.size               "Koko">
+<!ENTITY main.library.sortBy.date               "Päivämäärä">
+<!ENTITY main.library.sortBy.author             "Tekijä">
+<!ENTITY main.library.sortBy.publisher          "Julkaisija">
+<!ENTITY main.library.filterBy                  "Suodatusperuste">
+<!ENTITY main.library.filterBy.fileSize         "Tiedoston koko">
+<!ENTITY main.library.filterBy.language         "Kieli">
+<!ENTITY main.library.filterBy.language.all     "Kaikki">
+<!ENTITY main.library.filterBy.author           "Tekijä">
+<!ENTITY main.library.filterBy.author.all       "Kaikki">
+<!ENTITY main.library.filterBy.publisher        "Julkaisija">
+<!ENTITY main.library.filterBy.publisher.all    "Kaikki">
+<!ENTITY main.library.filterBy.lessThan         "Vähemmän kuin">
+

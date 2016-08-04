@@ -1,0 +1,162 @@
+<!-- Window -->
+<!ENTITY main.title                     "&brand.brandShortName;">
+<!ENTITY main.cssdirection              "ltr">
+
+<!-- Mac menu -->
+<!ENTITY main.osxservices               "Usluge">
+<!ENTITY main.osxhideapp                "Sakrij &brand.brandShortName;">
+<!ENTITY main.osxhideothers             "Sakrij druge">
+<!ENTITY main.osxshowall                "Prikaži sve">
+
+<!-- File menu -->
+<!ENTITY main.file                      "Datoteka">
+<!ENTITY main.file.accesskey            "F">
+<!ENTITY main.openFile                  "Otvori datoteku…">
+<!ENTITY main.browseLibrary.accesskey   "B">
+<!ENTITY main.browseLibrary             "Pregledaj biblioteku">
+<!ENTITY main.hideLibrary               "Sakrij biblioteku">
+<!ENTITY main.openFile.accesskey        "O">
+<!ENTITY main.lastOpen                  "Nedavno otvoreno…">
+<!ENTITY main.saveFile                  "Sačuvaj stranicu kao…">
+<!ENTITY main.saveFile.accesskey        "S">
+<!ENTITY main.print                     "Štampaj">
+<!ENTITY main.print.accesskey           "P">
+<!ENTITY main.printPdf                  "Štampaj kao PDF">
+<!ENTITY main.printPdf.accesskey        "D">
+<!ENTITY main.quit                      "Izađi">
+<!ENTITY main.quit.accesskey            "Q">
+
+<!-- Edit menu -->
+<!ENTITY main.edit                      "Uredi">
+<!ENTITY main.edit.accesskey            "E">
+<!ENTITY main.find                      "Pretraži stranicu…">
+<!ENTITY main.find.accesskey            "S">
+<!ENTITY main.selectall                 "Izaberi sve">
+<!ENTITY main.selectall.accesskey       "a">
+<!ENTITY main.copy                      "Umnoži">
+<!ENTITY main.copy.accesskey            "p">
+<!ENTITY main.transliteration           "Preslovljavanje">
+<!ENTITY main.transliteration.accesskey "T">
+<!ENTITY main.preferences               "Podešavanja">
+<!ENTITY main.preferences.accesskey     "n">
+<!ENTITY main.server                    "Server">
+<!ENTITY main.server.accesskey          "s">
+
+<!-- Display menu -->
+<!ENTITY main.display                   "Prikaz">
+<!ENTITY main.display.accesskey         "D">
+<!ENTITY main.zoom                      "Uvećanje">
+<!ENTITY main.zoom.accesskey            "Z">
+<!ENTITY main.zoomin                    "Uvećaj">
+<!ENTITY main.zoomin.accesskey          "M">
+<!ENTITY main.zoomout                   "Umanji">
+<!ENTITY main.zoomout.accesskey         "R">
+<!ENTITY main.zoomorig                  "Izvorna veličina">
+<!ENTITY main.zoomorig.accesskey        "O">
+<!ENTITY main.language                  "Jezik">
+<!ENTITY main.language.accesskey        "L">
+<!ENTITY main.skin                      "Tema">
+<!ENTITY main.skin.accesskey            "S">
+<!ENTITY main.statusbar                 "Traka stanja">
+<!ENTITY main.statusbar.accesskey       "S">
+<!ENTITY main.resultsbar                "Traka s rezultatima">
+<!ENTITY main.resultsbar.accesskey      "R">
+<!ENTITY main.tabs                      "Jezičci">
+<!ENTITY main.tabs.accesskey            "T">
+<!ENTITY main.fullscreen                "Ceo ekran">
+<!ENTITY main.fullscreen.accesskey      "F">
+<!ENTITY main.invertedColors            "Obrnute boje">
+<!ENTITY main.invertedColors.accesskey  "I">
+
+<!-- Tools menu -->
+<!ENTITY main.tools                     "Alatke">
+<!ENTITY main.tools.accesskey           "T">
+<!ENTITY main.randomArticle             "Slučajan članak">
+<!ENTITY main.randomArticle.accesskey   "R">
+<!ENTITY main.checkIntegrity            "Provera ispravnosti">
+<!ENTITY main.checkIntegrity.accesskey  "k">
+<!ENTITY main.launchIndexing            "Launch indexing">
+<!ENTITY main.purgeHistory              "Očisti istoriju">
+<!ENTITY main.purgeHistory.accesskey    "P">
+
+<!-- Help menu -->
+<!ENTITY main.help                      "Pomoć">
+<!ENTITY main.help.accesskey            "H">
+<!ENTITY main.feedback                  "Povratna informacija">
+<!ENTITY main.reportabug                "Prijavi grešku">
+<!ENTITY main.requestafeature           "Zatraži mogućnost">
+<!ENTITY main.about                     "O &brand.brandShortName;">
+<!ENTITY main.about.accesskey           "A">
+
+<!-- Tool bar -->
+<!ENTITY main.back                      "Nazad">
+<!ENTITY main.forward                   "Napred">
+<!ENTITY main.home                      "Početna">
+<!ENTITY main.searchBar                 "Traka za pretragu">
+<!ENTITY main.search                    "Pretraži">
+<!ENTITY main.searchPlaceholder         "Ovde unesite tekst za pretraživanje…">
+<!ENTITY main.findInText                "Pronađi u tekstu">
+<!ENTITY main.noSearchBar               "Pretraga zahteva popisanu ZIP datoteku">
+<!ENTITY main.bookmarks                 "Zabeleške">
+
+<!-- Results bar -->
+<!ENTITY main.results.title             "Rezultati pretrage">
+
+<!-- Bookmarks Bar -->
+<!ENTITY main.bmkLabel                  "Zabeleške:">
+<!ENTITY main.notesLabel                "Napomene o zabeleškama:">
+<!ENTITY main.loadbmk                   "Uvezi skup zabeleški">
+<!ENTITY main.newbmk                    "Napravi novi skup zabeleški">
+<!ENTITY main.mark                      "Označi ovu stranicu">
+<!ENTITY main.unmark                    "Poništi izabrano">
+<!ENTITY main.reload                    "Osveži skup zabeleški">
+<!ENTITY main.defaultset                "Podrazumevani skup">
+
+<!-- Contextual Menu -->
+<!ENTITY main.saveMediaAs               "Save media as...">
+<!ENTITY main.openLinkInNewTab          "Otvori vezu u novom jezičku">
+<!ENTITY main.searchFor                 "Traži">
+<!ENTITY main.copyLinkAdress            "Copy link address">
+<!ENTITY main.mute                      "Isključi zvuk">
+<!ENTITY main.audible                   "Zvučno">
+
+<!-- About Window -->
+<!ENTITY main.close                     "Zatvori">
+
+<!-- Preferences Window -->
+<!ENTITY preferences.preferences        "Postavke">
+<!ENTITY preferences.save               "Sačuvaj">
+<!ENTITY preferences.cancel             "Otkaži">
+<!ENTITY preferences.profileDirectory   "Fascikla za profile">
+<!ENTITY preferences.dataDirectory      "Data directory">
+<!ENTITY preferences.browse             "Potraži">
+<!ENTITY preferences.tabs               "Zapamti jezičke">
+<!ENTITY preferences.downloadCatalogs   "Preuzmi udaljene kataloge">
+<!ENTITY preferences.neverAskToIndex    "Never ask to index">
+
+<!-- Server -->
+<!ENTITY server.load                    "Učitaj">
+<!ENTITY server.start                   "Započni">
+<!ENTITY server.stop                    "Zaustavi">
+<!ENTITY server.close                   "Zatvori">
+
+<!-- Library -->
+<!ENTITY main.library.myLibrary                 "Moja biblioteka">
+<!ENTITY main.library.getNewFiles               "Preuzmite nove datoteke">
+<!ENTITY main.library.searchZimFiles            "Pretraga datoteka ZIM">
+<!ENTITY main.library.sortBy                    "Poređaj po:">
+<!ENTITY main.library.sortBy.title              "naslovu">
+<!ENTITY main.library.sortBy.size               "veličini">
+<!ENTITY main.library.sortBy.date               "datumu">
+<!ENTITY main.library.sortBy.author             "autoru">
+<!ENTITY main.library.sortBy.publisher          "izdavaču">
+<!ENTITY main.library.filterBy                  "Filtriraj po">
+<!ENTITY main.library.filterBy.fileSize         "veličini datoteke">
+<!ENTITY main.library.filterBy.language         "jeziku">
+<!ENTITY main.library.filterBy.language.all     "svim jezicima">
+<!ENTITY main.library.filterBy.author           "autoru">
+<!ENTITY main.library.filterBy.author.all       "svim autorima">
+<!ENTITY main.library.filterBy.publisher        "izdavaču">
+<!ENTITY main.library.filterBy.publisher.all    "svim izdavačima">
+<!ENTITY main.library.filterBy.lessThan         "Manje od">
+

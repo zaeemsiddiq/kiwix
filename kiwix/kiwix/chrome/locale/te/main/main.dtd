@@ -1,0 +1,162 @@
+<!-- Window -->
+<!ENTITY main.title                     "&brand.brandShortName;">
+<!ENTITY main.cssdirection              "ltr">
+
+<!-- Mac menu -->
+<!ENTITY main.osxservices               "సేవలు">
+<!ENTITY main.osxhideapp                "&brand.brandShortName;ను దాచు">
+<!ENTITY main.osxhideothers             "ఇతరాలను దాచు">
+<!ENTITY main.osxshowall                "అన్నిటినీ చూపించు">
+
+<!-- File menu -->
+<!ENTITY main.file                      "దస్త్రం">
+<!ENTITY main.file.accesskey            "F">
+<!ENTITY main.openFile                  "దస్త్రాన్ని తెరువు...">
+<!ENTITY main.browseLibrary.accesskey   "B">
+<!ENTITY main.browseLibrary             "గ్రంథాలయాన్ని చూడు">
+<!ENTITY main.hideLibrary               "గ్రంథాలయాన్ని దాచు">
+<!ENTITY main.openFile.accesskey        "O">
+<!ENTITY main.lastOpen                  "ఇటీవల తెరిచినవి...">
+<!ENTITY main.saveFile                  "పేజీను ఇలా భద్రపరుచు...">
+<!ENTITY main.saveFile.accesskey        "S">
+<!ENTITY main.print                     "ముద్రించు">
+<!ENTITY main.print.accesskey           "P">
+<!ENTITY main.printPdf                  "PDF గా ప్రచురించు">
+<!ENTITY main.printPdf.accesskey        "D">
+<!ENTITY main.quit                      "నిలిపివేయి">
+<!ENTITY main.quit.accesskey            "Q">
+
+<!-- Edit menu -->
+<!ENTITY main.edit                      "సవరించు">
+<!ENTITY main.edit.accesskey            "E">
+<!ENTITY main.find                      "పుటలో వెతుకు...">
+<!ENTITY main.find.accesskey            "S">
+<!ENTITY main.selectall                 "అన్నీ ఎంచుకో">
+<!ENTITY main.selectall.accesskey       "a">
+<!ENTITY main.copy                      "నకలు తీయి">
+<!ENTITY main.copy.accesskey            "p">
+<!ENTITY main.transliteration           "లిప్యంతరీకరణ">
+<!ENTITY main.transliteration.accesskey "T">
+<!ENTITY main.preferences               "అభిరుచులు">
+<!ENTITY main.preferences.accesskey     "n">
+<!ENTITY main.server                    "సేవిక">
+<!ENTITY main.server.accesskey          "s">
+
+<!-- Display menu -->
+<!ENTITY main.display                   "వీక్షణం">
+<!ENTITY main.display.accesskey         "D">
+<!ENTITY main.zoom                      "అతిరూపణం">
+<!ENTITY main.zoom.accesskey            "Z">
+<!ENTITY main.zoomin                    "పెద్దదిగాచూపు">
+<!ENTITY main.zoomin.accesskey          "M">
+<!ENTITY main.zoomout                   "పరిమాణం తగ్గించు">
+<!ENTITY main.zoomout.accesskey         "R">
+<!ENTITY main.zoomorig                  "అసలు పరిమాణం">
+<!ENTITY main.zoomorig.accesskey        "O">
+<!ENTITY main.language                  "భాష">
+<!ENTITY main.language.accesskey        "L">
+<!ENTITY main.skin                      "అలంకారం">
+<!ENTITY main.skin.accesskey            "S">
+<!ENTITY main.statusbar                 "స్థితి పట్టీ">
+<!ENTITY main.statusbar.accesskey       "S">
+<!ENTITY main.resultsbar                "ఫలితాల పట్టీ">
+<!ENTITY main.resultsbar.accesskey      "R">
+<!ENTITY main.tabs                      "ట్యాబులు">
+<!ENTITY main.tabs.accesskey            "T">
+<!ENTITY main.fullscreen                "నిండుతెర">
+<!ENTITY main.fullscreen.accesskey      "F">
+<!ENTITY main.invertedColors            "విలోమం చేయబడిన రంగులు">
+<!ENTITY main.invertedColors.accesskey  "I">
+
+<!-- Tools menu -->
+<!ENTITY main.tools                     "పనిముట్లు">
+<!ENTITY main.tools.accesskey           "T">
+<!ENTITY main.randomArticle             "యాదృచ్ఛిక వ్యాసం">
+<!ENTITY main.randomArticle.accesskey   "R">
+<!ENTITY main.checkIntegrity            "సమగ్రతా పరీక్ష">
+<!ENTITY main.checkIntegrity.accesskey  "k">
+<!ENTITY main.launchIndexing            "క్రమబద్ధీకరణ ప్రారంభించు">
+<!ENTITY main.purgeHistory              "చరిత్రను తుడిచివేయి">
+<!ENTITY main.purgeHistory.accesskey    "P">
+
+<!-- Help menu -->
+<!ENTITY main.help                      "సహాయం">
+<!ENTITY main.help.accesskey            "H">
+<!ENTITY main.feedback                  "ప్రతిస్పందన">
+<!ENTITY main.reportabug                "దోషాలను నివేదించండి">
+<!ENTITY main.requestafeature           "కొత్త సౌలభ్యాలన్ని కోరండి">
+<!ENTITY main.about                     "&brand.brandShortName; గురించి">
+<!ENTITY main.about.accesskey           "A">
+
+<!-- Tool bar -->
+<!ENTITY main.back                      "వెనుకకు">
+<!ENTITY main.forward                   "ముందుకు">
+<!ENTITY main.home                      "ముంగిలి">
+<!ENTITY main.searchBar                 "అన్వేషణ పట్టీ">
+<!ENTITY main.search                    "వెతుకు">
+<!ENTITY main.searchPlaceholder         "వెతుకుటకు పాఠ్యాన్ని ఇక్కడ టైపుచేయు...">
+<!ENTITY main.findInText                "పాఠ్యంలో వెతుకు">
+<!ENTITY main.noSearchBar               "వెతుకుటకు క్రమబద్ధీకరించిన జిమ్(indexed ZIM) ఫైల్ అవసరము">
+<!ENTITY main.bookmarks                 "మడతపేజీలు">
+
+<!-- Results bar -->
+<!ENTITY main.results.title             "అన్వేషణ ఫలితాలు">
+
+<!-- Bookmarks Bar -->
+<!ENTITY main.bmkLabel                  "మడతపేజీలు:">
+<!ENTITY main.notesLabel                "మడతపేజీ వ్రాతలు:">
+<!ENTITY main.loadbmk                   "ఇష్టాంశాలసెట్ ను దిగుమతి చెయ్యి">
+<!ENTITY main.newbmk                    "కొత్త మడతపేజీల సమితి సృష్టించు">
+<!ENTITY main.mark                      "ఈ పుటను గుర్తించు">
+<!ENTITY main.unmark                    "ఎంపికచేసినవాటినితొలగించు">
+<!ENTITY main.reload                    "ఇష్టాంశాల సెట్ మరల ఎక్కించు">
+<!ENTITY main.defaultset                "అప్రమేయ సెట్">
+
+<!-- Contextual Menu -->
+<!ENTITY main.saveMediaAs               "మీడియాని ఇలా భద్రపరచండి...">
+<!ENTITY main.openLinkInNewTab          "లంకెను కొత్త ట్యాబులో తెరువు">
+<!ENTITY main.searchFor                 "దీనికై వెతుకు">
+<!ENTITY main.copyLinkAdress            "Copy link address">
+<!ENTITY main.mute                      "ధ్వని నిలిపివేయి">
+<!ENTITY main.audible                   "వినిపించునట్లుచేయు">
+
+<!-- About Window -->
+<!ENTITY main.close                     "మూసివేయి">
+
+<!-- Preferences Window -->
+<!ENTITY preferences.preferences        "అభిరుచులు">
+<!ENTITY preferences.save               "భద్రపరచు">
+<!ENTITY preferences.cancel             "రద్దుచేయి">
+<!ENTITY preferences.profileDirectory   "ప్రవర సంచయం">
+<!ENTITY preferences.dataDirectory      "Data directory">
+<!ENTITY preferences.browse             "విహరణ">
+<!ENTITY preferences.tabs               "ట్యాబులను గుర్తుంచుకో">
+<!ENTITY preferences.downloadCatalogs   "సుదూర కేటాలాగ్(లు) ను దించు">
+<!ENTITY preferences.neverAskToIndex    "క్రమబద్ధీకరణ గురించి ఎప్పటికీ అడగవద్దు">
+
+<!-- Server -->
+<!ENTITY server.load                    "లోడుచెయ్యి">
+<!ENTITY server.start                   "మొదలుపెట్టు">
+<!ENTITY server.stop                    "నిలిపివేయి">
+<!ENTITY server.close                   "మూసివేయి">
+
+<!-- Library -->
+<!ENTITY main.library.myLibrary                 "నా గ్రంథాలయం">
+<!ENTITY main.library.getNewFiles               "కొత్త దస్త్రాలను పొందండి">
+<!ENTITY main.library.searchZimFiles            "జిమ్(ZIM)ఫైళ్లలో వెతుకు">
+<!ENTITY main.library.sortBy                    "ఈ క్రమంలో">
+<!ENTITY main.library.sortBy.title              "శీర్షిక">
+<!ENTITY main.library.sortBy.size               "పరిమాణం">
+<!ENTITY main.library.sortBy.date               "తేదీ">
+<!ENTITY main.library.sortBy.author             "రచయిత">
+<!ENTITY main.library.sortBy.publisher          "ప్రచురణకర్త">
+<!ENTITY main.library.filterBy                  "వడపోత">
+<!ENTITY main.library.filterBy.fileSize         "దస్త్రపు పరిమాణం">
+<!ENTITY main.library.filterBy.language         "భాష">
+<!ENTITY main.library.filterBy.language.all     "అన్నీ">
+<!ENTITY main.library.filterBy.author           "రచయిత">
+<!ENTITY main.library.filterBy.author.all       "అందరూ">
+<!ENTITY main.library.filterBy.publisher        "ప్రచురణకర్త">
+<!ENTITY main.library.filterBy.publisher.all    "అందరూ">
+<!ENTITY main.library.filterBy.lessThan         "కంటే తక్కువ">
+

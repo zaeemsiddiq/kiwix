@@ -1,0 +1,64 @@
+This is the procedure to build your own Kiwix/Moulinwiki DVD Windows
+installer. This installer is necessary to copy data and binary files
+from the DVD to the user HD easily and setup the application menu on
+the user system.
+
+"make-installer.rb" is a ruby script. This script is a wrapper over
+NSIS (Nullsoft Scriptable Install System). The output file is called
+'kiwix-setup.exe'.
+
+Please follow the steps in the given order.
+
+== Prepare ==
+
+* Download Ruby here: http://download.kiwix.org/dev/ruby186-26.exe and
+  install it in the default proposed directory: C:\ruby\
+
+* Download NSIS: http://download.kiwix.org/dev/nsis-2.46-setup.exe and
+  install it in the default proposed directory: C:\Program Files\NSIS\
+
+* Download the following file, unpack and run install.exe
+  http://download.kiwix.org/dev/nsis_locate.zip
+
+* Download the following file, unpack it and copy UAC.nsh into your
+  Include directory (e.g. C:\Program Files\NSIS\Include) and UAC.dll
+  from Release/A into your Plugins directory (e.g. C:\Program
+  Files\NSIS\Plugins).
+  http://download.kiwix.org/dev/nsis_uac.zip
+
+* Install this self-extracting MSYS package on your system in the
+  default proposed directory: C:\msys\1.0. A the end a console will be
+  launched. Please answer "y" two times. After that you need to give
+  the Qt SDK MinGW path: c:/Qt/2010.01/mingw. Enter "y" a last time
+  and the MSYS installation will be finished.
+
+== Compile ==
+
+* Start MSYS, an icon should be present on your desktop. Otherwise
+  start C:\msys\1.0\msys.bat
+
+* Go to your code directory in "moulinkiwix/installer/" like
+  following: cd /c/your_path_to_the_code/moulinkiwix/installer/
+
+* Add the ruby and NSIS bin directory to the path like following:
+  export PATH=$PATH:/c/ruby/bin:/c/Program\ Files/NSIS/
+
+* Now you can run the make-installer.rb script to build your
+  installer. For that you need to give the path of the directory which
+  has exactly the file hierarchy like the DVD. Do like following:
+  ruby.exe make-installer.rb --path=/c/your_dvd_path
+
+== Run ==
+
+* You have to install the kiwix-setup.exe installer in the /install/
+  directory on the DVD file hierarchy. This is really essential to
+  copy it there, because by running the installer, files will be
+  copied relatively to its (the installer) position in the DVD file
+  system.
+
+* To run the installer simply double click on the
+  "installer/kiwix-install.exe" binary and it should work.
+
+== More infos ==
+
+* http://www.kiwix.org/wiki/Build_a_DVD

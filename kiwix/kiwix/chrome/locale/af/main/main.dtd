@@ -1,0 +1,162 @@
+<!-- Window -->
+<!ENTITY main.title                     "&brand.brandShortName;">
+<!ENTITY main.cssdirection              "ltr">
+
+<!-- Mac menu -->
+<!ENTITY main.osxservices               "Dienste">
+<!ENTITY main.osxhideapp                "Versteek &brand.brandShortName;">
+<!ENTITY main.osxhideothers             "Versteek andere">
+<!ENTITY main.osxshowall                "Wys alles">
+
+<!-- File menu -->
+<!ENTITY main.file                      "Lêer">
+<!ENTITY main.file.accesskey            "F">
+<!ENTITY main.openFile                  "Maak lêer oop...">
+<!ENTITY main.browseLibrary.accesskey   "B">
+<!ENTITY main.browseLibrary             "Blaai deur biblioteek">
+<!ENTITY main.hideLibrary               "Verstek biblioteek">
+<!ENTITY main.openFile.accesskey        "O">
+<!ENTITY main.lastOpen                  "Onlangs geopen...">
+<!ENTITY main.saveFile                  "Stoor bladsy as...">
+<!ENTITY main.saveFile.accesskey        "S">
+<!ENTITY main.print                     "Druk">
+<!ENTITY main.print.accesskey           "P">
+<!ENTITY main.printPdf                  "Druk as PDF">
+<!ENTITY main.printPdf.accesskey        "D">
+<!ENTITY main.quit                      "Sluit">
+<!ENTITY main.quit.accesskey            "Q">
+
+<!-- Edit menu -->
+<!ENTITY main.edit                      "Wysig">
+<!ENTITY main.edit.accesskey            "E">
+<!ENTITY main.find                      "Soek in bladsy...">
+<!ENTITY main.find.accesskey            "S">
+<!ENTITY main.selectall                 "Kies almal">
+<!ENTITY main.selectall.accesskey       "a">
+<!ENTITY main.copy                      "Kopieer">
+<!ENTITY main.copy.accesskey            "p">
+<!ENTITY main.transliteration           "Transliterasie">
+<!ENTITY main.transliteration.accesskey "T">
+<!ENTITY main.preferences               "Voorkeure">
+<!ENTITY main.preferences.accesskey     "n">
+<!ENTITY main.server                    "Bediener">
+<!ENTITY main.server.accesskey          "s">
+
+<!-- Display menu -->
+<!ENTITY main.display                   "Wys">
+<!ENTITY main.display.accesskey         "D">
+<!ENTITY main.zoom                      "Zoom">
+<!ENTITY main.zoom.accesskey            "Z">
+<!ENTITY main.zoomin                    "Vergroot">
+<!ENTITY main.zoomin.accesskey          "M">
+<!ENTITY main.zoomout                   "Verklein">
+<!ENTITY main.zoomout.accesskey         "R">
+<!ENTITY main.zoomorig                  "Oorspronklike grootte">
+<!ENTITY main.zoomorig.accesskey        "O">
+<!ENTITY main.language                  "Taal">
+<!ENTITY main.language.accesskey        "L">
+<!ENTITY main.skin                      "Omslag">
+<!ENTITY main.skin.accesskey            "S">
+<!ENTITY main.statusbar                 "Statusbalk">
+<!ENTITY main.statusbar.accesskey       "S">
+<!ENTITY main.resultsbar                "Resultatebalk">
+<!ENTITY main.resultsbar.accesskey      "R">
+<!ENTITY main.tabs                      "Oortjies">
+<!ENTITY main.tabs.accesskey            "T">
+<!ENTITY main.fullscreen                "Volle skerm">
+<!ENTITY main.fullscreen.accesskey      "F">
+<!ENTITY main.invertedColors            "Omgekeerde kleure">
+<!ENTITY main.invertedColors.accesskey  "I">
+
+<!-- Tools menu -->
+<!ENTITY main.tools                     "Gereedskap">
+<!ENTITY main.tools.accesskey           "T">
+<!ENTITY main.randomArticle             "Lukrake artikel">
+<!ENTITY main.randomArticle.accesskey   "R">
+<!ENTITY main.checkIntegrity            "Integriteitskontrole">
+<!ENTITY main.checkIntegrity.accesskey  "k">
+<!ENTITY main.launchIndexing            "Begin indeksering">
+<!ENTITY main.purgeHistory              "Skrap geskiedenis">
+<!ENTITY main.purgeHistory.accesskey    "P">
+
+<!-- Help menu -->
+<!ENTITY main.help                      "Hulp">
+<!ENTITY main.help.accesskey            "H">
+<!ENTITY main.feedback                  "Terugvoer">
+<!ENTITY main.reportabug                "Rapporteer 'n fout">
+<!ENTITY main.requestafeature           "Vra vir nuwe funksionaliteit">
+<!ENTITY main.about                     "Oor &brand.brandShortName;">
+<!ENTITY main.about.accesskey           "A">
+
+<!-- Tool bar -->
+<!ENTITY main.back                      "Terug">
+<!ENTITY main.forward                   "Verder">
+<!ENTITY main.home                      "Tuisblad">
+<!ENTITY main.searchBar                 "Soekbalk">
+<!ENTITY main.search                    "Soek">
+<!ENTITY main.searchPlaceholder         "Tik waarna u soek hier in...">
+<!ENTITY main.findInText                "Soek in teks">
+<!ENTITY main.noSearchBar               "Soek vereis 'n geïndekseerde ZIM-lêer">
+<!ENTITY main.bookmarks                 "Boekmerke">
+
+<!-- Results bar -->
+<!ENTITY main.results.title             "Soekresultate">
+
+<!-- Bookmarks Bar -->
+<!ENTITY main.bmkLabel                  "Boekmerke:">
+<!ENTITY main.notesLabel                "Bookmerknotas:">
+<!ENTITY main.loadbmk                   "Laai stel boekmerke">
+<!ENTITY main.newbmk                    "Skep nuwe stel bookmerke">
+<!ENTITY main.mark                      "Merk hierdie bladsy">
+<!ENTITY main.unmark                    "Ontmerk gekose">
+<!ENTITY main.reload                    "Herlaai die stel boekmerke">
+<!ENTITY main.defaultset                "Standaardgroep">
+
+<!-- Contextual Menu -->
+<!ENTITY main.saveMediaAs               "Save media as...">
+<!ENTITY main.openLinkInNewTab          "Open skakel in nuwe oortjie">
+<!ENTITY main.searchFor                 "Soek na">
+<!ENTITY main.copyLinkAdress            "Copy link address">
+<!ENTITY main.mute                      "Demp klank">
+<!ENTITY main.audible                   "Skakel klank aan">
+
+<!-- About Window -->
+<!ENTITY main.close                     "Sluit">
+
+<!-- Preferences Window -->
+<!ENTITY preferences.preferences        "Voorkeure">
+<!ENTITY preferences.save               "Stoor">
+<!ENTITY preferences.cancel             "Kanselleer">
+<!ENTITY preferences.profileDirectory   "Profielgids">
+<!ENTITY preferences.dataDirectory      "Data directory">
+<!ENTITY preferences.browse             "Blaai">
+<!ENTITY preferences.tabs               "Onthou oortjies">
+<!ENTITY preferences.downloadCatalogs   "Laai katalogus(se) af">
+<!ENTITY preferences.neverAskToIndex    "Moet nooit vir indeksering vra nie">
+
+<!-- Server -->
+<!ENTITY server.load                    "Laai">
+<!ENTITY server.start                   "Begin">
+<!ENTITY server.stop                    "Stop">
+<!ENTITY server.close                   "Sluit">
+
+<!-- Library -->
+<!ENTITY main.library.myLibrary                 "My biblioteek">
+<!ENTITY main.library.getNewFiles               "Kry nuwe lêers">
+<!ENTITY main.library.searchZimFiles            "Soek ZIM-lêers">
+<!ENTITY main.library.sortBy                    "Sorteer volgens">
+<!ENTITY main.library.sortBy.title              "Titel">
+<!ENTITY main.library.sortBy.size               "Grootte">
+<!ENTITY main.library.sortBy.date               "Datum">
+<!ENTITY main.library.sortBy.author             "Outeur">
+<!ENTITY main.library.sortBy.publisher          "Uitgewer">
+<!ENTITY main.library.filterBy                  "Filtreer volgens">
+<!ENTITY main.library.filterBy.fileSize         "Lêergrootte">
+<!ENTITY main.library.filterBy.language         "Taal">
+<!ENTITY main.library.filterBy.language.all     "Alle">
+<!ENTITY main.library.filterBy.author           "Outeur">
+<!ENTITY main.library.filterBy.author.all       "Alle">
+<!ENTITY main.library.filterBy.publisher        "Uitgewer">
+<!ENTITY main.library.filterBy.publisher.all    "Alle">
+<!ENTITY main.library.filterBy.lessThan         "Minder as">
+

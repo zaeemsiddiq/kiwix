@@ -1,0 +1,162 @@
+<!-- Window -->
+<!ENTITY main.title                     "&brand.brandShortName;">
+<!ENTITY main.cssdirection              "rtl">
+
+<!-- Mac menu -->
+<!ENTITY main.osxservices               "چوپړونه">
+<!ENTITY main.osxhideapp                "سوداگريزې نخښې لنډ سوداگريز نوم پټول؛">
+<!ENTITY main.osxhideothers             "نور پټول">
+<!ENTITY main.osxshowall                "ټول ښکاره کول">
+
+<!-- File menu -->
+<!ENTITY main.file                      "دوتنه">
+<!ENTITY main.file.accesskey            "F">
+<!ENTITY main.openFile                  "دوتنه پرانيستل...">
+<!ENTITY main.browseLibrary.accesskey   "B">
+<!ENTITY main.browseLibrary             "کتابتون سپړل">
+<!ENTITY main.hideLibrary               "کتابتون پټول">
+<!ENTITY main.openFile.accesskey        "O">
+<!ENTITY main.lastOpen                  "وروستی پرانيستی...">
+<!ENTITY main.saveFile                  "مخ خوندي کول لکه...">
+<!ENTITY main.saveFile.accesskey        "S">
+<!ENTITY main.print                     "چاپول">
+<!ENTITY main.print.accesskey           "P">
+<!ENTITY main.printPdf                  "د پي ډي اېف په توگه چاپول">
+<!ENTITY main.printPdf.accesskey        "D">
+<!ENTITY main.quit                      "بندول">
+<!ENTITY main.quit.accesskey            "Q">
+
+<!-- Edit menu -->
+<!ENTITY main.edit                      "سمول">
+<!ENTITY main.edit.accesskey            "E">
+<!ENTITY main.find                      "په مخ کې پلټل...">
+<!ENTITY main.find.accesskey            "S">
+<!ENTITY main.selectall                 "ټول ټاکل">
+<!ENTITY main.selectall.accesskey       "a">
+<!ENTITY main.copy                      "لمېسل">
+<!ENTITY main.copy.accesskey            "p">
+<!ENTITY main.transliteration           "سپوڼ کښنه">
+<!ENTITY main.transliteration.accesskey "T">
+<!ENTITY main.preferences               "غوره توبونه">
+<!ENTITY main.preferences.accesskey     "n">
+<!ENTITY main.server                    "پالنگر">
+<!ENTITY main.server.accesskey          "s">
+
+<!-- Display menu -->
+<!ENTITY main.display                   "ښکارېدنه">
+<!ENTITY main.display.accesskey         "D">
+<!ENTITY main.zoom                      "لوډېرول">
+<!ENTITY main.zoom.accesskey            "Z">
+<!ENTITY main.zoomin                    "لويول">
+<!ENTITY main.zoomin.accesskey          "M">
+<!ENTITY main.zoomout                   "وړوکی کول">
+<!ENTITY main.zoomout.accesskey         "R">
+<!ENTITY main.zoomorig                  "آر کچه">
+<!ENTITY main.zoomorig.accesskey        "O">
+<!ENTITY main.language                  "ژبه">
+<!ENTITY main.language.accesskey        "L">
+<!ENTITY main.skin                      "پوښۍ">
+<!ENTITY main.skin.accesskey            "S">
+<!ENTITY main.statusbar                 "دريځ پټه">
+<!ENTITY main.statusbar.accesskey       "S">
+<!ENTITY main.resultsbar                "د پايلو پټه">
+<!ENTITY main.resultsbar.accesskey      "R">
+<!ENTITY main.tabs                      "پاڼې">
+<!ENTITY main.tabs.accesskey            "T">
+<!ENTITY main.fullscreen                "ډکه پرده">
+<!ENTITY main.fullscreen.accesskey      "F">
+<!ENTITY main.invertedColors            "نسکور شوي رنگونه">
+<!ENTITY main.invertedColors.accesskey  "I">
+
+<!-- Tools menu -->
+<!ENTITY main.tools                     "اوزارونه">
+<!ENTITY main.tools.accesskey           "T">
+<!ENTITY main.randomArticle             "ناټاکلې ليکنه">
+<!ENTITY main.randomArticle.accesskey   "R">
+<!ENTITY main.checkIntegrity            "د ټينگښت بياکتنه">
+<!ENTITY main.checkIntegrity.accesskey  "k">
+<!ENTITY main.launchIndexing            "ليکلړ جوړېدنه پيلول">
+<!ENTITY main.purgeHistory              "پېښليک سپينول">
+<!ENTITY main.purgeHistory.accesskey    "P">
+
+<!-- Help menu -->
+<!ENTITY main.help                      "لارښود">
+<!ENTITY main.help.accesskey            "H">
+<!ENTITY main.feedback                  "غبرگون">
+<!ENTITY main.reportabug                "د تېروتنې راپور ورکول">
+<!ENTITY main.requestafeature           "د يوې ځانگړنې غوښتنه">
+<!ENTITY main.about                     "د سوداگريزې نخښې لنډ سوداگريز نوم په اړه؛">
+<!ENTITY main.about.accesskey           "A">
+
+<!-- Tool bar -->
+<!ENTITY main.back                      "پر شا">
+<!ENTITY main.forward                   "پر مخ">
+<!ENTITY main.home                      "کور">
+<!ENTITY main.searchBar                 "د پلټلو پټه">
+<!ENTITY main.search                    "پلټل">
+<!ENTITY main.searchPlaceholder         "د پلټلو لپاره مو متن دلته وټاپئ ...">
+<!ENTITY main.findInText                "په متن کې موندل">
+<!ENTITY main.noSearchBar               "پلټنه د يوې ZIM دوتنې ليکلړ شوې بڼې ته اړتيا لري">
+<!ENTITY main.bookmarks                 "کتاب نخښې">
+
+<!-- Results bar -->
+<!ENTITY main.results.title             "د پلټنې پايلې">
+
+<!-- Bookmarks Bar -->
+<!ENTITY main.bmkLabel                  "کتاب نخښې:">
+<!ENTITY main.notesLabel                "د کتابنښې يادښتونه:">
+<!ENTITY main.loadbmk                   "د کتابنښو ټولگه واردول">
+<!ENTITY main.newbmk                    "د کتابنښو نوی جونگ جوړول">
+<!ENTITY main.mark                      "دا مخ په نخښه کول">
+<!ENTITY main.unmark                    "ټاکلي بې نخښې کول">
+<!ENTITY main.reload                    "د کتابنښو ټولگه بيابرسېرول">
+<!ENTITY main.defaultset                "تلواليزې امستنې">
+
+<!-- Contextual Menu -->
+<!ENTITY main.saveMediaAs               "رسنۍ ساتل لکه...">
+<!ENTITY main.openLinkInNewTab          "تړنه په نوې کړکۍ کې پرانيستل">
+<!ENTITY main.searchFor                 "پلټل">
+<!ENTITY main.copyLinkAdress            "Copy link address">
+<!ENTITY main.mute                      "ټپول">
+<!ENTITY main.audible                   "اورېدون وړ">
+
+<!-- About Window -->
+<!ENTITY main.close                     "تړل">
+
+<!-- Preferences Window -->
+<!ENTITY preferences.preferences        "غوره توبونه">
+<!ENTITY preferences.save               "خوندي کول">
+<!ENTITY preferences.cancel             "ناگارل">
+<!ENTITY preferences.profileDirectory   "پېژنيال لارښودټولگه">
+<!ENTITY preferences.dataDirectory      "Data directory">
+<!ENTITY preferences.browse             "سپړل">
+<!ENTITY preferences.tabs               "پاڼې په ياد ساتل">
+<!ENTITY preferences.downloadCatalogs   "ليري کتلاک (کتلاکونه) ښکته کول">
+<!ENTITY preferences.neverAskToIndex    "هېڅکله د ليکلړ جوړولو مه پوښته">
+
+<!-- Server -->
+<!ENTITY server.load                    "برسېرول">
+<!ENTITY server.start                   "پيلول">
+<!ENTITY server.stop                    "درول">
+<!ENTITY server.close                   "تړل">
+
+<!-- Library -->
+<!ENTITY main.library.myLibrary                 "زما کتابتون">
+<!ENTITY main.library.getNewFiles               "نوې دوتنې ترلاسه کول">
+<!ENTITY main.library.searchZimFiles            "ZIM دوتنې پلټل">
+<!ENTITY main.library.sortBy                    "اوډنه له مخې د">
+<!ENTITY main.library.sortBy.title              "سرليک">
+<!ENTITY main.library.sortBy.size               "کچه">
+<!ENTITY main.library.sortBy.date               "نېټه">
+<!ENTITY main.library.sortBy.author             "ليکوال">
+<!ENTITY main.library.sortBy.publisher          "خپروونکی">
+<!ENTITY main.library.filterBy                  "چاڼ له مخې د">
+<!ENTITY main.library.filterBy.fileSize         "د دوتنې کچه">
+<!ENTITY main.library.filterBy.language         "ژبه">
+<!ENTITY main.library.filterBy.language.all     "ټول">
+<!ENTITY main.library.filterBy.author           "ليکوال">
+<!ENTITY main.library.filterBy.author.all       "ټول">
+<!ENTITY main.library.filterBy.publisher        "خپروونکی">
+<!ENTITY main.library.filterBy.publisher.all    "ټول">
+<!ENTITY main.library.filterBy.lessThan         "لږ له">
+

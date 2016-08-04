@@ -1,0 +1,162 @@
+<!-- Window -->
+<!ENTITY main.title                     "&brand.brandShortName;">
+<!ENTITY main.cssdirection              "ltr">
+
+<!-- Mac menu -->
+<!ENTITY main.osxservices               "Servicis">
+<!ENTITY main.osxhideapp                "Amagar &brand.brandShortName;">
+<!ENTITY main.osxhideothers             "Amagar los autres">
+<!ENTITY main.osxshowall                "Afichar tot">
+
+<!-- File menu -->
+<!ENTITY main.file                      "Fichièr">
+<!ENTITY main.file.accesskey            "F">
+<!ENTITY main.openFile                  "Dobrir un fichièr...">
+<!ENTITY main.browseLibrary.accesskey   "B">
+<!ENTITY main.browseLibrary             "Percórrer la bibliotèca">
+<!ENTITY main.hideLibrary               "Amagar la bibliotèca">
+<!ENTITY main.openFile.accesskey        "O">
+<!ENTITY main.lastOpen                  "Fichièrs recents...">
+<!ENTITY main.saveFile                  "Enregistrar coma...">
+<!ENTITY main.saveFile.accesskey        "S">
+<!ENTITY main.print                     "Imprimir">
+<!ENTITY main.print.accesskey           "P">
+<!ENTITY main.printPdf                  "Crear un PDF">
+<!ENTITY main.printPdf.accesskey        "D">
+<!ENTITY main.quit                      "Sortir">
+<!ENTITY main.quit.accesskey            "Q">
+
+<!-- Edit menu -->
+<!ENTITY main.edit                      "Modificar">
+<!ENTITY main.edit.accesskey            "E">
+<!ENTITY main.find                      "Cercar per la pagina...">
+<!ENTITY main.find.accesskey            "S">
+<!ENTITY main.selectall                 "O seleccionar tot">
+<!ENTITY main.selectall.accesskey       "a">
+<!ENTITY main.copy                      "Copiar">
+<!ENTITY main.copy.accesskey            "p">
+<!ENTITY main.transliteration           "Transliteracion">
+<!ENTITY main.transliteration.accesskey "T">
+<!ENTITY main.preferences               "Opcions">
+<!ENTITY main.preferences.accesskey     "n">
+<!ENTITY main.server                    "Servidor">
+<!ENTITY main.server.accesskey          "s">
+
+<!-- Display menu -->
+<!ENTITY main.display                   "Afichar">
+<!ENTITY main.display.accesskey         "D">
+<!ENTITY main.zoom                      "Zom">
+<!ENTITY main.zoom.accesskey            "Z">
+<!ENTITY main.zoomin                    "Agrandir">
+<!ENTITY main.zoomin.accesskey          "M">
+<!ENTITY main.zoomout                   "Redusir">
+<!ENTITY main.zoomout.accesskey         "R">
+<!ENTITY main.zoomorig                  "Talha d'origina">
+<!ENTITY main.zoomorig.accesskey        "O">
+<!ENTITY main.language                  "Lenga">
+<!ENTITY main.language.accesskey        "L">
+<!ENTITY main.skin                      "Aparéncia">
+<!ENTITY main.skin.accesskey            "S">
+<!ENTITY main.statusbar                 "Barra d'estat">
+<!ENTITY main.statusbar.accesskey       "S">
+<!ENTITY main.resultsbar                "Barra de resultas">
+<!ENTITY main.resultsbar.accesskey      "R">
+<!ENTITY main.tabs                      "Onglets">
+<!ENTITY main.tabs.accesskey            "T">
+<!ENTITY main.fullscreen                "Plen ecran">
+<!ENTITY main.fullscreen.accesskey      "F">
+<!ENTITY main.invertedColors            "Colors inversadas">
+<!ENTITY main.invertedColors.accesskey  "I">
+
+<!-- Tools menu -->
+<!ENTITY main.tools                     "Aisinas">
+<!ENTITY main.tools.accesskey           "T">
+<!ENTITY main.randomArticle             "Article per escasença">
+<!ENTITY main.randomArticle.accesskey   "R">
+<!ENTITY main.checkIntegrity            "Verificacion d'integritat">
+<!ENTITY main.checkIntegrity.accesskey  "k">
+<!ENTITY main.launchIndexing            "Aviar l'indexacion">
+<!ENTITY main.purgeHistory              "Voidar l'istoric">
+<!ENTITY main.purgeHistory.accesskey    "P">
+
+<!-- Help menu -->
+<!ENTITY main.help                      "Ajuda">
+<!ENTITY main.help.accesskey            "H">
+<!ENTITY main.feedback                  "Vejaire">
+<!ENTITY main.reportabug                "Senhalar una error">
+<!ENTITY main.requestafeature           "Demandar una melhora">
+<!ENTITY main.about                     "&brand.brandShortName;, qu'es aquò?">
+<!ENTITY main.about.accesskey           "A">
+
+<!-- Tool bar -->
+<!ENTITY main.back                      "Enrè">
+<!ENTITY main.forward                   "Endavant">
+<!ENTITY main.home                      "Acuèlh">
+<!ENTITY main.searchBar                 "Barra de cèrca">
+<!ENTITY main.search                    "Cèrca">
+<!ENTITY main.searchPlaceholder         "Entrar lo tèxte de recercar aicí...">
+<!ENTITY main.findInText                "Trobar dins lo tèxte">
+<!ENTITY main.noSearchBar               "Per cercar cal un fichièr ZIM indexat">
+<!ENTITY main.bookmarks                 "Onglets">
+
+<!-- Results bar -->
+<!ENTITY main.results.title             "Resulta de la cèrca">
+
+<!-- Bookmarks Bar -->
+<!ENTITY main.bmkLabel                  "Onglets:">
+<!ENTITY main.notesLabel                "Nòtas dels onglets:">
+<!ENTITY main.loadbmk                   "Importar d'onglets">
+<!ENTITY main.newbmk                    "Crear un ensems d'onglets">
+<!ENTITY main.mark                      "Marcar aquela pagina">
+<!ENTITY main.unmark                    "Desmarcar la seleccion">
+<!ENTITY main.reload                    "Recargar lo juòc de marcapaginas">
+<!ENTITY main.defaultset                "Ensems per manca">
+
+<!-- Contextual Menu -->
+<!ENTITY main.saveMediaAs               "Enregistrar lo mèdia jos…">
+<!ENTITY main.openLinkInNewTab          "Dobrir lo ligam dins un onglet novèl">
+<!ENTITY main.searchFor                 "Recercar">
+<!ENTITY main.copyLinkAdress            "Copy link address">
+<!ENTITY main.mute                      "Mut">
+<!ENTITY main.audible                   "Ausible">
+
+<!-- About Window -->
+<!ENTITY main.close                     "Barrar">
+
+<!-- Preferences Window -->
+<!ENTITY preferences.preferences        "Opcions">
+<!ENTITY preferences.save               "Enregistrar">
+<!ENTITY preferences.cancel             "Anullar">
+<!ENTITY preferences.profileDirectory   "Repertòri del profil">
+<!ENTITY preferences.dataDirectory      "Data directory">
+<!ENTITY preferences.browse             "Legir">
+<!ENTITY preferences.tabs               "Se remembrar dels onglets dobèrts en quitant Kiwix">
+<!ENTITY preferences.downloadCatalogs   "Telecargar lo(s) catalòg(s) distant(s)">
+<!ENTITY preferences.neverAskToIndex    "Demandar pas jamai d'indexar">
+
+<!-- Server -->
+<!ENTITY server.load                    "Cargar">
+<!ENTITY server.start                   "Començament">
+<!ENTITY server.stop                    "Arrèst">
+<!ENTITY server.close                   "Tampar">
+
+<!-- Library -->
+<!ENTITY main.library.myLibrary                 "Ma bibliotèca">
+<!ENTITY main.library.getNewFiles               "Obténer de fichièrs novèls">
+<!ENTITY main.library.searchZimFiles            "Recercar de fichièrs ZIM">
+<!ENTITY main.library.sortBy                    "Triar per">
+<!ENTITY main.library.sortBy.title              "Títol">
+<!ENTITY main.library.sortBy.size               "Talha">
+<!ENTITY main.library.sortBy.date               "Data">
+<!ENTITY main.library.sortBy.author             "Autor">
+<!ENTITY main.library.sortBy.publisher          "Editor">
+<!ENTITY main.library.filterBy                  "Filtrar per">
+<!ENTITY main.library.filterBy.fileSize         "Talha del fichièr">
+<!ENTITY main.library.filterBy.language         "Lenga">
+<!ENTITY main.library.filterBy.language.all     "Totas">
+<!ENTITY main.library.filterBy.author           "Autor">
+<!ENTITY main.library.filterBy.author.all       "Totes">
+<!ENTITY main.library.filterBy.publisher        "Editor">
+<!ENTITY main.library.filterBy.publisher.all    "Totes">
+<!ENTITY main.library.filterBy.lessThan         "Mens que">
+

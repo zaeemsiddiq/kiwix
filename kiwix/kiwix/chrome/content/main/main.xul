@@ -1,0 +1,448 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+<?xml-stylesheet href="resource://defaultskin/main.css" type="text/css"?>
+<?xml-stylesheet href="chrome://main/skin/main.css" type="text/css"?>
+
+<!DOCTYPE window [
+<!ENTITY % mainDTD SYSTEM "chrome://main/locale/main.dtd">
+<!ENTITY % brandDTD SYSTEM "chrome://branding/locale/brand.dtd">
+%mainDTD;
+%brandDTD;
+]>
+<window	xmlns:html="http://www.w3.org/1999/xhtml" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+	id        = "main"
+	onload    = "onStart()"
+	onunload  = "onQuit()"
+	titlemodifier = "&main.title;"
+	style = "direction: &main.cssdirection;"
+	langdir = "&main.cssdirection;"
+	windowtype = "singleton"
+	ondragenter="return startDragOnWindows(event)"
+	ondragover="return startDragOnWindows(event)"
+	ondrop="return dropOnWindows(event)"
+	>
+<!-- Menu bar -->
+<menubar id="menu-bar">
+  <menupopup id="mac-menu" display="none">
+      <menuitem id="aboutName" label="&main.about;" command="cmd:about" />
+      <menuitem id="menu_preferences" label="&main.preferences;" key="key:showPrefs" command="cmd:prefs"/>
+      <menuitem id="menu_mac_services" label="&main.osxservices;"/>
+      <menuitem id="menu_mac_hide_app" label="&main.osxhideapp;" key="key:hideApp"/>
+      <menuitem id="menu_mac_hide_others" label="&main.osxhideothers;" key="key:hideOthersApp"/>
+      <menuitem id="menu_mac_show_all" label="&main.osxshowall;"/>
+      <menuitem id="menu_FileQuitItem" label="&main.quit;" key="quit" command="cmd:quit"/>
+  </menupopup>
+  <menu id="menu-file" label="&main.file;" accesskey="&main.file.accesskey;" class="menu-iconic">
+    <menupopup id="file-popup">
+      <menuitem id="file-browse-library" label="&main.browseLibrary;" class="menuitem-iconic"
+		accesskey="&main.browseLibrary.accesskey;" oncommand="toggleLibrary(true);"/>
+      <menuitem id="file-hide-library" label="&main.hideLibrary;" class="menuitem-iconic"
+		accesskey="&main.browseLibrary.accesskey;" oncommand="toggleLibrary(false);"
+		style="display: none;"/>
+      <menuitem id="file-open" label="&main.openFile;" key="open-file-key" class="menuitem-iconic"
+		accesskey="&main.openFile.accesskey;" oncommand="manageOpenFile()"/>
+      <menu label="&main.lastOpen;" id="menu-lastopen-top">
+	<menupopup id="menu-lastopen">
+	</menupopup>
+      </menu>
+      <menuitem id="file-save" label="&main.saveFile;" key="save-file-key" class="menuitem-iconic"
+		accesskey="&main.saveFile.accesskey;" oncommand="saveDocument(getHtmlRenderer().contentDocument);"/>
+      <menuitem id="file-print" label="&main.print;" key="print-key" class="menuitem-iconic"
+		accesskey="&main.print.accesskey;" oncommand="print()"/>
+      <menuitem id="file-print-pdf" label="&main.printPdf;" key="print-pdf-key" class="menuitem-iconic"
+		accesskey="&main.printPdf.accesskey;" oncommand="printPdf()"/>
+      <menuseparator id="file-sep" />
+      <menuitem id="file-quit" label="&main.quit;" key="quit-key" class="menuitem-iconic"
+		accesskey="&main.quit.accesskey;" command="cmd:quit"/>
+    </menupopup>
+  </menu>
+  <menu id="menu-edit" label="&main.edit;" accesskey="&main.edit.accesskey;">
+    <menupopup id="edit-popup">
+      <menuitem id="edit-find" label="&main.find;" key="find-key" class="menuitem-iconic"
+		accesskey="&main.find.accesskey;" oncommand="find()"/>
+      <menuitem id="edit-selectall" label="&main.selectall;" key="selectall-key" class="menuitem-iconic"
+		accesskey="&main.selectall.accesskey;" oncommand="selectAll()"/>
+      <menuitem id="edit-copy" label="&main.copy;" key="copy-key" class="menuitem-iconic"
+		accesskey="&main.copy.accesskey;" oncommand="copySelectedContent()"/>
+      <menu id="edit-transliteration" label="&main.transliteration;" accesskey="&main.transliteration.accesskey;" style="display: none;">
+	<menupopup id="menu-transliterations">
+	</menupopup>
+      </menu>
+      <menuseparator style="display: none;"/>
+      <menuitem id="file-preferences" label="&main.preferences;" class="menuitem-iconic"
+		accesskey="&main.preferences.accesskey;" command="cmd:prefs" />
+    </menupopup>
+  </menu>
+  <menu id="menu-display" label="&main.display;" accesskey="&main.display.accesskey;">
+    <menupopup id="display-popup">
+      <menuitem id="display-tabs" label="&main.tabs;" type="checkbox" checked="false"
+		accesskey="&main.tabs.accesskey;" key="change-tabs-visibility-status"
+		oncommand="changeTabsVisibilityStatus(undefined, true)"/>
+      <menuitem id="display-fullscreen" label="&main.fullscreen;" type="checkbox" checked="false" class="menuitem-iconic"
+		key="fullscreen-key" accesskey="&main.fullscreen.accesskey;" oncommand="UIToggleFullScreen(true)"/>
+      <menuitem id="display-statusbar" label="&main.statusbar;" type="checkbox" checked="true"
+		accesskey="&main.statusbar.accesskey;" oncommand="changeStatusBarVisibilityStatus(undefined, true)"/>
+      <menu label="&main.zoom;" accesskey="&main.zoom.accesskey;">
+	<menupopup id="menu-zoom">
+	  <menuitem id="display-zoom-in" label="&main.zoomin;" key="zoomin" class="menuitem-iconic"
+		    accesskey="&main.zoomin.accesskey;" oncommand="zoomIn()"/>
+	  <menuitem id="display-zoom-out" label="&main.zoomout;" key="zoomout" class="menuitem-iconic"
+		    accesskey="&main.zoomout.accesskey;" oncommand="zoomOut()"/>
+	  <menuseparator/>
+	  <menuitem id="display-zoom-orig" label="&main.zoomorig;" key="zoomorig" class="menuitem-iconic"
+		    accesskey="&main.zoomorig.accesskey;" oncommand="zoomOriginal()"/>
+	</menupopup>
+      </menu>
+      <menu label="&main.language;" accesskey="&main.language.accesskey;">
+	<menupopup id="menu-languages">
+	</menupopup>
+      </menu>
+      <menu label="&main.skin;" accesskey="&main.skin.accesskey;">
+	<menupopup id="menu-skins">
+	  <menuitem type="checkbox" label="Default" id="skin-default" oncommand="selectSkin('default');"/>
+          <menuitem type="checkbox" label="Evolution" id="skin-evolution" oncommand="selectSkin('evolution');"/>
+          <menuitem type="checkbox" label="Minimal" id="skin-minimal" oncommand="selectSkin('minimal');"/>
+	</menupopup>
+      </menu>
+      <menuitem id="display-inverted-colors" label="&main.invertedColors;" type="checkbox" checked="false"
+		accesskey="&main.invertedColors.accesskey;" oncommand="reloadContentInAllTabs()" key="invert-colors-key"/>
+    </menupopup>
+  </menu>
+  <menu id="menu-tools" label="&main.tools;" accesskey="&main.tools.accesskey;">
+    <menupopup id="tools-popup">
+      <menuitem id="tools-randomArticle" label="&main.randomArticle;" key="random-article-key"
+		class="menuitem-iconic" disabled="true"
+		accesskey="&main.randomArticle.accesskey;" oncommand="loadRandomArticle()"/>
+      <menuitem id="tools-server" label="&main.server;" key="server-key" class="menuitem-iconic"
+		accesskey="&main.server.accesskey;" oncommand="showServerDialog()"/>
+      <menuitem id="tools-launchIndexing" label="&main.launchIndexing;" class="menuitem-iconic"
+		oncommand="manageIndexCurrentBook(true)" disabled="true"/>
+      <menuitem id="tools-checkIntegrity" label="&main.checkIntegrity;" class="menuitem-iconic"
+		accesskey="&main.checkIntegrity.accesskey;" oncommand="manageCheckIntegrity()" disabled="true"/>
+      <menuitem id="tools-purgeHistory" label="&main.purgeHistory;" key="purge-history-key" class="menuitem-iconic"
+		accesskey="&main.purgeHistory.accesskey;" oncommand="managePurgeHistory()"/>
+    </menupopup>
+  </menu>
+  <menu id="menu-help" label="&main.help;" accesskey="&main.help.accesskey;">
+    <menupopup id="help-popup">
+      <menuitem id="help-help" label="&main.help;" class="menuitem-iconic"
+		key="help-key" accesskey="&main.help.accesskey;" oncommand="showHelp(undefined, true)"/>
+      <menuseparator/>
+      <menuitem id="help-feedback" label="&main.feedback;" class="menuitem-iconic"
+		oncommand="openUrlWithExternalBrowser('http://input.kiwix.org/feedback.html?version=0.9')"/>
+      <menuitem id="help-reportabug" label="&main.reportabug;" class="menuitem-iconic"
+		oncommand="openUrlWithExternalBrowser('http://reportabug.kiwix.org')"/>
+      <menuitem id="help-requestafeature" label="&main.requestafeature;" class="menuitem-iconic"
+		oncommand="openUrlWithExternalBrowser('http://requestafeature.kiwix.org')"/>
+      <menuseparator/>
+      <menuitem id="help-about" label="&main.about;" class="menuitem-iconic"
+		accesskey="&main.about.accesskey;" command="cmd:about" />
+    </menupopup>
+  </menu>
+</menubar>
+
+<!-- Properties (should be implemented after menubar otherwise generate a 1 pixel big space between windows decoration and menubar) -->
+<stringbundle id="properties" src="chrome://main/locale/main.properties"/>
+<stringbundle id="brandproperties" src="chrome://branding/locale/brand.properties"/>
+
+<!-- Custom Javascript scripts (should be implemented after menubar otherwise generate a 1 pixel big space between windows decoration and menubar) -->
+<script language="javaScript" type="text/javascript" src="js/languages.js"/>
+<script language="javaScript" type="text/javascript" src="js/zim.js"/>
+<script language="javaScript" type="text/javascript" src="js/logger.js"/>
+<script language="javaScript" type="text/javascript" src="js/search.js"/>
+<script language="javaScript" type="text/javascript" src="js/tools.js"/>
+<script language="javaScript" type="text/javascript" src="js/dom.js"/>
+<script language="javaScript" type="text/javascript" src="js/gui.js"/>
+<script language="javaScript" type="text/javascript" src="js/bookmarks.js"/>
+<script language="javaScript" type="text/javascript" src="js/contentAreaUtils.js"/>
+<script language="javaScript" type="text/javascript" src="js/library.js"/>
+<script language="javaScript" type="text/javascript" src="js/tabs.js"/>
+<script language="javaScript" type="text/javascript" src="js/xmlrpc.js"/>
+<script language="javaScript" type="text/javascript" src="js/content.js"/>
+<script language="javaScript" type="text/javascript" src="js/workerMessage.js"/>
+<script language="javaScript" type="text/javascript" src="js/preferences.js"/>
+<script language="javaScript" type="text/javascript" src="js/server.js"/>
+
+<!-- Global Javascript scripts (should be implemented after menubar otherwise generate a 1 pixel big space between windows decoration and menubar) -->
+<script language="javaScript" type="application/x-javascript" src="chrome://global/content/printUtils.js"/>
+<script language="javaScript" type="application/x-javascript" src="chrome://global/content/findUtils.js"/>
+
+<!-- Keyset (should be implemented after menubar otherwise generate a 1 pixel big space between windows decoration and menubar) -->
+<keyset>
+  <key id="thumb-key" key="Y" modifiers="control" oncommand="testThumbnail()"/>
+  <key id="quit-key" key="Q" modifiers="control" oncommand="quit()"/>
+  <key id="find-key" key="F" modifiers="control" oncommand="find()"/>
+  <key id="goto-search-field-key" key="L" modifiers="control" oncommand="manageFocusOnSearchBox()"/>
+  <key id="goto-search-field-key-bis" keycode="D" modifiers="alt" oncommand="manageFocusOnSearchBox()"/>
+  <key id="goto-search-field-key-ter" keycode="F" modifiers="control,shift" oncommand="manageFocusOnSearchBox()"/>
+  <key id="open-file-key" key="O" modifiers="control" oncommand="manageOpenFile()"/>
+  <key id="save-file-key" key="S" modifiers="control" oncommand="saveDocument(window.content.document)"/>
+  <key id="print-key" key="P" modifiers="control" oncommand="print()"/>
+  <key id="print-pdf-key" key="D" modifiers="control,shift" oncommand="printPdf()"/>
+  <key id="add-bookmark-key" key="D" modifiers="control" oncommand="bookmarkCurrentPage(); UIToggleBookmarksBar(true)"/>
+  <key id="selectall-key" key="A" modifiers="control" oncommand="selectAll()"/>
+  <key id="bookmarks-key" key="B" modifiers="control" oncommand="UIToggleBookmarksBar()"/>
+  <key id="copy-key" key="C" modifiers="control" oncommand="copySelectedContent()"/>
+  <key id="findnext" key="G" modifiers="control" oncommand="getFindBar().onFindAgainCommand(false);"/>
+  <key id="findnextbis" keycode="VK_F3" oncommand="getFindBar().onFindAgainCommand(false);"/>
+  <key id="findprevious" key="G" modifiers="control,shift" oncommand="getFindBar().onFindAgainCommand(true);"/>
+  <key id="zoomin" key="+" modifiers="control" oncommand="zoomIn()"/>
+  <key id="zoomin-bis" key="=" modifiers="control" oncommand="zoomIn()"/> <!-- facilitate the zoomin without using SHIFT-->
+  <key id="zoomout" key="-" modifiers="control" oncommand="zoomOut()"/>
+  <key id="zoomorig" key="0" modifiers="control" oncommand="zoomOriginal()"/>
+  <key id="open-tab-key" key="T" modifiers="control" oncommand="openNewTab(); getSearchBox().value = ''; focusOnSearchBox()"/>
+  <key id="close-tab-key" key="w" modifiers="control" oncommand="closeCurrentTab();"/>
+  <key id="close-alltab-key" key="W" modifiers="control,shift" oncommand="closeAllTabs();"/>
+  <key id="invert-colors-key" key="I" modifiers="control" oncommand="toggleInvertedColors(); reloadContent()"/>
+  <key id="help-key" keycode="VK_F1" oncommand="showHelp(undefined, true)"/>
+  <key id="home-key" keycode="VK_HOME" modifiers="alt" oncommand="goHome()"/>
+  <key id="random-article-key" key="R" modifiers="control" oncommand="loadRandomArticle()"/>
+  <key id="fullscreen-key" keycode="VK_F11" oncommand="UIToggleFullScreen(true)"/>
+  <key id="escape" keycode="VK_ESCAPE" oncommand="handleEscape()"/>
+  <key id="pageback-key" keycode="VK_LEFT" modifiers="control" oncommand="pageBack()"/>
+  <key id="pagenext-key" keycode="VK_RIGHT" modifiers="control" oncommand="pageNext()"/>
+  <key id="pageback-key" keycode="VK_LEFT" modifiers="alt" oncommand="pageBack()"/>
+  <key id="pagenext-key" keycode="VK_RIGHT" modifiers="alt" oncommand="pageNext()"/>
+  <key id="arrowup-key" keycode="VK_UP" oncommand="scrollLineUp()"/>
+  <key id="arrowdown-key" keycode="VK_DOWN" oncommand="scrollLineDown()"/>
+  <key id="pageup-key" keycode="VK_PAGE_UP" oncommand="scrollPageUp()"/>
+  <key id="pagedown-key" keycode="VK_PAGE_DOWN" oncommand="scrollPageDown()"/>
+  <key id="tabback-key" keycode="VK_PAGE_UP" modifiers="control" oncommand="tabBack()"/>
+  <key id="tabnext-key" keycode="VK_PAGE_DOWN" modifiers="control" oncommand="tabNext()"/>
+  <key id="key:quit" key="Q" modifiers="accel" command="cmd:quit"/>
+  <key id="key:hideApp" key="H" modifiers="accel"/>
+  <key id="key:hideOthersApp" key="H" modifiers="accel,alt"/>
+  <key id="key:showPrefs" key="," modifiers="accel"/>
+</keyset>
+
+<commandset id="mac-commands">
+  <command id="cmd:quit" oncommand="quit();"/>
+  <command id="cmd:prefs" oncommand="showPreferences();"/>
+  <command id="cmd:about" oncommand="showAbout();"/>
+</commandset>
+
+<!-- Contextual menu (should be implemented after menubar otherwise generate a 1 pixel big space between windows decoration and menubar) -->
+<popupset>
+<menupopup id="browser-contextual-menu">
+  <menuitem label="&main.saveMediaAs;" id="browser-contextual-menu-savemediaas"/>
+  <menuitem label="&main.openLinkInNewTab;" id="browser-contextual-menu-openlinkinnewtab"/>
+  <menuitem label="&main.copy;" id="browser-contextual-menu-copyselectedtext"/>
+  <menuitem label="&main.selectall;" id="browser-contextual-menu-selectall" onclick="selectAll()"/>
+  <menuitem label="&main.searchFor;" id="browser-contextual-menu-searchfor"/>
+  <menuitem label="&main.copyLinkAdress;" id="browser-contextual-menu-copylinkaddress"/>
+  <menuitem label="&main.mute;" id="browser-contextual-menu-mute" onclick="document.popupNode.muted=true"/>
+  <menuitem label="&main.audible;" id="browser-contextual-menu-audible" oncommand="document.popupNode.muted=false"/>
+</menupopup>
+</popupset>
+
+<menupopup id="sugar-options-menu">
+      <menuitem id="tools-randomArticle" label="&main.randomArticle;" key="random-article-key" accesskey="&main.randomArticle.accesskey;" oncommand="loadRandomArticle()"/>
+      <menuitem id="file-open" label="&main.openFile;" key="open-file-key" accesskey="&main.openFile.accesskey;" oncommand="manageOpenFile()"/>
+      <menu label="&main.lastOpen;" id="sugar-menu-lastopen-top"><menupopup id="sugar-menu-lastopen"></menupopup></menu>
+      <menuseparator />
+      <menuitem id="sugar-button-find" label="&main.find;" oncommand="find()"/>
+      <menuitem id="file-save" label="&main.saveFile;" key="save-file-key" accesskey="&main.saveFile.accesskey;" oncommand="saveDocument(window.content.document);"/>
+      <menuitem id="file-print" label="&main.print;" key="print-key" accesskey="&main.print.accesskey;" oncommand="print()"/>
+      <menuitem id="file-print-pdf" label="&main.printPdf;" key="print-pdf-key" accesskey="&main.printPdf.accesskey;" oncommand="printPdf()"/>
+      <menuseparator />
+      <menuitem id="tools-purgeHistory" label="&main.purgeHistory;" key="purge-history-key" accesskey="&main.purgeHistory.accesskey;" oncommand="managePurgeHistory()"/>
+      <menuitem id="help-help" label="&main.help;" oncommand="showHelp()"/>
+</menupopup>
+
+<!-- Tool bar -->
+<toolbox id="tool-box">
+  <toolbar id="tool-bar" class="chromeclass-toolbar">
+    <toolbarbutton id="button-library" oncommand="toggleLibrary()" tooltiptext="&main.browseLibrary;" checked="false" />
+    <toolbarbutton id="sugar-button-options" oncommand="openSugarOptionsMenu()"/>
+    <toolbarbutton id="button-home" oncommand="goHome(isCtrlDown())" tooltiptext="&main.home;"/>
+    <toolbarbutton id="button-back" oncommand="pageBack(isCtrlDown())" tooltiptext="&main.back;"/>
+    <toolbarbutton id="button-next" oncommand="pageNext(isCtrlDown())" tooltiptext="&main.forward;"/>
+    <stack flex="1">
+      <hbox>
+	<textbox id="textbox-search" flex="1" tooltiptext="&main.searchBar;"
+		 placeholder="&main.searchPlaceholder;" disabled="true"
+		 onkeypress="if (event.keyCode == 27) { this.value = '' }"
+		 ontextentered="blur(); manageSearchInIndex();" type="autocomplete"
+		 autocompletesearch="kiwix-suggest" maxrows="11" onfocus="this.select();">
+	  <hbox class="textbox-search-go-container">
+	    <image id="textbox-search-go-button" onclick="manageSearchInIndex();" tooltiptext="&main.search;"/>
+	  </hbox>
+	</textbox>
+      </hbox>
+      <label id="search-label" style="margin: 0px;" collapsed="true" tooltiptext="&main.noSearchBar;"/>
+    </stack>
+    <toolbarbutton id="button-bookmarks" oncommand="UIToggleBookmarksBar()" tooltiptext="&main.bookmarks;"/>
+    <toolbarbutton id="button-print" oncommand="print()" tooltiptext="&main.print;"/>
+    <toolbarbutton id="button-search-article" oncommand="find()" tooltiptext="&main.findInText;" />
+    <toolbarbutton id="button-zoom-out" oncommand="zoomOut()" tooltiptext="&main.zoomout;"/>
+    <toolbarbutton id="button-zoom-in" oncommand="zoomIn()" tooltiptext="&main.zoomin;"/>
+    <toolbarbutton id="sugar-button-display" oncommand="toggleSugarDisplayBar()" />
+    <toolbarbutton id="button-fullscreen" oncommand="UIToggleFullScreen(true)" tooltiptext="&main.fullscreen;"/>
+    <toolbarbutton id="sugar-button-back" oncommand="pageBack()" tooltiptext="&main.back;"/>
+    <toolbarbutton id="sugar-button-next" oncommand="pageNext()" tooltiptext="&main.forward;"/>
+    <toolbarbutton id="sugar-button-bookmark" tooltiptext="Mark/Unmark this page" oncommand="toggleBookmarkStatusForCurrentPage()" />
+    <toolbarbutton id="sugar-button-quit" tooltiptext="Quit" command="cmd:quit"/>
+  </toolbar>
+  <toolbar id="sugar-display-toolbar">
+    <toolbarbutton id="sugar-button-zoom-out" oncommand="zoomOut()" tooltiptext="&main.zoomout;"/>
+    <toolbarbutton id="sugar-button-zoom-in" oncommand="zoomIn()" tooltiptext="&main.zoomin;"/>
+    <toolbarbutton id="sugar-button-copy" oncommand="copySelectedContent()" tooltiptext="&main.copy;"/>
+    <toolbarbutton id="sugar-button-bookmarks" oncommand="UIToggleBookmarksBar()" tooltiptext="&main.bookmarks;"/>
+  </toolbar>
+</toolbox>
+
+<hbox flex="1">
+
+  <!-- bookmarks side bar -->
+  <vbox id="bookmarks-bar" hidden="true">
+
+    <hbox id="bookmarks-bar-header">
+      <label flex="1" class="results-title" value="&main.bmkLabel;"/>
+      <toolbarbutton id="bookmarks-close-button" oncommand="UIToggleBookmarksBar()"/>
+    </hbox>
+
+    <hbox>
+      <toolbar id="bookmarks-toolbar" flex="1">
+	<toolbarbutton id="bookmarks-mark-button" tooltiptext="&main.mark;" oncommand="javascript:bookmarkCurrentPage ();" />
+	<toolbarbutton id="bookmarks-unmark-button" tooltiptext="&main.unmark;" oncommand="javascript:removeCurrentBookmark ();" />
+<!-- Seems to be pretty dangerous and ambigous
+	<toolbarbutton id="bookmarks-reload-button" tooltiptext="&main.reload;" oncommand="javascript:UIResetBookmarkSet ();" />
+-->
+        <spacer flex="1"/>
+	<toolbarbutton id="bookmarks-new-button" tooltiptext="&main.newbmk;" oncommand="javascript:UICreateNewBookmarkSet ();" />
+	<toolbarbutton id="bookmarks-load-button" tooltiptext="&main.loadbmk;" oncommand="javascript:UILoadExternalBookmarkFile ();" />
+      </toolbar>
+    </hbox>
+
+    <menulist id="bookmarks-sets-list">
+      <menupopup id="bookmarks-sets">
+	<menuitem label="&main.defaultset;" value="default" oncommand="UIBookmarkSetSwitch(this.value);"/>
+      </menupopup>
+    </menulist>
+
+    <listbox flex="1" id="bookmarks-list" onkeypress="if (event.keyCode == 13) { onBookmarkItemClicked( this.selectedItem ) }" />
+
+    <label id="notesLabel" value="&main.notesLabel;" />
+    <textbox id="notesTextBox" onchange="UISaveCurrentNote(null);" multiline="true" flex="1" dir="&main.cssdirection;" disabled="true" />
+  </vbox>
+
+  <!-- Rendering space -->
+  <deck id="rendering-deck" flex="1">
+    <page id="rendering-page" flex="1" onclick="lostFocusOnSearchBox()">
+      <vbox flex="1">
+	<tabbox flex="1" id="tab-box" handleCtrlTab="false" handleCtrlPageUpDown="false">
+	  <tabs id="tab-headers">
+            <tab id="tab-header-00000000" onclick="if (event.button == 1) { closeThatTab(this.id); } else { switchTab(null, this); }" class="tab-header" selected="true">
+	      <label value="No Name" crop="right" class="tab-header-label"/>
+	    </tab>
+            <toolbarbutton id="tab-close-button-00000000" class="tabs-close-button" oncommand="closeThatTab('00000000')" style="visibility: hidden;"/>
+            <toolbarbutton id="tabs-add-button" oncommand="switchToNewTab();" tooltiptext="Open a new Tab"/>
+	  </tabs>
+	  <tabpanels id="tab-panels" flex="1">
+            <tabpanel id="tab-panel-00000000">
+              <browser flex="1" id="html-renderer-00000000" src="" type="content-primary"/>
+            </tabpanel>
+	  </tabpanels>
+	</tabbox>
+
+	<!-- Find bar -->
+	<findbar id="find-bar" browserid="html-renderer-00000000"/>
+
+	<!-- Status bar -->
+	<hbox id="status-bar">
+	  <vbox id="status-bar-image">
+	    <image id="earth-icon" collapsed="true"/>
+	    <image id="book-icon" collapsed="true"/>
+	  </vbox>
+	  <label id="address-bar" crop="end" flex="1" value=" "/>
+	  <spacer flex="1"/>
+	  <stack>
+	    <progressmeter id="progress-bar" mode="determined" collapsed="true"/>
+	    <label id="progress-bar-label" collapsed="true"/>
+	  </stack>
+	</hbox>
+
+      </vbox>
+    </page>
+    <page id="library-page" flex="1" style="display: none;"><!-- Do not remove display:non, browser size problem -->
+      <hbox flex="1">
+	<vbox class="library-left">
+	  <box class="library-left-stuffer" style="height: 10px;" />
+	  <vbox class="library-menu">
+	    <vbox id="library-menuitem-local" onclick="selectLibraryMenu(this.id);">
+	      <description class="library-menuitem-description">&main.library.myLibrary;</description>
+	    </vbox>
+	    <div style="height: 6px;" class="library-left-stuffer"/>
+	    <vbox id="library-menuitem-remote" onclick="selectLibraryMenu(this.id);">
+	      <description class="library-menuitem-description">&main.library.getNewFiles;</description>
+	    </vbox>
+	  </vbox>
+
+	  <vbox class="library-left-stuffer" flex="1">
+	    <vbox class="library-filter" style="border-radius: 5px 5px 0px 0px; margin: 10px 10px 2px 10px;">
+	      <label value="&main.library.searchZimFiles;"/>
+	      <textbox id="library-filter-search" oninput="populateBookList()"/>
+	    </vbox>
+	    <vbox class="library-filter" style="margin: 0px 10px 2px 10px;">
+	      <label value="&main.library.sortBy;"/>
+	      <menulist id="library-sortby" oncommand="populateBookList()">
+		<menupopup>
+		  <menuitem label="&main.library.sortBy.title;" value="title" selected="true"/>
+		  <menuitem label="&main.library.sortBy.size;" value="size"/>
+		  <menuitem label="&main.library.sortBy.date;" value="date"/>
+		  <menuitem label="&main.library.sortBy.author;" value="creator"/>
+		  <menuitem label="&main.library.sortBy.publisher;" value="publisher"/>
+		</menupopup>
+	      </menulist>
+	    </vbox>
+	    <vbox class="library-filter" style="border-radius: 0px 0px 5px 5px; margin: 0px 10px 10px 10px;">
+	      <label value="&main.library.filterBy;"/>
+
+	      <label value="▾ &main.library.filterBy.fileSize;"/>
+	      <box style="margin-left: 10px; font-size: smaller;" align="center">
+		<label value="&main.library.filterBy.lessThan;"/>
+		<textbox id="library-content-maxsize" size="2" type="number" min="0" max="99" onchange="populateBookList()"/>
+		<label value="GB"/>
+	      </box>
+
+	      <label value="▾ &main.library.filterBy.language;"/>
+	      <box style="margin-left: 10px; font-size: smaller;" align="center">
+		<menulist id="library-filter-language" oncommand="populateBookList()" flex="1">
+		  <menupopup>
+		    <menuitem label="&main.library.filterBy.language.all;" value=""/>
+		  </menupopup>
+		</menulist>
+	      </box>
+
+	      <label value="▾ &main.library.filterBy.author;"/>
+	      <vbox style="margin-left: 10px; font-size: smaller;">
+		<menulist id="library-filter-creator" oncommand="populateBookList()" flex="1">
+		  <menupopup>
+		    <menuitem label="&main.library.filterBy.author.all;" value=""/>
+		  </menupopup>
+		</menulist>
+	      </vbox>
+
+	      <label value="▾ &main.library.filterBy.publisher;"/>
+	      <vbox style="margin-left: 10px; font-size: smaller;">
+		<menulist id="library-filter-publisher" oncommand="populateBookList()" flex="1">
+		  <menupopup>
+		    <menuitem label="&main.library.filterBy.publisher.all;" value=""/>
+		  </menupopup>
+		</menulist>
+	      </vbox>
+	    </vbox>
+	  </vbox>
+	</vbox>
+	<box class="library-content" flex="1">
+	  <deck id="library-deck" selectedIndex="0" flex="1">
+	    <richlistbox id="library-content-local"/>
+	    <richlistbox id="library-content-remote"/>
+	  </deck>
+	</box>
+      </hbox>
+    </page>
+  </deck>
+</hbox>
+<html:canvas style="background: white; display:none;" id="thumbnail-saver-canvas" />
+</window>

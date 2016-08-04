@@ -1,0 +1,577 @@
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; Kiwix nsis code for make the installer ;
+; Please, see the README file            ;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+; Define the Bitmaps used in the installer
+!define MUI_WELCOMEFINISHPAGE_BITMAP "finish.bmp" ;Welcome image 164x314px
+!define MUI_HEADERIMAGE 
+!define MUI_HEADERIMAGE_RIGHT ;Header position
+!define MUI_HEADERIMAGE_BITMAP "header.bmp" ;Header installer image 500x63px
+
+; Define the icons for the installer and uninstaller
+!define MUI_ICON  "install.ico"
+!define MUI_UNICON "uninstall.ico"
+
+; Target Windows XP or more recent / make a Unicode installer (up to v. 2.50)
+; TargetMinimalOS 5.1
+
+; Define User Interface additional stuff
+!define MUI_FINISHPAGE_RUN "kiwix\kiwix.exe"
+
+; Define the things related to the installation of desktop launch icon
+Function createDesktopShortcut
+CreateShortcut "$desktop\Kiwix.lnk" "$instdir\kiwix\kiwix.exe"
+FunctionEnd
+
+!define MUI_FINISHPAGE_SHOWREADME ""
+!define MUI_FINISHPAGE_SHOWREADME_NOTCHECKED
+!define MUI_FINISHPAGE_SHOWREADME_TEXT "Create Desktop Shortcut"
+!define MUI_FINISHPAGE_SHOWREADME_FUNCTION createDesktopShortcut
+
+; Show a warning if the user want to close the install
+!define MUI_ABORTWARNING
+
+; Define Application and Local Applicaiont Data paths
+!define CSIDL_APPDATA '0x1A' 
+!define CSIDL_LOCALAPPDATA '0x1C'
+
+; Define installer registry string contants
+!define PRODUCT_NAME "Kiwix"
+!define PRODUCT_VERSION "0.9"
+!define PRODUCT_PUBLISHER "Kiwix"
+!define PRODUCT_WEB_SITE "http://www.kiwix.org"
+
+; Define installer Regkey values
+!define PRODUCT_UNINST_KEY "Software\Microsoft\Windows\CurrentVersion\Uninstall\${PRODUCT_NAME}"
+!define PRODUCT_UNINST_ROOT_KEY "HKLM"
+
+; Mandatory plugins
+!include "MUI2.nsh"
+!include "InstallOptions.nsh"
+!include "WinMessages.nsh"
+!include "LogicLib.nsh"
+!include "Locate.nsh"
+!include "FileAssociation.nsh"
+
+; RequestExecutionLevel
+RequestExecutionLevel admin
+!include "UAC.nsh"
+
+; Installer variables declarations
+SetCompressor lzma
+Name "${PRODUCT_NAME} ${PRODUCT_VERSION}"
+OutFile "kiwix-install.exe"
+ShowInstDetails show
+ShowUnInstDetails show
+InstallDir "$PROGRAMFILES\Kiwix"
+
+; Code to refresh icons after file association
+!define SHCNE_ASSOCCHANGED 0x08000000
+!define SHCNF_IDLIST 0
+ 
+Function RefreshShellIcons
+  ; By jerome tremblay - april 2003
+  System::Call 'shell32.dll::SHChangeNotify(i, i, i, i) v \
+  (${SHCNE_ASSOCCHANGED}, ${SHCNF_IDLIST}, 0, 0)'
+FunctionEnd
+
+Function un.RefreshShellIcons
+  ; By jerome tremblay - april 2003
+  System::Call 'shell32.dll::SHChangeNotify(i, i, i, i) v \
+  (${SHCNE_ASSOCCHANGED}, ${SHCNF_IDLIST}, 0, 0)'
+FunctionEnd
+
+
+; Reserve files to make the decompression faster
+ReserveFile "kiwix-install.ini"
+!insertmacro MUI_RESERVEFILE_LANGDLL
+
+; Global variables
+Var PAGETOSHOW
+Var CONTENTSIZE
+
+; Create Welcome page
+Page custom .onWelcomePageCreate .onWelcomePageLeave
+
+; Create License page
+!define MUI_PAGE_CUSTOMFUNCTION_PRE .onLicensePageCreate
+!define MUI_PAGE_CUSTOMFUNCTION_SHOW .onCommonPageShow
+!define MUI_PAGE_CUSTOMFUNCTION_LEAVE showWelcomePage
+!insertmacro MUI_PAGE_LICENSE "COPYING"
+
+; Create Directory page
+!define MUI_PAGE_CUSTOMFUNCTION_PRE .onDirectoryPageCreate
+!define MUI_PAGE_CUSTOMFUNCTION_SHOW .onCommonPageShow
+!define MUI_PAGE_CUSTOMFUNCTION_LEAVE showWelcomePage
+!insertmacro MUI_PAGE_DIRECTORY
+
+; Create install files page
+!define MUI_PAGE_CUSTOMFUNCTION_SHOW .onInstFilesShow
+!define MUI_CUSTOMFUNCTION_ABORT rollback
+!insertmacro MUI_PAGE_INSTFILES
+
+; Create end page
+!insertmacro MUI_PAGE_FINISH
+
+; The language selection dialog of Modern UI hides languages
+; unsupported by the user's selected codepage by default.
+; This is to avoid this behaviour
+;!define MUI_LANGDLL_ALLLANGUAGES
+
+; Translations
+!macro LANG_LOAD LANGLOAD
+  !insertmacro MUI_LANGUAGE "${LANGLOAD}"
+  !verbose off
+  !include "translations\${LANGLOAD}.nsh"
+  !verbose on
+  !undef LANG
+!macroend
+ 
+!macro LANG_STRING NAME VALUE
+  LangString "${NAME}" "${LANG_${LANG}}" "${VALUE}"
+!macroend
+
+; Insert language macro to get the interface common sentences localized
+;!insertmacro LANG_LOAD "Arabic"
+!insertmacro LANG_LOAD "English"
+!insertmacro LANG_LOAD "French"
+!insertmacro LANG_LOAD "German"
+!insertmacro LANG_LOAD "Spanish"
+;!insertmacro LANG_LOAD "SpanishInternational"
+;!insertmacro LANG_LOAD "SimpChinese"
+;!insertmacro LANG_LOAD "TradChinese"
+;!insertmacro LANG_LOAD "Japanese"
+;!insertmacro LANG_LOAD "Korean"
+;!insertmacro LANG_LOAD "Italian"
+;!insertmacro LANG_LOAD "Dutch"
+;!insertmacro LANG_LOAD "Danish"
+;!insertmacro LANG_LOAD "Swedish"
+;!insertmacro LANG_LOAD "Norwegian"
+;!insertmacro LANG_LOAD "NorwegianNynorsk"
+;!insertmacro LANG_LOAD "Finnish"
+;!insertmacro LANG_LOAD "Greek"
+;!insertmacro LANG_LOAD "Russian"
+!insertmacro LANG_LOAD "Portuguese"
+;!insertmacro LANG_LOAD "PortugueseBR"
+!insertmacro LANG_LOAD "Polish"
+;!insertmacro LANG_LOAD "Ukrainian"
+;!insertmacro LANG_LOAD "Czech"
+;!insertmacro LANG_LOAD "Slovak"
+;!insertmacro LANG_LOAD "Croatian"
+;!insertmacro LANG_LOAD "Bulgarian"
+;!insertmacro LANG_LOAD "Hungarian"
+;!insertmacro LANG_LOAD "Thai"
+;!insertmacro LANG_LOAD "Romanian"
+;!insertmacro LANG_LOAD "Latvian"
+;!insertmacro LANG_LOAD "Macedonian"
+;!insertmacro LANG_LOAD "Estonian"
+;!insertmacro LANG_LOAD "Turkish"
+;!insertmacro LANG_LOAD "Lithuanian"
+;!insertmacro LANG_LOAD "Slovenian"
+;!insertmacro LANG_LOAD "Serbian"
+;!insertmacro LANG_LOAD "SerbianLatin"
+!insertmacro LANG_LOAD "Farsi"
+;!insertmacro LANG_LOAD "Hebrew"
+;!insertmacro LANG_LOAD "Indonesian"
+;!insertmacro LANG_LOAD "Mongolian"
+;!insertmacro LANG_LOAD "Luxembourgish"
+;!insertmacro LANG_LOAD "Albanian"
+;!insertmacro LANG_LOAD "Breton"
+;!insertmacro LANG_LOAD "Belarusian"
+;!insertmacro LANG_LOAD "Icelandic"
+;!insertmacro LANG_LOAD "Malay"
+;!insertmacro LANG_LOAD "Bosnian"
+;!insertmacro LANG_LOAD "Kurdish"
+;!insertmacro LANG_LOAD "Irish"
+;!insertmacro LANG_LOAD "Uzbek"
+;!insertmacro LANG_LOAD "Galician"
+;!insertmacro LANG_LOAD "Afrikaans"
+;!insertmacro LANG_LOAD "Catalan"
+;!insertmacro LANG_LOAD "Esperanto"
+
+Section Install SECTIONINSTALLID
+SectionEnd
+
+; This callback will be called when the installer is nearly finished initializing. 
+Function .onInit
+
+UAC_Elevate:
+    UAC::RunElevated 
+    StrCmp 1223 $0 UAC_ElevationAborted ; UAC dialog aborted by user?
+    StrCmp 0 $0 0 UAC_Err ; Error?
+    StrCmp 1 $1 0 UAC_Success ;Are we the real deal or just the wrapper?
+    Quit
+ 
+UAC_Err:
+    MessageBox mb_iconstop "Unable to elevate, error $0"
+    Abort
+ 
+UAC_ElevationAborted:
+    # elevation was aborted, run as normal?
+    MessageBox mb_iconstop "This installer requires admin access, aborting!"
+    Abort
+ 
+UAC_Success:
+    StrCmp 1 $3 +4 ;Admin?
+    StrCmp 3 $1 0 UAC_ElevationAborted ;Try again?
+    MessageBox mb_iconstop "This installer requires admin access, try again"
+    goto UAC_Elevate 
+
+  __CONTENTSIZE__
+
+  ${If} ${FileExists} "..\data"
+    ${locate::GetSize} "..\data\" "/S=Mb /M=*.* /G=1 /B=1" $R1 $R2 $R3
+    System::Int64Op $R1 * 1024
+    Pop $0
+    SectionSetSize ${SECTIONINSTALLID} "$0"
+  ${EndIf}
+
+  !insertmacro MUI_LANGDLL_DISPLAY
+
+FunctionEnd
+
+; Triggered by welcome page creation
+Function .onWelcomePageCreate
+  !insertmacro INSTALLOPTIONS_EXTRACT "kiwix-install.ini"
+  !insertmacro INSTALLOPTIONS_WRITE "kiwix-install.ini" "Field 1" "Text" $(LICENSE_AGREEMENT)
+  !insertmacro INSTALLOPTIONS_WRITE "kiwix-install.ini" "Field 2" "Text" $(LICENSE_AGREEMENT_EXPLANATION)
+  !insertmacro INSTALLOPTIONS_WRITE "kiwix-install.ini" "Field 3" "Text" $(INSTALL_DIRECTORY)
+  !insertmacro INSTALLOPTIONS_WRITE "kiwix-install.ini" "Field 4" "Text" $(INSTALL_DIRECTORY_EXPLANATION)
+  !insertmacro INSTALLOPTIONS_DISPLAY "kiwix-install.ini"
+FunctionEnd
+
+; Abort installation
+Function rollback
+	Delete "$INSTDIR\${PRODUCT_NAME}.url"
+	Delete "$INSTDIR\kiwix-uninstall.exe"
+	Delete "$SMPROGRAMS\Kiwix\Uninstall.lnk"
+	Delete "$SMPROGRAMS\Kiwix\kiwix.lnk"
+	Delete "$SMPROGRAMS\Kiwix\kiwix Website.lnk"
+
+	RMDir /R "$SMPROGRAMS\Kiwix"
+	RMDir /R "$INSTDIR"
+	DeleteRegKey ${PRODUCT_UNINST_ROOT_KEY} "${PRODUCT_UNINST_KEY}"
+
+	SetAutoClose true
+FunctionEnd
+
+; Triggered by welcome page leaving
+Function .onWelcomePageLeave
+  !insertmacro INSTALLOPTIONS_READ $R0 "kiwix-install.ini" "Settings" "State"
+  ${Select} $R0
+    ${Case} 0
+      Call isEnoughDisqueSpace
+      StrCpy $PAGETOSHOW "none"
+    ${Case} 1
+      StrCpy $PAGETOSHOW "license"
+    ${Case} 3
+      StrCpy $PAGETOSHOW "directory"
+    ${Default}
+      Abort
+  ${EndSelect}
+FunctionEnd
+
+Function .onCommonPageShow
+  ${If} $PAGETOSHOW != "license"
+    GetDlgItem $R0 $HWNDPARENT 1
+    SendMessage $R0 ${WM_SETTEXT} 0 "STR:OK"
+  ${EndIf}
+FunctionEnd
+
+Function showWelcomePage
+  SendMessage $HWNDPARENT ${WM_COMMAND} 3 0
+  Abort
+FunctionEnd
+
+Function .onLicensePageCreate
+  Push "license"
+  Call shouldSkipPage
+  Pop $R0
+  ${If} $R0 == 1
+    Abort
+  ${EndIf}
+FunctionEnd
+
+Function .onDirectoryPageCreate
+  Push "directory"
+  Call shouldSkipPage
+  Pop $R0
+  ${If} $R0 == 1
+    Abort
+  ${EndIf}
+FunctionEnd
+
+; Push textual page id and it returns 1 if the page should be skipped
+Function shouldSkipPage
+  Exch $R0
+  ${If} $PAGETOSHOW == $R0
+    StrCpy $R0 0
+  ${Else}
+    StrCpy $R0 1
+  ${EndIf}
+  Exch $R0
+FunctionEnd
+
+; Customize the instFile page
+; Able the Cancel button
+Function .onInstFilesShow
+  GetDlgItem $0 $HWNDPARENT 2
+  EnableWindow $0 1
+FunctionEnd
+
+Function isEnoughDisqueSpace
+  StrCpy $0 "$INSTDIR" 
+  Call FreeDiskSpace
+
+  StrCpy $2 $CONTENTSIZE ; Free space required by you (in kb)
+
+  System::Int64Op $1 > $2 ; Compare the space required and the space available
+  Pop $3 ; Get the result ...
+ 
+  IntCmp $3 1 okay ; ... and compare it
+  MessageBox MB_OK "Error: Not enough disk space!"
+  Call showWelcomePage
+  okay:
+FunctionEnd
+
+; Extract or Copy all necessary files and do necessary changes in the registry
+Section
+; Create directory
+  CreateDirectory "$INSTDIR"
+ 
+; Set the current directory one level higher to installer binary (following paths are relative)
+  Push "$EXEPATH"
+  Call GetParent 
+  Pop $0
+  SetOutPath $0
+  SetOutPath "..\"
+
+; Insert here the command to copy files
+  __FILES_TO_INSTALL__	
+
+; Copy files from "data" directory
+${If} ${FileExists} "data"
+  ${IfNot} ${FileExists} "$INSTDIR\data"
+    CreateDirectory "$INSTDIR\data"
+  ${EndIf}
+
+  ${locate::Open} "data\" "/S=Mb /M=*.* /G=1 /B=1" $0
+  StrCmp $0 0 0 loop
+
+  loop:
+  ${locate::Find} $0 $1 $2 $3 $4 $5 $6
+  ${If} $1 != ""
+    ${If} $4 == ""
+      ${IfNot} ${FileExists} "$INSTDIR\$1"
+        CreateDirectory "$INSTDIR\$1"
+      ${EndIf}	
+    ${Else}
+      CopyFiles /SILENT $1 "$INSTDIR\$2"
+    ${EndIf}
+    Goto loop
+  ${EndIf}
+
+  close:
+  ${locate::Close} $0
+  ${locate::Unload}
+${EndIf}
+
+; Delete the "live" file which should never be installed
+  Delete "$INSTDIR\live"
+
+; Create shorcuts for Kiwix Seb Site and essential binaries
+  SetOutPath $INSTDIR
+  WriteIniStr "$INSTDIR\${PRODUCT_NAME}.url" "InternetShortcut" "URL" "${PRODUCT_WEB_SITE}"
+
+; Create shortcuts
+  GetFunctionAddress $0 CreateShortcuts
+  UAC::ExecCodeSegment $0
+
+; Write in the registry necessary keys to uninstall Kiwix
+  WriteUninstaller "$INSTDIR\kiwix-uninstall.exe"
+  WriteRegStr ${PRODUCT_UNINST_ROOT_KEY} "${PRODUCT_UNINST_KEY}" "DisplayName" "$(^Name)"
+  WriteRegStr ${PRODUCT_UNINST_ROOT_KEY} "${PRODUCT_UNINST_KEY}" "UninstallString" "$INSTDIR\kiwix-uninstall.exe"
+  WriteRegStr ${PRODUCT_UNINST_ROOT_KEY} "${PRODUCT_UNINST_KEY}" "DisplayVersion" "${PRODUCT_VERSION}"
+  WriteRegStr ${PRODUCT_UNINST_ROOT_KEY} "${PRODUCT_UNINST_KEY}" "URLInfoAbout" "${PRODUCT_WEB_SITE}"
+  WriteRegStr ${PRODUCT_UNINST_ROOT_KEY} "${PRODUCT_UNINST_KEY}" "Publisher" "${PRODUCT_PUBLISHER}"
+
+; Create the file association
+  ${registerExtension} "$INSTDIR\kiwix\kiwix.exe" ".zim" "ZIM File"
+  ${registerExtension} "$INSTDIR\kiwix\kiwix.exe" ".zimaa" "ZIM File"
+  Call RefreshShellIcons
+
+SectionEnd
+
+; Create user shortcuts
+Function CreateShortcuts
+  SetShellVarContext all	 
+  CreateDirectory "$SMPROGRAMS\Kiwix"
+  CreateShortCut "$SMPROGRAMS\Kiwix\Kiwix.lnk" "$INSTDIR\kiwix\kiwix.exe"
+  CreateShortCut "$SMPROGRAMS\Kiwix\Kiwix Website.lnk" "$INSTDIR\${PRODUCT_NAME}.url"
+  CreateShortCut "$SMPROGRAMS\Kiwix\Uninstall.lnk" "$INSTDIR\kiwix-uninstall.exe"
+FunctionEnd
+
+Function un.onUninstSuccess
+  IfSilent +3
+    HideWindow
+    MessageBox MB_ICONINFORMATION|MB_OK "$(^Name) was successfully removed from your computer."
+FunctionEnd
+
+Function .OnInstFailed
+    UAC::Unload ;Must call unload!
+FunctionEnd
+ 
+Function .OnInstSuccess
+    UAC::Unload ;Must call unload!
+FunctionEnd
+
+Function un.onInit
+UAC_Elevate:
+    UAC::RunElevated 
+    StrCmp 1223 $0 UAC_ElevationAborted ; UAC dialog aborted by user?
+    StrCmp 0 $0 0 UAC_Err ; Error?
+    StrCmp 1 $1 0 UAC_Success ;Are we the real deal or just the wrapper?
+    Quit
+ 
+UAC_Err:
+    MessageBox mb_iconstop "Unable to elevate, error $0"
+    Abort
+ 
+UAC_ElevationAborted:
+    # elevation was aborted, run as normal?
+    MessageBox mb_iconstop "This installer requires admin access, aborting!"
+    Abort
+ 
+UAC_Success:
+    StrCmp 1 $3 +4 ;Admin?
+    StrCmp 3 $1 0 UAC_ElevationAborted ;Try again?
+    MessageBox mb_iconstop "This installer requires admin access, try again"
+    goto UAC_Elevate 
+
+FunctionEnd
+
+; Remove user shortcuts
+Function un.RemoveShortcuts
+  SetShellVarContext all
+  Delete "$SMPROGRAMS\Kiwix\Uninstall.lnk"
+  Delete "$SMPROGRAMS\Kiwix\Kiwix.lnk"
+  Delete "$SMPROGRAMS\Kiwix\Kiwix Website.lnk"
+  Delete "$desktop\Kiwix.lnk"
+  RMDir /R "$SMPROGRAMS\Kiwix"
+FunctionEnd
+
+; You don' t need to specify file to remove since we remove the whole
+; $INSTDIR folder recursivly.
+Section Uninstall
+
+	${unregisterExtension} ".zim" "ZIM File"
+	${unregisterExtension} ".zimaa" "ZIM File"
+	DeleteRegKey HKCR "ZIM File"
+	Call un.RefreshShellIcons
+
+        Delete "$INSTDIR\${PRODUCT_NAME}.url"
+        Delete "$INSTDIR\kiwix-uninstall.exe"
+
+	GetFunctionAddress $0 un.RemoveShortcuts
+	UAC::ExecCodeSegment $0
+
+	RMDir /R "$INSTDIR"
+	DeleteRegKey ${PRODUCT_UNINST_ROOT_KEY} "${PRODUCT_UNINST_KEY}"
+
+	IfSilent +3
+	  MessageBox MB_ICONQUESTION|MB_YESNO|MB_DEFBUTTON2 "Do you want to KEEP your personnal datas (bookmarks, notes) ?" IDYES +2
+	  Call un.removeProfile
+
+	SetAutoClose true
+SectionEnd
+
+; Remove your Kiwix profile from your user directory
+Function un.removeProfile
+    System::Call 'shell32::SHGetSpecialFolderPathA(i $HWNDPARENT, t .r1, i ${CSIDL_APPDATA}, b 'false') i r0'
+    RMDir /r "$1\www.kiwix.org"
+    System::Call 'shell32::SHGetSpecialFolderPathA(i $HWNDPARENT, t .r1, i ${CSIDL_LOCALAPPDATA}, b 'false') i r0'
+    RMDir /r "$1\www.kiwix.org"
+FunctionEnd
+
+!define sysGetDiskFreeSpaceEx 'kernel32::GetDiskFreeSpaceExA(t, *l, *l, *l) i'
+; $0 - Path to check (can be a drive 'C:' or a full path 'C:\Windows')
+; $1 - Return value, free space in kb
+function FreeDiskSpace
+
+  push $0
+  Call GetRoot
+  pop $0
+
+  System::Call '${sysGetDiskFreeSpaceEx}(r0,.,,.r1)'
+
+  ; convert the large integer byte values into managable kb
+  System::Int64Op $1 / 1024
+
+  ; Return the free space
+  Pop $1
+functionend
+
+; Return the parent directory
+Function GetParent
+ 
+  Exch $R0
+  Push $R1
+  Push $R2
+  Push $R3
+ 
+  StrCpy $R1 0
+  StrLen $R2 $R0
+ 
+  loop:
+    IntOp $R1 $R1 + 1
+    IntCmp $R1 $R2 get 0 get
+    StrCpy $R3 $R0 1 -$R1
+    StrCmp $R3 "\" get
+  Goto loop
+
+  get:
+    StrCpy $R0 $R0 -$R1
+ 
+    Pop $R3
+    Pop $R2
+    Pop $R1
+    Exch $R0
+ 
+FunctionEnd
+
+; Return the root of a path
+Function GetRoot
+  Exch $0
+  Push $1
+  Push $2
+  Push $3
+  Push $4
+ 
+  StrCpy $1 $0 2
+  StrCmp $1 "\\" UNC
+    StrCpy $0 $1
+    Goto done
+ 
+UNC:
+  StrCpy $2 3
+  StrLen $3 $0
+  loop:
+    IntCmp $2 $3 "" "" loopend
+    StrCpy $1 $0 1 $2
+    IntOp $2 $2 + 1
+    StrCmp $1 "\" loopend loop
+  loopend:
+    StrCmp $4 "1" +3
+      StrCpy $4 1
+      Goto loop
+    IntOp $2 $2 - 1
+    StrCpy $0 $0 $2
+ 
+done:
+  Pop $4
+  Pop $3
+  Pop $2
+  Pop $1
+  Exch $0
+FunctionEnd
